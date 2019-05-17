@@ -5,6 +5,43 @@ create database project2;
 
 use project2;
 
+
+----------------------------------------------------------
+-- drug overdose data
+----------------------------------------------------------
+
+
+create table drug_deaths
+(
+   drug_deaths_pk_id               int(5) unsigned not null auto_increment
+  ,year_de                         varchar(4)
+  ,state_de                        varchar(2)
+  ,region                          varchar(10)
+  ,rate                            decimal(5,2)
+  ,deaths                          int(10)
+  ,url                             varchar(100)
+  ,primary key (drug_deaths_pk_id)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+
+
+LOAD DATA LOCAL INFILE  
+'C:\\Users\\erp_p\\OneDrive\\Documents\\USC\\Projects\\Team Project 2\\Data\\DRUG_DEATHS2016_ADDED_REGION.csv'
+INTO TABLE drug_deaths  
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+( 
+   year_de                    
+  ,state_de         
+  ,region           
+  ,rate             
+  ,deaths           
+  ,url              
+)
+set drug_deaths_pk_id = null;  
+
 ----------------------------------------------------------
 -- admissions_raw (csv data no manipulation)
 ----------------------------------------------------------
@@ -1306,6 +1343,13 @@ as select
     else "Undefined"
     end sub3_d_de  
   ,employ_d
+  ,case when employ_d = 1  then "FULL TIME"
+        when employ_d = 2  then "PART TIME"
+        when employ_d = 3  then "UNEMPLOYED"
+        when employ_d = 4  then "NOT IN LABOR FORCE"
+        when employ_d = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
+   else "Undefined"
+   end employ_d_de  
   ,livarag_d
   ,detnlf_d
   ,freq1_d
