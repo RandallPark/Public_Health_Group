@@ -5,6 +5,46 @@ create database project2;
 
 use project2;
 
+<<<<<<< HEAD
+=======
+
+----------------------------------------------------------
+-- drug overdose data
+----------------------------------------------------------
+
+
+create table drug_deaths
+(
+   drug_deaths_pk_id               int(5) unsigned not null auto_increment
+  ,year_de                         varchar(4)
+  ,state_de                        varchar(2)
+  ,region                          varchar(10)
+  ,rate                            decimal(5,2)
+  ,deaths                          int(10)
+  ,url                             varchar(100)
+  ,primary key (drug_deaths_pk_id)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+
+
+LOAD DATA LOCAL INFILE  
+'C:\\Users\\erp_p\\OneDrive\\Documents\\USC\\Projects\\Team Project 2\\Data\\DRUG_DEATHS2016_ADDED_REGION.csv'
+INTO TABLE drug_deaths  
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+( 
+   year_de                    
+  ,state_de         
+  ,region           
+  ,rate             
+  ,deaths           
+  ,url              
+)
+set drug_deaths_pk_id = null;  
+
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
 ----------------------------------------------------------
 -- admissions_raw (csv data no manipulation)
 ----------------------------------------------------------
@@ -79,6 +119,7 @@ create table admissions_raw
 
 
 --LOAD RAW ADMISSIONS DATA (ALL)
+<<<<<<< HEAD
 LOAD DATA LOCAL INFILE
 'C:\\Users\\erp_p\\OneDrive\\Documents\\USC\\Projects\\Team Project 2\\Data\\admissions.csv'
 INTO TABLE admissions_raw
@@ -87,6 +128,16 @@ ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS
 (
+=======
+LOAD DATA LOCAL INFILE  
+'C:\\Users\\erp_p\\OneDrive\\Documents\\USC\\Projects\\Team Project 2\\Data\\admissions.csv'
+INTO TABLE admissions_raw  
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(                      
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
    caseid
   ,stfips
   ,age
@@ -150,7 +201,11 @@ IGNORE 1 ROWS
   ,cbsa10
   ,idu
 )
+<<<<<<< HEAD
 set adm_pk_id = null;
+=======
+set adm_pk_id = null;  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
 
 ----------------------------------------------------------
 -- discharges_raw (csv data no manipulation)
@@ -242,6 +297,7 @@ create table discharges_raw
 
 
 --LOAD RAW DISCHARGES DATA (ALL)
+<<<<<<< HEAD
 LOAD DATA LOCAL INFILE
 'C:\\Users\\erp_p\\OneDrive\\Documents\\USC\\Projects\\Team Project 2\\Data\\discharges.csv'
 INTO TABLE discharges_raw
@@ -250,6 +306,16 @@ ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS
 (
+=======
+LOAD DATA LOCAL INFILE  
+'C:\\Users\\erp_p\\OneDrive\\Documents\\USC\\Projects\\Team Project 2\\Data\\discharges.csv'
+INTO TABLE discharges_raw  
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(                      
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
    disyr
   ,caseid
   ,stfips
@@ -329,7 +395,11 @@ IGNORE 1 ROWS
   ,cbsa
   ,gender
 )
+<<<<<<< HEAD
 set disch_pk_id = null;
+=======
+set disch_pk_id = null;  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
 
 
 --------------------------------
@@ -338,6 +408,7 @@ set disch_pk_id = null;
 
 --admissions data
 create table adm_lookups as select
+<<<<<<< HEAD
    caseid
   ,stfips
   ,age
@@ -350,6 +421,20 @@ create table adm_lookups as select
         when age = 7 then "35-39"
         when age = 8 then "40-44"
         when age = 9 then "45-49"
+=======
+   caseid 
+  ,stfips 
+  ,age
+  ,case when age = 1 then "12-14" 
+        when age = 2 then "15-17" 
+        when age = 3 then "18-20" 
+        when age = 4 then "21-24" 
+        when age = 5 then "25-29" 
+        when age = 6 then "30-34" 
+        when age = 7 then "35-39" 
+        when age = 8 then "40-44" 
+        when age = 9 then "45-49" 
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
         when age = 10 then "50-54"
         when age = 11 then "55-64"
         when age = 12 then "65 and older"
@@ -444,13 +529,21 @@ create table adm_lookups as select
         when detcrim = -9  then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
    else "Undefined"
    end detcrim_de
+<<<<<<< HEAD
   ,noprior
+=======
+  ,noprior 
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,case when noprior = 0 then "NO PRIOR TREATMENT EPISODE"
         when noprior = 1 then "ONE AND MORE PRIOR TREATMENT EPISODES"
         when noprior = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
    else "Undefined"
    end noprior_de
+<<<<<<< HEAD
   ,psource
+=======
+  ,psource 
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,case when psource = 1  then "INDIVIDUAL (INCLUDES SELF-REFERRAL)"
         when psource = 2  then "ALCOHOL/DRUG USE CARE PROVIDER"
         when psource = 3  then "OTHER HEALTH CARE PROVIDER"
@@ -480,7 +573,11 @@ create table adm_lookups as select
         when race = 9  then "NATIVE HAWAIIAN OR OTHER PACIFIC ISLANDER"
         when race = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
         else "Undefined"
+<<<<<<< HEAD
         end race_de
+=======
+        end race_de  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,ethnic
   ,case when ethnic = 1  then "PUERTO RICAN"
         when ethnic = 2  then "MEXICAN"
@@ -490,13 +587,22 @@ create table adm_lookups as select
         when ethnic = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
         else "Undefined"
         end ethnic_de
+<<<<<<< HEAD
   ,gender
+=======
+  ,gender 
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,case when gender = 1  then "MALE"
         when gender = 2  then "FEMALE"
         when gender = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
    else "Undefined"
+<<<<<<< HEAD
    end gender_de
   ,educ
+=======
+   end gender_de  
+  ,educ 
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,case when educ = 1  then "8 YEARS OR LESS"
         when educ = 2  then "9-11"
         when educ = 3  then "12 (GED)"
@@ -512,6 +618,7 @@ create table adm_lookups as select
         when employ = 4  then "NOT IN LABOR FORCE"
         when employ = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
    else "Undefined"
+<<<<<<< HEAD
    end employ_de
   ,methuse
   ,case when methuse =  1 then "YES"
@@ -538,13 +645,46 @@ create table adm_lookups as select
    else "Undefined"
    end vet_de
   ,livarag
+=======
+   end employ_de  
+  ,methuse
+  ,case when methuse =  1 then "YES"
+        when methuse =  2 then "NO"
+        when methuse = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"   
+   else "Undefined"
+   end methuse_de
+  ,psyprob 
+  ,case when psyprob =  1 then "YES"
+        when psyprob =  2 then "NO"
+        when psyprob = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"   
+   else "Undefined"
+   end psyprob_de  
+  ,preg 
+  ,case when preg =  1 then "YES"
+        when preg =  2 then "NO"
+        when preg = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"   
+   else "Undefined"
+   end preg_de   
+  ,vet
+  ,case when vet =  1 then "YES"
+        when vet =  2 then "NO"
+        when vet = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"   
+   else "Undefined"
+   end vet_de
+  ,livarag 
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,case when livarag = 1  then "HOMELESS"
         when livarag = 2  then "DEPENDENT LIVING"
         when livarag = 3  then "INDEPENDENT LIVING"
         when livarag = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
    else "Undefined"
+<<<<<<< HEAD
    end livarag_de
   ,priminc
+=======
+   end livarag_de  
+  ,priminc 
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,case when priminc = 1  then "WAGES/SALARY"
         when priminc = 2  then "PUBLIC ASSISTANCE"
         when priminc = 3  then "RETIREMENT/PENSION, DISABILITY"
@@ -552,17 +692,28 @@ create table adm_lookups as select
         when priminc = 5  then "NONE"
         when priminc = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
    else "Undefined"
+<<<<<<< HEAD
    end priminc_de
   ,hlthins
 
+=======
+   end priminc_de  
+  ,hlthins 
+  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,case when hlthins = 1  then "PRIVATE INSURANCE, BLUE CROSS/BLUE SHIELD, HMO"
         when hlthins = 2  then "MEDICAID"
         when hlthins = 3  then "MEDICARE, OTHER (E.G. TRICARE, CHAMPUS)"
         when hlthins = 4  then "NONE"
         when hlthins = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
    else "Undefined"
+<<<<<<< HEAD
    end hlthins_de
   ,primpay
+=======
+   end hlthins_de  
+  ,primpay 
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,case when primpay = 1  then "SELF-PAY"
         when primpay = 2  then "PRIVATE INSURANCE (BLUE CROSS/BLUE SHIELD, OTHER HEALTH INSURANCE, WORKERS COMPENSATION)"
         when primpay = 3  then "MEDICARE"
@@ -572,8 +723,13 @@ create table adm_lookups as select
         when primpay = 7  then "OTHER"
         when primpay = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
    else "Undefined"
+<<<<<<< HEAD
    end primpay_de
   ,detnlf
+=======
+   end primpay_de  
+  ,detnlf 
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,case when detnlf = 1  then "HOMEMAKER"
         when detnlf = 2  then "STUDENT"
         when detnlf = 3  then "RETIRED, DISABLED"
@@ -590,7 +746,11 @@ create table adm_lookups as select
         when marstat = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
    else "Undefined"
    end marstat_de
+<<<<<<< HEAD
   ,daywait
+=======
+  ,daywait 
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,case when daywait = 0  then "0"
         when daywait = 1  then "1-7"
         when daywait = 2  then "8-14"
@@ -598,7 +758,11 @@ create table adm_lookups as select
         when daywait = 4  then "31 and more"
         when daywait = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
    else "Undefined"
+<<<<<<< HEAD
    end daywait_de
+=======
+   end daywait_de  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,route1
   ,case when route1 = 1  then "ORAL"
         when route1 = 2  then "SMOKING"
@@ -641,7 +805,11 @@ create table adm_lookups as select
         when freq2 = 3  then "DAILY USE"
         when freq2 = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
    else "Undefined"
+<<<<<<< HEAD
    end freq2_de
+=======
+   end freq2_de  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,frstuse2
   ,case when frstuse2 = 1  then "11 AND UNDER"
         when frstuse2 = 2  then "12 TO 14 YEARS"
@@ -652,7 +820,11 @@ create table adm_lookups as select
         when frstuse2 = 7  then "30 AND OVER"
         when frstuse2 = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
    else "Undefined"
+<<<<<<< HEAD
    end frstuse2_de
+=======
+   end frstuse2_de  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,route3
   ,case when route3 = 1  then "ORAL"
         when route3 = 2  then "SMOKING"
@@ -669,7 +841,11 @@ create table adm_lookups as select
         when freq3 = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
    else "Undefined"
    end freq3_de
+<<<<<<< HEAD
   ,frstuse3
+=======
+  ,frstuse3 
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,case when frstuse3 = 1  then "11 AND UNDER"
         when frstuse3 = 2  then "12 TO 14 YEARS"
         when frstuse3 = 3  then "15 TO 17 YEARS"
@@ -679,7 +855,11 @@ create table adm_lookups as select
         when frstuse3 = 7  then "30 AND OVER"
         when frstuse3 = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
    else "Undefined"
+<<<<<<< HEAD
    end frstuse3_de
+=======
+   end frstuse3_de  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,freq_atnd_self_help
   ,case when freq_atnd_self_help = 1  then "NO ATTENDANCE"
         when freq_atnd_self_help = 2  then "1-3 TIMES IN THE PAST MONTH"
@@ -721,6 +901,7 @@ create table adm_lookups as select
   ,case when cokeflg = 0 then "SUBSTANCE NOT REPORTED"
         when cokeflg = 1 then "SUBSTANCE REPORTED"
    else "Undefined"
+<<<<<<< HEAD
    end cokeflg_de
   ,marflg
   ,case when marflg = 0 then "SUBSTANCE NOT REPORTED"
@@ -737,16 +918,42 @@ create table adm_lookups as select
         when methflg = 1 then "SUBSTANCE REPORTED"
    else "Undefined"
    end methflg_de
+=======
+   end cokeflg_de  
+  ,marflg 
+  ,case when marflg = 0 then "SUBSTANCE NOT REPORTED"
+        when marflg = 1 then "SUBSTANCE REPORTED"
+   else "Undefined"
+   end marflg_de  
+  ,herflg 
+  ,case when herflg = 0 then "SUBSTANCE NOT REPORTED"
+        when herflg = 1 then "SUBSTANCE REPORTED"
+   else "Undefined"
+   end herflg_de  
+  ,methflg 
+  ,case when methflg = 0 then "SUBSTANCE NOT REPORTED"
+        when methflg = 1 then "SUBSTANCE REPORTED"
+   else "Undefined"
+   end methflg_de  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,opsynflg
   ,case when opsynflg = 0 then "SUBSTANCE NOT REPORTED"
         when opsynflg = 1 then "SUBSTANCE REPORTED"
    else "Undefined"
+<<<<<<< HEAD
    end opsynflg_de
+=======
+   end opsynflg_de  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,pcpflg
   ,case when pcpflg = 0 then "SUBSTANCE NOT REPORTED"
         when pcpflg = 1 then "SUBSTANCE REPORTED"
    else "Undefined"
+<<<<<<< HEAD
    end pcpflg_de
+=======
+   end pcpflg_de  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
  ,hallflg
   ,case when hallflg = 0 then "SUBSTANCE NOT REPORTED"
         when hallflg = 1 then "SUBSTANCE REPORTED"
@@ -756,52 +963,93 @@ create table adm_lookups as select
   ,case when mthamflg = 0 then "SUBSTANCE NOT REPORTED"
         when mthamflg = 1 then "SUBSTANCE REPORTED"
    else "Undefined"
+<<<<<<< HEAD
    end mthamflg_de
   ,amphflg
   ,case when amphflg = 0 then "SUBSTANCE NOT REPORTED"
         when amphflg = 1 then "SUBSTANCE REPORTED"
    else "Undefined"
    end amphflg_de
+=======
+   end mthamflg_de  
+  ,amphflg 
+  ,case when amphflg = 0 then "SUBSTANCE NOT REPORTED"
+        when amphflg = 1 then "SUBSTANCE REPORTED"
+   else "Undefined"
+   end amphflg_de  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,stimflg
   ,case when stimflg = 0 then "SUBSTANCE NOT REPORTED"
         when stimflg = 1 then "SUBSTANCE REPORTED"
    else "Undefined"
+<<<<<<< HEAD
    end stimflg_de
+=======
+   end stimflg_de  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,benzflg
   ,case when benzflg = 0 then "SUBSTANCE NOT REPORTED"
         when benzflg = 1 then "SUBSTANCE REPORTED"
    else "Undefined"
+<<<<<<< HEAD
    end benzflg_de
+=======
+   end benzflg_de  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,trnqflg
   ,case when trnqflg = 0 then "SUBSTANCE NOT REPORTED"
         when trnqflg = 1 then "SUBSTANCE REPORTED"
    else "Undefined"
+<<<<<<< HEAD
    end trnqflg_de
+=======
+   end trnqflg_de  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,barbflg
   ,case when barbflg = 0 then "SUBSTANCE NOT REPORTED"
         when barbflg = 1 then "SUBSTANCE REPORTED"
    else "Undefined"
+<<<<<<< HEAD
    end barbflg_de
+=======
+   end barbflg_de  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,sedhpflg
   ,case when sedhpflg = 0 then "SUBSTANCE NOT REPORTED"
         when sedhpflg = 1 then "SUBSTANCE REPORTED"
    else "Undefined"
+<<<<<<< HEAD
    end sedhpflg_de
+=======
+   end sedhpflg_de  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,inhflg
   ,case when inhflg = 0 then "SUBSTANCE NOT REPORTED"
         when inhflg = 1 then "SUBSTANCE REPORTED"
    else "Undefined"
+<<<<<<< HEAD
    end inhflg_de
+=======
+   end inhflg_de  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,otcflg
   ,case when otcflg = 0 then "SUBSTANCE NOT REPORTED"
         when otcflg = 1 then "SUBSTANCE REPORTED"
    else "Undefined"
+<<<<<<< HEAD
    end otcflg_de
+=======
+   end otcflg_de  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,otherflg
   ,case when otherflg = 0 then "SUBSTANCE NOT REPORTED"
         when otherflg = 1 then "SUBSTANCE REPORTED"
    else "Undefined"
+<<<<<<< HEAD
    end otherflg_de
+=======
+   end otherflg_de  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,division
   ,case when division = 0 then "US JURISDICTION/TERRITORY"
         when division = 1 then "NEW ENGLAND"
@@ -823,7 +1071,11 @@ create table adm_lookups as select
         when region = 4 then "WEST"
    else "Undefined"
    end region_de
+<<<<<<< HEAD
   ,alcdrug
+=======
+  ,alcdrug 
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,case when alcdrug = 0 then "NONE"
         when alcdrug = 1 then "ALCOHOL ONLY"
         when alcdrug = 2 then "OTHER DRUGS ONLY"
@@ -831,14 +1083,24 @@ create table adm_lookups as select
    else "Undefined"
    end alcdrug_de
   ,year_de
+<<<<<<< HEAD
   ,cbsa10
   ,idu
+=======
+  ,cbsa10 
+  ,idu 
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,case when idu = 0  then "IDU NOT REPORTED"
         when idu = 1  then "IDU REPORTED"
         when idu = -9 then "NO SUBSTANCES REPORTED"
    else "Undefined"
+<<<<<<< HEAD
    end idu_de
 FROM
+=======
+   end idu_de  
+FROM 
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   admissions_raw;
 
 
@@ -854,6 +1116,7 @@ as select
   ,caseid
   ,stfips
   ,age
+<<<<<<< HEAD
   ,case when age = 1 then "12-14"
         when age = 2 then "15-17"
         when age = 3 then "18-20"
@@ -863,11 +1126,26 @@ as select
         when age = 7 then "35-39"
         when age = 8 then "40-44"
         when age = 9 then "45-49"
+=======
+  ,case when age = 1 then "12-14" 
+        when age = 2 then "15-17" 
+        when age = 3 then "18-20" 
+        when age = 4 then "21-24" 
+        when age = 5 then "25-29" 
+        when age = 6 then "30-34" 
+        when age = 7 then "35-39" 
+        when age = 8 then "40-44" 
+        when age = 9 then "45-49" 
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
         when age = 10 then "50-54"
         when age = 11 then "55-64"
         when age = 12 then "65 and older"
     else "Undefined"
+<<<<<<< HEAD
     end age_de
+=======
+    end age_de  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,services
   ,case when services = 1 then "DETOX, 24 HR, HOSPITAL INPATIENT"
         when services = 2 then "DETOX, 24 HR, FREE-STANDING RESIDENTIAL"
@@ -878,7 +1156,11 @@ as select
         when services = 7 then "AMBULATORY, NON-INTENSIVE OUTPATIENT"
         when services = 8 then "AMBULATORY, DETOXIFICATION"
    else "Undefined"
+<<<<<<< HEAD
    end services_de
+=======
+   end services_de  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,sub1
   ,case when sub1 = 1  then "NONE"
         when sub1 = 2  then "ALCOHOL"
@@ -957,13 +1239,21 @@ as select
         when detcrim = -9  then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
    else "Undefined"
    end detcrim_de
+<<<<<<< HEAD
   ,noprior
+=======
+  ,noprior 
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,case when noprior = 0 then "NO PRIOR TREATMENT EPISODE"
         when noprior = 1 then "ONE AND MORE PRIOR TREATMENT EPISODES"
         when noprior = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
    else "Undefined"
    end noprior_de
+<<<<<<< HEAD
   ,psource
+=======
+  ,psource 
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,case when psource = 1  then "INDIVIDUAL (INCLUDES SELF-REFERRAL)"
         when psource = 2  then "ALCOHOL/DRUG USE CARE PROVIDER"
         when psource = 3  then "OTHER HEALTH CARE PROVIDER"
@@ -993,7 +1283,11 @@ as select
         when race = 9  then "NATIVE HAWAIIAN OR OTHER PACIFIC ISLANDER"
         when race = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
         else "Undefined"
+<<<<<<< HEAD
         end race_de
+=======
+        end race_de  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,ethnic
   ,case when ethnic = 1  then "PUERTO RICAN"
         when ethnic = 2  then "MEXICAN"
@@ -1003,7 +1297,11 @@ as select
         when ethnic = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
         else "Undefined"
         end ethnic_de
+<<<<<<< HEAD
   ,educ
+=======
+  ,educ 
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,case when educ = 1  then "8 YEARS OR LESS"
         when educ = 2  then "9-11"
         when educ = 3  then "12 (GED)"
@@ -1019,6 +1317,7 @@ as select
         when employ = 4  then "NOT IN LABOR FORCE"
         when employ = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
    else "Undefined"
+<<<<<<< HEAD
    end employ_de
   ,methuse
   ,case when methuse =  1 then "YES"
@@ -1045,13 +1344,45 @@ as select
    else "Undefined"
    end vet_de
   ,livarag
+=======
+   end employ_de  
+  ,methuse
+  ,case when methuse =  1 then "YES"
+        when methuse =  2 then "NO"
+        when methuse = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"   
+   else "Undefined"
+   end methuse_de
+  ,psyprob 
+  ,case when psyprob =  1 then "YES"
+        when psyprob =  2 then "NO"
+        when psyprob = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"   
+   else "Undefined"
+   end psyprob_de  
+  ,preg 
+  ,case when preg =  1 then "YES"
+        when preg =  2 then "NO"
+        when preg = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"   
+   else "Undefined"
+   end preg_de   
+  ,vet
+  ,case when vet =  1 then "YES"
+        when vet =  2 then "NO"
+        when vet = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"   
+   else "Undefined"
+   end vet_de
+  ,livarag 
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,case when livarag = 1  then "HOMELESS"
         when livarag = 2  then "DEPENDENT LIVING"
         when livarag = 3  then "INDEPENDENT LIVING"
         when livarag = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
    else "Undefined"
    end livarag_de
+<<<<<<< HEAD
   ,priminc
+=======
+  ,priminc 
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,case when priminc = 1  then "WAGES/SALARY"
         when priminc = 2  then "PUBLIC ASSISTANCE"
         when priminc = 3  then "RETIREMENT/PENSION, DISABILITY"
@@ -1059,16 +1390,26 @@ as select
         when priminc = 5  then "NONE"
         when priminc = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
    else "Undefined"
+<<<<<<< HEAD
    end priminc_de
   ,hlthins
+=======
+   end priminc_de  
+  ,hlthins 
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,case when hlthins = 1  then "PRIVATE INSURANCE, BLUE CROSS/BLUE SHIELD, HMO"
         when hlthins = 2  then "MEDICAID"
         when hlthins = 3  then "MEDICARE, OTHER (E.G. TRICARE, CHAMPUS)"
         when hlthins = 4  then "NONE"
         when hlthins = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
    else "Undefined"
+<<<<<<< HEAD
    end hlthins_de
   ,primpay
+=======
+   end hlthins_de  
+  ,primpay 
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,case when primpay = 1  then "SELF-PAY"
         when primpay = 2  then "PRIVATE INSURANCE (BLUE CROSS/BLUE SHIELD, OTHER HEALTH INSURANCE, WORKERS COMPENSATION)"
         when primpay = 3  then "MEDICARE"
@@ -1079,7 +1420,11 @@ as select
         when primpay = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
    else "Undefined"
    end primpay_de
+<<<<<<< HEAD
   ,detnlf
+=======
+  ,detnlf 
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,case when detnlf = 1  then "HOMEMAKER"
         when detnlf = 2  then "STUDENT"
         when detnlf = 3  then "RETIRED, DISABLED"
@@ -1096,7 +1441,11 @@ as select
         when marstat = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
    else "Undefined"
    end marstat_de
+<<<<<<< HEAD
   ,daywait
+=======
+  ,daywait 
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,case when daywait = 0  then "0"
         when daywait = 1  then "1-7"
         when daywait = 2  then "8-14"
@@ -1147,7 +1496,11 @@ as select
         when freq2 = 3  then "DAILY USE"
         when freq2 = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
    else "Undefined"
+<<<<<<< HEAD
    end freq2_de
+=======
+   end freq2_de  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,frstuse2
   ,case when frstuse2 = 1  then "11 AND UNDER"
         when frstuse2 = 2  then "12 TO 14 YEARS"
@@ -1158,7 +1511,11 @@ as select
         when frstuse2 = 7  then "30 AND OVER"
         when frstuse2 = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
    else "Undefined"
+<<<<<<< HEAD
    end frstuse2_de
+=======
+   end frstuse2_de  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,route3
   ,case when route3 = 1  then "ORAL"
         when route3 = 2  then "SMOKING"
@@ -1175,7 +1532,11 @@ as select
         when freq3 = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
    else "Undefined"
    end freq3_de
+<<<<<<< HEAD
   ,frstuse3
+=======
+  ,frstuse3 
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,case when frstuse3 = 1  then "11 AND UNDER"
         when frstuse3 = 2  then "12 TO 14 YEARS"
         when frstuse3 = 3  then "15 TO 17 YEARS"
@@ -1304,7 +1665,11 @@ as select
         when sub3_d = 18 then "OVER-THE-COUNTER MEDICATIONS"
         when sub3_d = 19 then "OTHER"
     else "Undefined"
+<<<<<<< HEAD
     end sub3_d_de
+=======
+    end sub3_d_de  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,employ_d
   ,case when employ_d = 1  then "FULL TIME"
         when employ_d = 2  then "PART TIME"
@@ -1312,6 +1677,7 @@ as select
         when employ_d = 4  then "NOT IN LABOR FORCE"
         when employ_d = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
    else "Undefined"
+<<<<<<< HEAD
    end employ_d_de
   ,livarag_d
   case when livarag_d = 1  then "HOMELESS"
@@ -1405,6 +1771,17 @@ as select
         when arrests_d = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
    else "Undefined"
    end arrests_d_de
+=======
+   end employ_d_de  
+  ,livarag_d
+  ,detnlf_d
+  ,freq1_d
+  ,freq2_d
+  ,freq3_d
+  ,freq_atnd_self_help_d
+  ,los
+  ,arrests_d
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,alcflg
   ,case when alcflg = 0 then "SUBSTANCE NOT REPORTED"
         when alcflg = 1 then "SUBSTANCE REPORTED"
@@ -1414,6 +1791,7 @@ as select
   ,case when cokeflg = 0 then "SUBSTANCE NOT REPORTED"
         when cokeflg = 1 then "SUBSTANCE REPORTED"
    else "Undefined"
+<<<<<<< HEAD
    end cokeflg_de
   ,marflg
   ,case when marflg = 0 then "SUBSTANCE NOT REPORTED"
@@ -1426,6 +1804,20 @@ as select
    else "Undefined"
    end herflg_de
   ,methflg
+=======
+   end cokeflg_de  
+  ,marflg 
+  ,case when marflg = 0 then "SUBSTANCE NOT REPORTED"
+        when marflg = 1 then "SUBSTANCE REPORTED"
+   else "Undefined"
+   end marflg_de  
+  ,herflg 
+  ,case when herflg = 0 then "SUBSTANCE NOT REPORTED"
+        when herflg = 1 then "SUBSTANCE REPORTED"
+   else "Undefined"
+   end herflg_de  
+  ,methflg 
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,case when methflg = 0 then "SUBSTANCE NOT REPORTED"
         when methflg = 1 then "SUBSTANCE REPORTED"
    else "Undefined"
@@ -1434,12 +1826,20 @@ as select
   ,case when opsynflg = 0 then "SUBSTANCE NOT REPORTED"
         when opsynflg = 1 then "SUBSTANCE REPORTED"
    else "Undefined"
+<<<<<<< HEAD
    end opsynflg_de
+=======
+   end opsynflg_de  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,pcpflg
   ,case when pcpflg = 0 then "SUBSTANCE NOT REPORTED"
         when pcpflg = 1 then "SUBSTANCE REPORTED"
    else "Undefined"
+<<<<<<< HEAD
    end pcpflg_de
+=======
+   end pcpflg_de  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
  ,hallflg
   ,case when hallflg = 0 then "SUBSTANCE NOT REPORTED"
         when hallflg = 1 then "SUBSTANCE REPORTED"
@@ -1449,17 +1849,30 @@ as select
   ,case when mthamflg = 0 then "SUBSTANCE NOT REPORTED"
         when mthamflg = 1 then "SUBSTANCE REPORTED"
    else "Undefined"
+<<<<<<< HEAD
    end mthamflg_de
   ,amphflg
   ,case when amphflg = 0 then "SUBSTANCE NOT REPORTED"
         when amphflg = 1 then "SUBSTANCE REPORTED"
    else "Undefined"
    end amphflg_de
+=======
+   end mthamflg_de  
+  ,amphflg 
+  ,case when amphflg = 0 then "SUBSTANCE NOT REPORTED"
+        when amphflg = 1 then "SUBSTANCE REPORTED"
+   else "Undefined"
+   end amphflg_de  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,stimflg
   ,case when stimflg = 0 then "SUBSTANCE NOT REPORTED"
         when stimflg = 1 then "SUBSTANCE REPORTED"
    else "Undefined"
+<<<<<<< HEAD
    end stimflg_de
+=======
+   end stimflg_de  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,benzflg
   ,case when benzflg = 0 then "SUBSTANCE NOT REPORTED"
         when benzflg = 1 then "SUBSTANCE REPORTED"
@@ -1469,17 +1882,29 @@ as select
   ,case when trnqflg = 0 then "SUBSTANCE NOT REPORTED"
         when trnqflg = 1 then "SUBSTANCE REPORTED"
    else "Undefined"
+<<<<<<< HEAD
    end trnqflg_de
+=======
+   end trnqflg_de  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,barbflg
   ,case when barbflg = 0 then "SUBSTANCE NOT REPORTED"
         when barbflg = 1 then "SUBSTANCE REPORTED"
    else "Undefined"
+<<<<<<< HEAD
    end barbflg_de
+=======
+   end barbflg_de  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,sedhpflg
   ,case when sedhpflg = 0 then "SUBSTANCE NOT REPORTED"
         when sedhpflg = 1 then "SUBSTANCE REPORTED"
    else "Undefined"
+<<<<<<< HEAD
    end sedhpflg_de
+=======
+   end sedhpflg_de  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,inhflg
   ,case when inhflg = 0 then "SUBSTANCE NOT REPORTED"
         when inhflg = 1 then "SUBSTANCE REPORTED"
@@ -1489,7 +1914,11 @@ as select
   ,case when otcflg = 0 then "SUBSTANCE NOT REPORTED"
         when otcflg = 1 then "SUBSTANCE REPORTED"
    else "Undefined"
+<<<<<<< HEAD
    end otcflg_de
+=======
+   end otcflg_de  
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
   ,otherflg
   ,case when otherflg = 0 then "SUBSTANCE NOT REPORTED"
         when otherflg = 1 then "SUBSTANCE REPORTED"
@@ -1516,6 +1945,7 @@ create table age_lookup
  ,age_range_de   varchar(15)
 );
 
+<<<<<<< HEAD
 insert into age_lookup values (1, '12-14');
 insert into age_lookup values (2, '15-17');
 insert into age_lookup values (3, '18-20');
@@ -1528,3 +1958,18 @@ insert into age_lookup values (9, '45-49');
 insert into age_lookup values (10, '50-54');
 insert into age_lookup values (11, '55-64');
 insert into age_lookup values (12, '65 and older');
+=======
+insert into age_lookup values (1, '12-14'); 
+insert into age_lookup values (2, '15-17'); 
+insert into age_lookup values (3, '18-20'); 
+insert into age_lookup values (4, '21-24'); 
+insert into age_lookup values (5, '25-29'); 
+insert into age_lookup values (6, '30-34'); 
+insert into age_lookup values (7, '35-39'); 
+insert into age_lookup values (8, '40-44'); 
+insert into age_lookup values (9, '45-49'); 
+insert into age_lookup values (10, '50-54');
+insert into age_lookup values (11, '55-64');
+insert into age_lookup values (12, '65 and older');
+
+>>>>>>> 6709fd2a9e3f9f35372684b1c9c6ec7ebed8a2d4
