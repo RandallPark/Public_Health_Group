@@ -26,7 +26,7 @@ create table drug_deaths
 
 
 LOAD DATA LOCAL INFILE  
-'data\\DRUG_DEATHS2016_ADDED_REGION.csv'
+'DRUG_DEATHS2016_ADDED_REGION.csv'
 INTO TABLE drug_deaths  
 FIELDS TERMINATED BY ',' 
 ENCLOSED BY '"'
@@ -123,7 +123,7 @@ create table admissions_raw
 
 #--LOAD RAW ADMISSIONS DATA (ALL)
 LOAD DATA LOCAL INFILE  
-'data\\admissions.csv'
+'admissions.csv'
 INTO TABLE admissions_raw  
 FIELDS TERMINATED BY ',' 
 ENCLOSED BY '"'
@@ -292,7 +292,7 @@ create table discharges_raw
 
 #--LOAD RAW DISCHARGES DATA (ALL)
 LOAD DATA LOCAL INFILE  
-'data\\discharges.csv'
+'discharges.csv'
 INTO TABLE discharges_raw  
 FIELDS TERMINATED BY ',' 
 ENCLOSED BY '"'
