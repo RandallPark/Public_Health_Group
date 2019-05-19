@@ -1,5 +1,3 @@
-#--mysql -uroot -p -h127.0.0.1 sakila
-
 drop database if exists project2;
 
 create database project2;
