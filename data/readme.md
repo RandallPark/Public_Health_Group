@@ -11,5 +11,6 @@ Data is for year 2016 only and was obtained from the following:
 ### How to Load the Data
 ---
 - Pull all files in this repository and keep together in one folder
+- In the `config.py` file, change the dbname value to an existing database in YOUR database.
 - Open a command prompt and run: ` >>> python db_load.py`
 - Enter password when prompted
