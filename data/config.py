@@ -1,5 +1,5 @@
 dbuser = "root"
-dbpasswd = ""
+dbpasswd = "root"
 dbhost = "localhost"
 dbport = 3306
-dbname = ""
+dbname = "project2"

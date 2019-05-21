@@ -1,6 +1,0 @@
-flask
-sqlalchemy
-pymysql
-pandas
-gunicorn
-django-heroku
