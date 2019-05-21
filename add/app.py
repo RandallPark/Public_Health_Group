@@ -33,9 +33,9 @@ class UserDefinedError(Exception):
 
 # Calling etl.py's etl_data function
 try:
-    get_data(dataObj)
+    top_n_prdrugs = top_n_drugs(8)
 except: 
-    raise UserDefinedError('ETL operation failed in ''etl.py', status_code = 430)
+    raise UserDefinedError('Could not create Python data objects using ''data_functions.py', status_code = 430)
 
 # Flask setup
 app = Flask(__name__)
