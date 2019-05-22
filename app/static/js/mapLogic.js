@@ -55,6 +55,8 @@ L.geoJson(statesData, {
       mouseover: function(event) {
         console.log(event);
         layer = event.target;
+        // Giving each feature a pop-up with information pertinent to it
+        layer.bindPopup("<h1>" + feature.properties.name + "</h1> <hr> <h2>" + feature.properties.density + "</h2>");
         layer.setStyle({
           fillOpacity: 0.9
         });
@@ -70,11 +72,10 @@ L.geoJson(statesData, {
       // When a feature (neighborhood) is clicked, it is enlarged to fit the screen
       click: function(event) {
         console.log(event);
-        map.fitBounds(event.target.getBounds());
+        //map.fitBounds(event.target.getBounds());
       }
     });
-    // Giving each feature a pop-up with information pertinent to it
-    layer.bindPopup("<h1>" + feature.properties.name + "</h1> <hr> <h2>" + feature.properties.density + "</h2>");
+    
 
   }
 }).addTo(map);

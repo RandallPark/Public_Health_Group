@@ -7,15 +7,38 @@ app = Flask(__name__)
 # Use SQLAlchemy to establish SQL connection
 #TODO CODE HERE
 
-# Route to render index.html template using data from Mongo
+# Route to render index.html template
 @app.route("/")
+def index():
+
+    # Return template for html
+    # return render_template("index.html")
+    return redirect("/map")
+
+# Route to render home.html template
+@app.route("/home")
 def home():
 
     # Return template for html
-    return render_template("index.html")
+    return render_template("home.html")
+
+# Route to render index.html template
+@app.route("/map")
+def map():
+
+    # Return template for html
+    # return render_template("index.html")
+    return render_template("map.html")
+
+# Route to render graph.html
+@app.route("/graph")
+def graph():
+
+    # Return template for html
+    return render_template("graph.html")
 
 
-# Route that will trigger the scrape function
+# Route that will trigger data retrieval
 @app.route("/data")
 def data():
 
@@ -23,6 +46,11 @@ def data():
     # engine = data_functions.engine()
 
     # Redirect back to home page
+    return redirect("/")
+
+@app.route("/json")
+def json():
+
     return redirect("/")
 
 
