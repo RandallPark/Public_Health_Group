@@ -4,3 +4,4 @@ pymysql
 pandas
 gunicorn
 django-heroku
+Flask-Navigation
