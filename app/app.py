@@ -10,7 +10,7 @@ app = Flask(__name__)
 # Route to render index.html template
 @app.route("/")
 def index():
-
+    #data = get_data()
     # Return template for html
     # return render_template("index.html")
     return redirect("/map")
