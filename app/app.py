@@ -23,6 +23,7 @@ def home():
     return render_template("home.html")
 
 # Route to render index.html template
+# Warren using for development...
 @app.route("/map")
 def map():
 
@@ -46,7 +47,7 @@ def data():
     # engine = data_functions.engine()
 
     # Redirect back to home page
-    return redirect("/")
+    return render_template("practice_data.html")
 
 @app.route("/json")
 def json():
