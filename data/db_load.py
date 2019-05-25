@@ -1,7 +1,8 @@
 import pandas as pd
 from sqlalchemy import create_engine
 from os import system
-from config import dbuser, dbpasswd, dbhost, dbport, dbname 
+from config import dbuser, dbpasswd, dbhost, dbport, dbname, engine
+import pymysql
 
 
 #-----------------------------------------------
@@ -13,10 +14,10 @@ dd_column_names = ['year_de','state_de', 'region', 'rate','deaths','url']
 drug_deaths_df = pd.read_csv('DRUG_DEATHS2016_ADDED_REGION.csv', header = 0, names = dd_column_names)
 print(drug_deaths_df)
 
-engine = create_engine('mysql://root:root@localhost')
-engine.execute("drop DATABASE if exists project2")
-engine.execute("CREATE DATABASE project2") 
-engine.execute("USE project2") 
+#create_engine moved to config.py to allow different configurations
+engine.execute(f"drop DATABASE if exists {dbname}")
+engine.execute(f"CREATE DATABASE {dbname}") 
+engine.execute(f"USE {dbname}") 
 
 with engine.connect() as conn, conn.begin():
     drug_deaths_df.to_sql('drug_deaths', conn, if_exists='replace', index=True)
@@ -94,7 +95,7 @@ adm_column_names = \
 adm_df = pd.read_csv('admissions.csv', header = 0, names = adm_column_names)
 adm_df.tail()
 
-engine.execute("USE project2") 
+engine.execute(f"USE {dbname}") 
 
 with engine.connect() as conn, conn.begin():
     adm_df.to_sql('admissions_raw', conn, if_exists='replace', index=True)
@@ -191,7 +192,7 @@ disch_column_names = \
 disch_df = pd.read_csv('discharges.csv', header = 0, names = disch_column_names)
 disch_df.tail()
 
-engine.execute("USE project2") 
+engine.execute(f"USE {dbname}") 
 
 with engine.connect() as conn, conn.begin():
     disch_df.to_sql('discharges_raw', conn, if_exists='replace', index=True)
