@@ -106,3 +106,7 @@ venv.bak/
 #MAC environment
 .DS_Store
 data/.DS_Store
+
+#random file?
+.vscode/
+
