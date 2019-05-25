@@ -1,0 +1,1187 @@
+[
+	{
+		"age" : "25-29",
+		"primary_drug" : "HEROIN",
+		"value" : 66647
+	},
+	{
+		"age" : "30-34",
+		"primary_drug" : "HEROIN",
+		"value" : 52154
+	},
+	{
+		"age" : "30-34",
+		"primary_drug" : "ALCOHOL",
+		"value" : 44942
+	},
+	{
+		"age" : "55-64",
+		"primary_drug" : "ALCOHOL",
+		"value" : 42957
+	},
+	{
+		"age" : "50-54",
+		"primary_drug" : "ALCOHOL",
+		"value" : 42692
+	},
+	{
+		"age" : "35-39",
+		"primary_drug" : "ALCOHOL",
+		"value" : 41551
+	},
+	{
+		"age" : "45-49",
+		"primary_drug" : "ALCOHOL",
+		"value" : 41140
+	},
+	{
+		"age" : "25-29",
+		"primary_drug" : "ALCOHOL",
+		"value" : 40228
+	},
+	{
+		"age" : "40-44",
+		"primary_drug" : "ALCOHOL",
+		"value" : 35814
+	},
+	{
+		"age" : "21-24",
+		"primary_drug" : "HEROIN",
+		"value" : 34293
+	},
+	{
+		"age" : "35-39",
+		"primary_drug" : "HEROIN",
+		"value" : 33418
+	},
+	{
+		"age" : "30-34",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 26480
+	},
+	{
+		"age" : "25-29",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 26115
+	},
+	{
+		"age" : "15-17",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 26008
+	},
+	{
+		"age" : "25-29",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 24207
+	},
+	{
+		"age" : "21-24",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 22335
+	},
+	{
+		"age" : "21-24",
+		"primary_drug" : "ALCOHOL",
+		"value" : 21848
+	},
+	{
+		"age" : "40-44",
+		"primary_drug" : "HEROIN",
+		"value" : 21017
+	},
+	{
+		"age" : "35-39",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 21001
+	},
+	{
+		"age" : "45-49",
+		"primary_drug" : "HEROIN",
+		"value" : 20869
+	},
+	{
+		"age" : "25-29",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 20057
+	},
+	{
+		"age" : "55-64",
+		"primary_drug" : "HEROIN",
+		"value" : 18066
+	},
+	{
+		"age" : "30-34",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 17998
+	},
+	{
+		"age" : "50-54",
+		"primary_drug" : "HEROIN",
+		"value" : 17389
+	},
+	{
+		"age" : "30-34",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 16630
+	},
+	{
+		"age" : "18-20",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 15683
+	},
+	{
+		"age" : "21-24",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 14604
+	},
+	{
+		"age" : "40-44",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 12727
+	},
+	{
+		"age" : "35-39",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 12414
+	},
+	{
+		"age" : "35-39",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 10853
+	},
+	{
+		"age" : "45-49",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 9695
+	},
+	{
+		"age" : "21-24",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 8624
+	},
+	{
+		"age" : "45-49",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 7076
+	},
+	{
+		"age" : "18-20",
+		"primary_drug" : "HEROIN",
+		"value" : 7071
+	},
+	{
+		"age" : "18-20",
+		"primary_drug" : "ALCOHOL",
+		"value" : 7008
+	},
+	{
+		"age" : "40-44",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 6904
+	},
+	{
+		"age" : "50-54",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 6864
+	},
+	{
+		"age" : "50-54",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 6232
+	},
+	{
+		"age" : "40-44",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 5950
+	},
+	{
+		"age" : "35-39",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 5811
+	},
+	{
+		"age" : "55-64",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 5756
+	},
+	{
+		"age" : "30-34",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 5710
+	},
+	{
+		"age" : "65 and older",
+		"primary_drug" : "ALCOHOL",
+		"value" : 5612
+	},
+	{
+		"age" : "40-44",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 5432
+	},
+	{
+		"age" : "25-29",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 5271
+	},
+	{
+		"age" : "45-49",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 5263
+	},
+	{
+		"age" : "18-20",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 4984
+	},
+	{
+		"age" : "12-14",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 4915
+	},
+	{
+		"age" : "55-64",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 4438
+	},
+	{
+		"age" : "50-54",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 4383
+	},
+	{
+		"age" : "45-49",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 4237
+	},
+	{
+		"age" : "55-64",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 3751
+	},
+	{
+		"age" : "15-17",
+		"primary_drug" : "ALCOHOL",
+		"value" : 3481
+	},
+	{
+		"age" : "50-54",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 3130
+	},
+	{
+		"age" : "21-24",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 2558
+	},
+	{
+		"age" : "55-64",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 2313
+	},
+	{
+		"age" : "25-29",
+		"primary_drug" : "OTHER",
+		"value" : 2284
+	},
+	{
+		"age" : "65 and older",
+		"primary_drug" : "HEROIN",
+		"value" : 2138
+	},
+	{
+		"age" : "25-29",
+		"primary_drug" : "NONE",
+		"value" : 2060
+	},
+	{
+		"age" : "25-29",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 1921
+	},
+	{
+		"age" : "18-20",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 1915
+	},
+	{
+		"age" : "30-34",
+		"primary_drug" : "NONE",
+		"value" : 1829
+	},
+	{
+		"age" : "15-17",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 1770
+	},
+	{
+		"age" : "30-34",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 1707
+	},
+	{
+		"age" : "30-34",
+		"primary_drug" : "OTHER",
+		"value" : 1700
+	},
+	{
+		"age" : "35-39",
+		"primary_drug" : "NONE",
+		"value" : 1389
+	},
+	{
+		"age" : "21-24",
+		"primary_drug" : "NONE",
+		"value" : 1350
+	},
+	{
+		"age" : "25-29",
+		"primary_drug" : "Undefined",
+		"value" : 1330
+	},
+	{
+		"age" : "21-24",
+		"primary_drug" : "OTHER",
+		"value" : 1303
+	},
+	{
+		"age" : "30-34",
+		"primary_drug" : "Undefined",
+		"value" : 1233
+	},
+	{
+		"age" : "35-39",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 1228
+	},
+	{
+		"age" : "21-24",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 1205
+	},
+	{
+		"age" : "35-39",
+		"primary_drug" : "OTHER",
+		"value" : 1202
+	},
+	{
+		"age" : "40-44",
+		"primary_drug" : "NONE",
+		"value" : 1014
+	},
+	{
+		"age" : "18-20",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 943
+	},
+	{
+		"age" : "30-34",
+		"primary_drug" : "PCP",
+		"value" : 929
+	},
+	{
+		"age" : "45-49",
+		"primary_drug" : "NONE",
+		"value" : 925
+	},
+	{
+		"age" : "25-29",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 920
+	},
+	{
+		"age" : "35-39",
+		"primary_drug" : "Undefined",
+		"value" : 920
+	},
+	{
+		"age" : "18-20",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 919
+	},
+	{
+		"age" : "50-54",
+		"primary_drug" : "NONE",
+		"value" : 856
+	},
+	{
+		"age" : "55-64",
+		"primary_drug" : "NONE",
+		"value" : 802
+	},
+	{
+		"age" : "30-34",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 798
+	},
+	{
+		"age" : "21-24",
+		"primary_drug" : "Undefined",
+		"value" : 793
+	},
+	{
+		"age" : "40-44",
+		"primary_drug" : "OTHER",
+		"value" : 770
+	},
+	{
+		"age" : "12-14",
+		"primary_drug" : "ALCOHOL",
+		"value" : 766
+	},
+	{
+		"age" : "35-39",
+		"primary_drug" : "PCP",
+		"value" : 724
+	},
+	{
+		"age" : "45-49",
+		"primary_drug" : "Undefined",
+		"value" : 724
+	},
+	{
+		"age" : "18-20",
+		"primary_drug" : "NONE",
+		"value" : 713
+	},
+	{
+		"age" : "50-54",
+		"primary_drug" : "Undefined",
+		"value" : 704
+	},
+	{
+		"age" : "40-44",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 688
+	},
+	{
+		"age" : "40-44",
+		"primary_drug" : "Undefined",
+		"value" : 683
+	},
+	{
+		"age" : "25-29",
+		"primary_drug" : "PCP",
+		"value" : 674
+	},
+	{
+		"age" : "45-49",
+		"primary_drug" : "OTHER",
+		"value" : 669
+	},
+	{
+		"age" : "35-39",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 649
+	},
+	{
+		"age" : "55-64",
+		"primary_drug" : "Undefined",
+		"value" : 647
+	},
+	{
+		"age" : "45-49",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 629
+	},
+	{
+		"age" : "15-17",
+		"primary_drug" : "HEROIN",
+		"value" : 598
+	},
+	{
+		"age" : "50-54",
+		"primary_drug" : "OTHER",
+		"value" : 591
+	},
+	{
+		"age" : "65 and older",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 540
+	},
+	{
+		"age" : "55-64",
+		"primary_drug" : "OTHER",
+		"value" : 537
+	},
+	{
+		"age" : "30-34",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 518
+	},
+	{
+		"age" : "21-24",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 508
+	},
+	{
+		"age" : "18-20",
+		"primary_drug" : "OTHER",
+		"value" : 487
+	},
+	{
+		"age" : "25-29",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 483
+	},
+	{
+		"age" : "55-64",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 451
+	},
+	{
+		"age" : "15-17",
+		"primary_drug" : "OTHER",
+		"value" : 432
+	},
+	{
+		"age" : "50-54",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 430
+	},
+	{
+		"age" : "15-17",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 419
+	},
+	{
+		"age" : "65 and older",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 410
+	},
+	{
+		"age" : "15-17",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 396
+	},
+	{
+		"age" : "40-44",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 395
+	},
+	{
+		"age" : "35-39",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 347
+	},
+	{
+		"age" : "15-17",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 333
+	},
+	{
+		"age" : "18-20",
+		"primary_drug" : "Undefined",
+		"value" : 296
+	},
+	{
+		"age" : "40-44",
+		"primary_drug" : "PCP",
+		"value" : 295
+	},
+	{
+		"age" : "45-49",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 256
+	},
+	{
+		"age" : "25-29",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 249
+	},
+	{
+		"age" : "25-29",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 231
+	},
+	{
+		"age" : "25-29",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 226
+	},
+	{
+		"age" : "30-34",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 217
+	},
+	{
+		"age" : "30-34",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 213
+	},
+	{
+		"age" : "30-34",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 206
+	},
+	{
+		"age" : "40-44",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 198
+	},
+	{
+		"age" : "15-17",
+		"primary_drug" : "NONE",
+		"value" : 190
+	},
+	{
+		"age" : "18-20",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 189
+	},
+	{
+		"age" : "65 and older",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 187
+	},
+	{
+		"age" : "55-64",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 185
+	},
+	{
+		"age" : "21-24",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 179
+	},
+	{
+		"age" : "21-24",
+		"primary_drug" : "PCP",
+		"value" : 177
+	},
+	{
+		"age" : "15-17",
+		"primary_drug" : "Undefined",
+		"value" : 176
+	},
+	{
+		"age" : "65 and older",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 175
+	},
+	{
+		"age" : "35-39",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 172
+	},
+	{
+		"age" : "45-49",
+		"primary_drug" : "PCP",
+		"value" : 166
+	},
+	{
+		"age" : "45-49",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 165
+	},
+	{
+		"age" : "18-20",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 164
+	},
+	{
+		"age" : "21-24",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 163
+	},
+	{
+		"age" : "12-14",
+		"primary_drug" : "NONE",
+		"value" : 155
+	},
+	{
+		"age" : "50-54",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 154
+	},
+	{
+		"age" : "21-24",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 143
+	},
+	{
+		"age" : "35-39",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 143
+	},
+	{
+		"age" : "65 and older",
+		"primary_drug" : "NONE",
+		"value" : 139
+	},
+	{
+		"age" : "35-39",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 136
+	},
+	{
+		"age" : "15-17",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 133
+	},
+	{
+		"age" : "21-24",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 131
+	},
+	{
+		"age" : "50-54",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 127
+	},
+	{
+		"age" : "15-17",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 126
+	},
+	{
+		"age" : "40-44",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 125
+	},
+	{
+		"age" : "25-29",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 115
+	},
+	{
+		"age" : "12-14",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 102
+	},
+	{
+		"age" : "50-54",
+		"primary_drug" : "PCP",
+		"value" : 101
+	},
+	{
+		"age" : "30-34",
+		"primary_drug" : "INHALANTS",
+		"value" : 94
+	},
+	{
+		"age" : "55-64",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 94
+	},
+	{
+		"age" : "25-29",
+		"primary_drug" : "INHALANTS",
+		"value" : 86
+	},
+	{
+		"age" : "40-44",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 85
+	},
+	{
+		"age" : "30-34",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 82
+	},
+	{
+		"age" : "15-17",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 81
+	},
+	{
+		"age" : "35-39",
+		"primary_drug" : "INHALANTS",
+		"value" : 81
+	},
+	{
+		"age" : "40-44",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 80
+	},
+	{
+		"age" : "18-20",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 77
+	},
+	{
+		"age" : "21-24",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 70
+	},
+	{
+		"age" : "45-49",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 69
+	},
+	{
+		"age" : "12-14",
+		"primary_drug" : "OTHER",
+		"value" : 68
+	},
+	{
+		"age" : "45-49",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 68
+	},
+	{
+		"age" : "55-64",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 66
+	},
+	{
+		"age" : "15-17",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 64
+	},
+	{
+		"age" : "12-14",
+		"primary_drug" : "Undefined",
+		"value" : 63
+	},
+	{
+		"age" : "40-44",
+		"primary_drug" : "INHALANTS",
+		"value" : 63
+	},
+	{
+		"age" : "35-39",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 62
+	},
+	{
+		"age" : "55-64",
+		"primary_drug" : "PCP",
+		"value" : 61
+	},
+	{
+		"age" : "18-20",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 59
+	},
+	{
+		"age" : "18-20",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 59
+	},
+	{
+		"age" : "18-20",
+		"primary_drug" : "INHALANTS",
+		"value" : 59
+	},
+	{
+		"age" : "50-54",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 55
+	},
+	{
+		"age" : "65 and older",
+		"primary_drug" : "Undefined",
+		"value" : 55
+	},
+	{
+		"age" : "21-24",
+		"primary_drug" : "INHALANTS",
+		"value" : 54
+	},
+	{
+		"age" : "45-49",
+		"primary_drug" : "INHALANTS",
+		"value" : 54
+	},
+	{
+		"age" : "25-29",
+		"primary_drug" : "BARBITURATES",
+		"value" : 53
+	},
+	{
+		"age" : "50-54",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 53
+	},
+	{
+		"age" : "55-64",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 52
+	},
+	{
+		"age" : "30-34",
+		"primary_drug" : "BARBITURATES",
+		"value" : 49
+	},
+	{
+		"age" : "65 and older",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 48
+	},
+	{
+		"age" : "45-49",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 45
+	},
+	{
+		"age" : "12-14",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 44
+	},
+	{
+		"age" : "15-17",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 44
+	},
+	{
+		"age" : "55-64",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 44
+	},
+	{
+		"age" : "65 and older",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 44
+	},
+	{
+		"age" : "15-17",
+		"primary_drug" : "INHALANTS",
+		"value" : 42
+	},
+	{
+		"age" : "40-44",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 42
+	},
+	{
+		"age" : "65 and older",
+		"primary_drug" : "OTHER",
+		"value" : 42
+	},
+	{
+		"age" : "21-24",
+		"primary_drug" : "BARBITURATES",
+		"value" : 38
+	},
+	{
+		"age" : "35-39",
+		"primary_drug" : "BARBITURATES",
+		"value" : 35
+	},
+	{
+		"age" : "12-14",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 33
+	},
+	{
+		"age" : "50-54",
+		"primary_drug" : "INHALANTS",
+		"value" : 31
+	},
+	{
+		"age" : "18-20",
+		"primary_drug" : "PCP",
+		"value" : 30
+	},
+	{
+		"age" : "25-29",
+		"primary_drug" : "OTHER NON-BENZODIAZEPINE TRANQUILIZERS",
+		"value" : 30
+	},
+	{
+		"age" : "50-54",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 29
+	},
+	{
+		"age" : "18-20",
+		"primary_drug" : "BARBITURATES",
+		"value" : 28
+	},
+	{
+		"age" : "55-64",
+		"primary_drug" : "INHALANTS",
+		"value" : 28
+	},
+	{
+		"age" : "18-20",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 27
+	},
+	{
+		"age" : "45-49",
+		"primary_drug" : "BARBITURATES",
+		"value" : 27
+	},
+	{
+		"age" : "55-64",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 27
+	},
+	{
+		"age" : "12-14",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 25
+	},
+	{
+		"age" : "12-14",
+		"primary_drug" : "INHALANTS",
+		"value" : 24
+	},
+	{
+		"age" : "45-49",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 24
+	},
+	{
+		"age" : "30-34",
+		"primary_drug" : "OTHER NON-BENZODIAZEPINE TRANQUILIZERS",
+		"value" : 23
+	},
+	{
+		"age" : "40-44",
+		"primary_drug" : "BARBITURATES",
+		"value" : 22
+	},
+	{
+		"age" : "50-54",
+		"primary_drug" : "BARBITURATES",
+		"value" : 20
+	},
+	{
+		"age" : "55-64",
+		"primary_drug" : "BARBITURATES",
+		"value" : 20
+	},
+	{
+		"age" : "12-14",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 18
+	},
+	{
+		"age" : "12-14",
+		"primary_drug" : "HEROIN",
+		"value" : 18
+	},
+	{
+		"age" : "12-14",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 18
+	},
+	{
+		"age" : "50-54",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 17
+	},
+	{
+		"age" : "35-39",
+		"primary_drug" : "OTHER NON-BENZODIAZEPINE TRANQUILIZERS",
+		"value" : 16
+	},
+	{
+		"age" : "12-14",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 14
+	},
+	{
+		"age" : "12-14",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 13
+	},
+	{
+		"age" : "50-54",
+		"primary_drug" : "OTHER NON-BENZODIAZEPINE TRANQUILIZERS",
+		"value" : 13
+	},
+	{
+		"age" : "40-44",
+		"primary_drug" : "OTHER NON-BENZODIAZEPINE TRANQUILIZERS",
+		"value" : 11
+	},
+	{
+		"age" : "65 and older",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 11
+	},
+	{
+		"age" : "45-49",
+		"primary_drug" : "OTHER NON-BENZODIAZEPINE TRANQUILIZERS",
+		"value" : 10
+	},
+	{
+		"age" : "15-17",
+		"primary_drug" : "OTHER NON-BENZODIAZEPINE TRANQUILIZERS",
+		"value" : 9
+	},
+	{
+		"age" : "15-17",
+		"primary_drug" : "PCP",
+		"value" : 8
+	},
+	{
+		"age" : "21-24",
+		"primary_drug" : "OTHER NON-BENZODIAZEPINE TRANQUILIZERS",
+		"value" : 8
+	},
+	{
+		"age" : "18-20",
+		"primary_drug" : "OTHER NON-BENZODIAZEPINE TRANQUILIZERS",
+		"value" : 7
+	},
+	{
+		"age" : "65 and older",
+		"primary_drug" : "BARBITURATES",
+		"value" : 7
+	},
+	{
+		"age" : "15-17",
+		"primary_drug" : "BARBITURATES",
+		"value" : 6
+	},
+	{
+		"age" : "12-14",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 5
+	},
+	{
+		"age" : "15-17",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 4
+	},
+	{
+		"age" : "65 and older",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 4
+	},
+	{
+		"age" : "65 and older",
+		"primary_drug" : "INHALANTS",
+		"value" : 4
+	},
+	{
+		"age" : "55-64",
+		"primary_drug" : "OTHER NON-BENZODIAZEPINE TRANQUILIZERS",
+		"value" : 3
+	},
+	{
+		"age" : "12-14",
+		"primary_drug" : "BARBITURATES",
+		"value" : 2
+	},
+	{
+		"age" : "65 and older",
+		"primary_drug" : "PCP",
+		"value" : 2
+	},
+	{
+		"age" : "65 and older",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 2
+	},
+	{
+		"age" : "65 and older",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 2
+	},
+	{
+		"age" : "12-14",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 1
+	},
+	{
+		"age" : "12-14",
+		"primary_drug" : "OTHER NON-BENZODIAZEPINE TRANQUILIZERS",
+		"value" : 1
+	}
+]

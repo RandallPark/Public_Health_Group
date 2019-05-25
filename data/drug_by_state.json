@@ -1,0 +1,3522 @@
+[
+	{
+		"state" : "ALABAMA",
+		"primary_drug" : "ALCOHOL",
+		"value" : 3044
+	},
+	{
+		"state" : "ALABAMA",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 3017
+	},
+	{
+		"state" : "ALABAMA",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 1978
+	},
+	{
+		"state" : "ALABAMA",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 1424
+	},
+	{
+		"state" : "ALABAMA",
+		"primary_drug" : "HEROIN",
+		"value" : 1016
+	},
+	{
+		"state" : "ALABAMA",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 982
+	},
+	{
+		"state" : "ALABAMA",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 235
+	},
+	{
+		"state" : "ALABAMA",
+		"primary_drug" : "OTHER",
+		"value" : 106
+	},
+	{
+		"state" : "ALABAMA",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 63
+	},
+	{
+		"state" : "ALABAMA",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 62
+	},
+	{
+		"state" : "ALABAMA",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 59
+	},
+	{
+		"state" : "ALABAMA",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 34
+	},
+	{
+		"state" : "ALABAMA",
+		"primary_drug" : "NONE",
+		"value" : 31
+	},
+	{
+		"state" : "ALABAMA",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 10
+	},
+	{
+		"state" : "ALABAMA",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 7
+	},
+	{
+		"state" : "ALABAMA",
+		"primary_drug" : "INHALANTS",
+		"value" : 5
+	},
+	{
+		"state" : "ALABAMA",
+		"primary_drug" : "Undefined",
+		"value" : 3
+	},
+	{
+		"state" : "ALASKA",
+		"primary_drug" : "ALCOHOL",
+		"value" : 4474
+	},
+	{
+		"state" : "ALASKA",
+		"primary_drug" : "HEROIN",
+		"value" : 854
+	},
+	{
+		"state" : "ALASKA",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 638
+	},
+	{
+		"state" : "ALASKA",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 564
+	},
+	{
+		"state" : "ALASKA",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 303
+	},
+	{
+		"state" : "ALASKA",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 68
+	},
+	{
+		"state" : "ALASKA",
+		"primary_drug" : "Undefined",
+		"value" : 62
+	},
+	{
+		"state" : "ALASKA",
+		"primary_drug" : "OTHER",
+		"value" : 58
+	},
+	{
+		"state" : "ALASKA",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 39
+	},
+	{
+		"state" : "ALASKA",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 19
+	},
+	{
+		"state" : "ALASKA",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 15
+	},
+	{
+		"state" : "ALASKA",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 11
+	},
+	{
+		"state" : "ALASKA",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 8
+	},
+	{
+		"state" : "ALASKA",
+		"primary_drug" : "INHALANTS",
+		"value" : 4
+	},
+	{
+		"state" : "ALASKA",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 3
+	},
+	{
+		"state" : "ALASKA",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 2
+	},
+	{
+		"state" : "ARIZONA",
+		"primary_drug" : "ALCOHOL",
+		"value" : 7970
+	},
+	{
+		"state" : "ARIZONA",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 6505
+	},
+	{
+		"state" : "ARIZONA",
+		"primary_drug" : "HEROIN",
+		"value" : 5468
+	},
+	{
+		"state" : "ARIZONA",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 4967
+	},
+	{
+		"state" : "ARIZONA",
+		"primary_drug" : "NONE",
+		"value" : 1609
+	},
+	{
+		"state" : "ARIZONA",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 1430
+	},
+	{
+		"state" : "ARIZONA",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 784
+	},
+	{
+		"state" : "ARIZONA",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 122
+	},
+	{
+		"state" : "ARIZONA",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 96
+	},
+	{
+		"state" : "ARIZONA",
+		"primary_drug" : "OTHER",
+		"value" : 92
+	},
+	{
+		"state" : "ARIZONA",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 61
+	},
+	{
+		"state" : "ARIZONA",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 31
+	},
+	{
+		"state" : "ARIZONA",
+		"primary_drug" : "INHALANTS",
+		"value" : 17
+	},
+	{
+		"state" : "ARKANSAS",
+		"primary_drug" : "ALCOHOL",
+		"value" : 3299
+	},
+	{
+		"state" : "ARKANSAS",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 3285
+	},
+	{
+		"state" : "ARKANSAS",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 2587
+	},
+	{
+		"state" : "ARKANSAS",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 1549
+	},
+	{
+		"state" : "ARKANSAS",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 587
+	},
+	{
+		"state" : "ARKANSAS",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 548
+	},
+	{
+		"state" : "ARKANSAS",
+		"primary_drug" : "HEROIN",
+		"value" : 208
+	},
+	{
+		"state" : "ARKANSAS",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 129
+	},
+	{
+		"state" : "ARKANSAS",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 63
+	},
+	{
+		"state" : "ARKANSAS",
+		"primary_drug" : "OTHER",
+		"value" : 46
+	},
+	{
+		"state" : "ARKANSAS",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 37
+	},
+	{
+		"state" : "ARKANSAS",
+		"primary_drug" : "PCP",
+		"value" : 35
+	},
+	{
+		"state" : "ARKANSAS",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 27
+	},
+	{
+		"state" : "ARKANSAS",
+		"primary_drug" : "NONE",
+		"value" : 26
+	},
+	{
+		"state" : "ARKANSAS",
+		"primary_drug" : "BARBITURATES",
+		"value" : 22
+	},
+	{
+		"state" : "ARKANSAS",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 18
+	},
+	{
+		"state" : "ARKANSAS",
+		"primary_drug" : "Undefined",
+		"value" : 14
+	},
+	{
+		"state" : "ARKANSAS",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 12
+	},
+	{
+		"state" : "ARKANSAS",
+		"primary_drug" : "INHALANTS",
+		"value" : 11
+	},
+	{
+		"state" : "ARKANSAS",
+		"primary_drug" : "OTHER NON-BENZODIAZEPINE TRANQUILIZERS",
+		"value" : 3
+	},
+	{
+		"state" : "CALIFORNIA",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 48214
+	},
+	{
+		"state" : "CALIFORNIA",
+		"primary_drug" : "HEROIN",
+		"value" : 37428
+	},
+	{
+		"state" : "CALIFORNIA",
+		"primary_drug" : "ALCOHOL",
+		"value" : 31760
+	},
+	{
+		"state" : "CALIFORNIA",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 20865
+	},
+	{
+		"state" : "CALIFORNIA",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 7278
+	},
+	{
+		"state" : "CALIFORNIA",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 4461
+	},
+	{
+		"state" : "CALIFORNIA",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 493
+	},
+	{
+		"state" : "CALIFORNIA",
+		"primary_drug" : "OTHER",
+		"value" : 457
+	},
+	{
+		"state" : "CALIFORNIA",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 357
+	},
+	{
+		"state" : "CALIFORNIA",
+		"primary_drug" : "PCP",
+		"value" : 266
+	},
+	{
+		"state" : "CALIFORNIA",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 218
+	},
+	{
+		"state" : "CALIFORNIA",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 208
+	},
+	{
+		"state" : "CALIFORNIA",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 82
+	},
+	{
+		"state" : "CALIFORNIA",
+		"primary_drug" : "BARBITURATES",
+		"value" : 75
+	},
+	{
+		"state" : "CALIFORNIA",
+		"primary_drug" : "INHALANTS",
+		"value" : 55
+	},
+	{
+		"state" : "CALIFORNIA",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 46
+	},
+	{
+		"state" : "CALIFORNIA",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 31
+	},
+	{
+		"state" : "CALIFORNIA",
+		"primary_drug" : "OTHER NON-BENZODIAZEPINE TRANQUILIZERS",
+		"value" : 28
+	},
+	{
+		"state" : "COLORADO",
+		"primary_drug" : "ALCOHOL",
+		"value" : 56236
+	},
+	{
+		"state" : "COLORADO",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 12281
+	},
+	{
+		"state" : "COLORADO",
+		"primary_drug" : "HEROIN",
+		"value" : 9002
+	},
+	{
+		"state" : "COLORADO",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 6282
+	},
+	{
+		"state" : "COLORADO",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 2530
+	},
+	{
+		"state" : "COLORADO",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 1938
+	},
+	{
+		"state" : "COLORADO",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 367
+	},
+	{
+		"state" : "COLORADO",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 210
+	},
+	{
+		"state" : "COLORADO",
+		"primary_drug" : "OTHER",
+		"value" : 137
+	},
+	{
+		"state" : "COLORADO",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 94
+	},
+	{
+		"state" : "COLORADO",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 48
+	},
+	{
+		"state" : "COLORADO",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 43
+	},
+	{
+		"state" : "COLORADO",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 36
+	},
+	{
+		"state" : "COLORADO",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 32
+	},
+	{
+		"state" : "COLORADO",
+		"primary_drug" : "INHALANTS",
+		"value" : 30
+	},
+	{
+		"state" : "COLORADO",
+		"primary_drug" : "BARBITURATES",
+		"value" : 20
+	},
+	{
+		"state" : "COLORADO",
+		"primary_drug" : "PCP",
+		"value" : 10
+	},
+	{
+		"state" : "COLORADO",
+		"primary_drug" : "OTHER NON-BENZODIAZEPINE TRANQUILIZERS",
+		"value" : 5
+	},
+	{
+		"state" : "CONNECTICUT",
+		"primary_drug" : "HEROIN",
+		"value" : 25017
+	},
+	{
+		"state" : "CONNECTICUT",
+		"primary_drug" : "ALCOHOL",
+		"value" : 22843
+	},
+	{
+		"state" : "CONNECTICUT",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 7820
+	},
+	{
+		"state" : "CONNECTICUT",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 4354
+	},
+	{
+		"state" : "CONNECTICUT",
+		"primary_drug" : "NONE",
+		"value" : 3398
+	},
+	{
+		"state" : "CONNECTICUT",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 2809
+	},
+	{
+		"state" : "CONNECTICUT",
+		"primary_drug" : "PCP",
+		"value" : 1019
+	},
+	{
+		"state" : "CONNECTICUT",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 921
+	},
+	{
+		"state" : "CONNECTICUT",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 145
+	},
+	{
+		"state" : "CONNECTICUT",
+		"primary_drug" : "Undefined",
+		"value" : 108
+	},
+	{
+		"state" : "CONNECTICUT",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 86
+	},
+	{
+		"state" : "CONNECTICUT",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 84
+	},
+	{
+		"state" : "CONNECTICUT",
+		"primary_drug" : "OTHER",
+		"value" : 74
+	},
+	{
+		"state" : "CONNECTICUT",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 70
+	},
+	{
+		"state" : "CONNECTICUT",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 53
+	},
+	{
+		"state" : "CONNECTICUT",
+		"primary_drug" : "BARBITURATES",
+		"value" : 40
+	},
+	{
+		"state" : "CONNECTICUT",
+		"primary_drug" : "INHALANTS",
+		"value" : 34
+	},
+	{
+		"state" : "CONNECTICUT",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 24
+	},
+	{
+		"state" : "CONNECTICUT",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 18
+	},
+	{
+		"state" : "CONNECTICUT",
+		"primary_drug" : "OTHER NON-BENZODIAZEPINE TRANQUILIZERS",
+		"value" : 3
+	},
+	{
+		"state" : "DELAWARE",
+		"primary_drug" : "NONE",
+		"value" : 2707
+	},
+	{
+		"state" : "DELAWARE",
+		"primary_drug" : "HEROIN",
+		"value" : 2415
+	},
+	{
+		"state" : "DELAWARE",
+		"primary_drug" : "Undefined",
+		"value" : 511
+	},
+	{
+		"state" : "DELAWARE",
+		"primary_drug" : "ALCOHOL",
+		"value" : 503
+	},
+	{
+		"state" : "DELAWARE",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 342
+	},
+	{
+		"state" : "DELAWARE",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 295
+	},
+	{
+		"state" : "DELAWARE",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 155
+	},
+	{
+		"state" : "DELAWARE",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 14
+	},
+	{
+		"state" : "DELAWARE",
+		"primary_drug" : "PCP",
+		"value" : 13
+	},
+	{
+		"state" : "DELAWARE",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 10
+	},
+	{
+		"state" : "DELAWARE",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 6
+	},
+	{
+		"state" : "DELAWARE",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 6
+	},
+	{
+		"state" : "DELAWARE",
+		"primary_drug" : "OTHER",
+		"value" : 5
+	},
+	{
+		"state" : "DELAWARE",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 4
+	},
+	{
+		"state" : "DELAWARE",
+		"primary_drug" : "INHALANTS",
+		"value" : 2
+	},
+	{
+		"state" : "DELAWARE",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 1
+	},
+	{
+		"state" : "DISTRICT OF COLUMBIA",
+		"primary_drug" : "ALCOHOL",
+		"value" : 1770
+	},
+	{
+		"state" : "DISTRICT OF COLUMBIA",
+		"primary_drug" : "HEROIN",
+		"value" : 1629
+	},
+	{
+		"state" : "DISTRICT OF COLUMBIA",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 691
+	},
+	{
+		"state" : "DISTRICT OF COLUMBIA",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 408
+	},
+	{
+		"state" : "DISTRICT OF COLUMBIA",
+		"primary_drug" : "PCP",
+		"value" : 387
+	},
+	{
+		"state" : "DISTRICT OF COLUMBIA",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 108
+	},
+	{
+		"state" : "DISTRICT OF COLUMBIA",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 68
+	},
+	{
+		"state" : "DISTRICT OF COLUMBIA",
+		"primary_drug" : "OTHER",
+		"value" : 17
+	},
+	{
+		"state" : "DISTRICT OF COLUMBIA",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 17
+	},
+	{
+		"state" : "DISTRICT OF COLUMBIA",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 9
+	},
+	{
+		"state" : "DISTRICT OF COLUMBIA",
+		"primary_drug" : "Undefined",
+		"value" : 7
+	},
+	{
+		"state" : "DISTRICT OF COLUMBIA",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 6
+	},
+	{
+		"state" : "DISTRICT OF COLUMBIA",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 5
+	},
+	{
+		"state" : "DISTRICT OF COLUMBIA",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 3
+	},
+	{
+		"state" : "DISTRICT OF COLUMBIA",
+		"primary_drug" : "OTHER NON-BENZODIAZEPINE TRANQUILIZERS",
+		"value" : 2
+	},
+	{
+		"state" : "FLORIDA",
+		"primary_drug" : "ALCOHOL",
+		"value" : 10218
+	},
+	{
+		"state" : "FLORIDA",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 5475
+	},
+	{
+		"state" : "FLORIDA",
+		"primary_drug" : "HEROIN",
+		"value" : 4899
+	},
+	{
+		"state" : "FLORIDA",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 4685
+	},
+	{
+		"state" : "FLORIDA",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 1737
+	},
+	{
+		"state" : "FLORIDA",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 916
+	},
+	{
+		"state" : "FLORIDA",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 663
+	},
+	{
+		"state" : "FLORIDA",
+		"primary_drug" : "OTHER",
+		"value" : 296
+	},
+	{
+		"state" : "FLORIDA",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 176
+	},
+	{
+		"state" : "FLORIDA",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 95
+	},
+	{
+		"state" : "FLORIDA",
+		"primary_drug" : "NONE",
+		"value" : 79
+	},
+	{
+		"state" : "FLORIDA",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 74
+	},
+	{
+		"state" : "FLORIDA",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 67
+	},
+	{
+		"state" : "FLORIDA",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 52
+	},
+	{
+		"state" : "FLORIDA",
+		"primary_drug" : "INHALANTS",
+		"value" : 23
+	},
+	{
+		"state" : "FLORIDA",
+		"primary_drug" : "BARBITURATES",
+		"value" : 17
+	},
+	{
+		"state" : "FLORIDA",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 16
+	},
+	{
+		"state" : "FLORIDA",
+		"primary_drug" : "Undefined",
+		"value" : 9
+	},
+	{
+		"state" : "FLORIDA",
+		"primary_drug" : "OTHER NON-BENZODIAZEPINE TRANQUILIZERS",
+		"value" : 4
+	},
+	{
+		"state" : "FLORIDA",
+		"primary_drug" : "PCP",
+		"value" : 2
+	},
+	{
+		"state" : "HAWAII",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 2380
+	},
+	{
+		"state" : "HAWAII",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 1575
+	},
+	{
+		"state" : "HAWAII",
+		"primary_drug" : "ALCOHOL",
+		"value" : 1411
+	},
+	{
+		"state" : "HAWAII",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 244
+	},
+	{
+		"state" : "HAWAII",
+		"primary_drug" : "HEROIN",
+		"value" : 230
+	},
+	{
+		"state" : "HAWAII",
+		"primary_drug" : "NONE",
+		"value" : 171
+	},
+	{
+		"state" : "HAWAII",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 119
+	},
+	{
+		"state" : "HAWAII",
+		"primary_drug" : "OTHER",
+		"value" : 19
+	},
+	{
+		"state" : "HAWAII",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 19
+	},
+	{
+		"state" : "HAWAII",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 12
+	},
+	{
+		"state" : "HAWAII",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 12
+	},
+	{
+		"state" : "HAWAII",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 11
+	},
+	{
+		"state" : "HAWAII",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 6
+	},
+	{
+		"state" : "HAWAII",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 2
+	},
+	{
+		"state" : "HAWAII",
+		"primary_drug" : "INHALANTS",
+		"value" : 2
+	},
+	{
+		"state" : "IDAHO",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 1186
+	},
+	{
+		"state" : "IDAHO",
+		"primary_drug" : "ALCOHOL",
+		"value" : 713
+	},
+	{
+		"state" : "IDAHO",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 394
+	},
+	{
+		"state" : "IDAHO",
+		"primary_drug" : "HEROIN",
+		"value" : 244
+	},
+	{
+		"state" : "IDAHO",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 119
+	},
+	{
+		"state" : "IDAHO",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 21
+	},
+	{
+		"state" : "IDAHO",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 16
+	},
+	{
+		"state" : "IDAHO",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 11
+	},
+	{
+		"state" : "IDAHO",
+		"primary_drug" : "OTHER",
+		"value" : 8
+	},
+	{
+		"state" : "IDAHO",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 4
+	},
+	{
+		"state" : "IDAHO",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 4
+	},
+	{
+		"state" : "IDAHO",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 3
+	},
+	{
+		"state" : "IDAHO",
+		"primary_drug" : "INHALANTS",
+		"value" : 3
+	},
+	{
+		"state" : "IDAHO",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 3
+	},
+	{
+		"state" : "IDAHO",
+		"primary_drug" : "BARBITURATES",
+		"value" : 2
+	},
+	{
+		"state" : "IDAHO",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 2
+	},
+	{
+		"state" : "ILLINOIS",
+		"primary_drug" : "HEROIN",
+		"value" : 4549
+	},
+	{
+		"state" : "ILLINOIS",
+		"primary_drug" : "ALCOHOL",
+		"value" : 4243
+	},
+	{
+		"state" : "ILLINOIS",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 2792
+	},
+	{
+		"state" : "ILLINOIS",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 954
+	},
+	{
+		"state" : "ILLINOIS",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 847
+	},
+	{
+		"state" : "ILLINOIS",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 726
+	},
+	{
+		"state" : "ILLINOIS",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 118
+	},
+	{
+		"state" : "ILLINOIS",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 67
+	},
+	{
+		"state" : "ILLINOIS",
+		"primary_drug" : "PCP",
+		"value" : 36
+	},
+	{
+		"state" : "ILLINOIS",
+		"primary_drug" : "OTHER",
+		"value" : 27
+	},
+	{
+		"state" : "ILLINOIS",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 19
+	},
+	{
+		"state" : "ILLINOIS",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 18
+	},
+	{
+		"state" : "ILLINOIS",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 16
+	},
+	{
+		"state" : "ILLINOIS",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 11
+	},
+	{
+		"state" : "ILLINOIS",
+		"primary_drug" : "INHALANTS",
+		"value" : 9
+	},
+	{
+		"state" : "ILLINOIS",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 7
+	},
+	{
+		"state" : "ILLINOIS",
+		"primary_drug" : "NONE",
+		"value" : 5
+	},
+	{
+		"state" : "ILLINOIS",
+		"primary_drug" : "BARBITURATES",
+		"value" : 2
+	},
+	{
+		"state" : "ILLINOIS",
+		"primary_drug" : "OTHER NON-BENZODIAZEPINE TRANQUILIZERS",
+		"value" : 2
+	},
+	{
+		"state" : "INDIANA",
+		"primary_drug" : "ALCOHOL",
+		"value" : 6302
+	},
+	{
+		"state" : "INDIANA",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 4313
+	},
+	{
+		"state" : "INDIANA",
+		"primary_drug" : "HEROIN",
+		"value" : 3730
+	},
+	{
+		"state" : "INDIANA",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 2664
+	},
+	{
+		"state" : "INDIANA",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 2162
+	},
+	{
+		"state" : "INDIANA",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 908
+	},
+	{
+		"state" : "INDIANA",
+		"primary_drug" : "OTHER",
+		"value" : 682
+	},
+	{
+		"state" : "INDIANA",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 205
+	},
+	{
+		"state" : "INDIANA",
+		"primary_drug" : "Undefined",
+		"value" : 58
+	},
+	{
+		"state" : "INDIANA",
+		"primary_drug" : "NONE",
+		"value" : 58
+	},
+	{
+		"state" : "INDIANA",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 55
+	},
+	{
+		"state" : "INDIANA",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 43
+	},
+	{
+		"state" : "INDIANA",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 26
+	},
+	{
+		"state" : "INDIANA",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 26
+	},
+	{
+		"state" : "INDIANA",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 24
+	},
+	{
+		"state" : "INDIANA",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 10
+	},
+	{
+		"state" : "INDIANA",
+		"primary_drug" : "INHALANTS",
+		"value" : 8
+	},
+	{
+		"state" : "INDIANA",
+		"primary_drug" : "BARBITURATES",
+		"value" : 6
+	},
+	{
+		"state" : "INDIANA",
+		"primary_drug" : "PCP",
+		"value" : 6
+	},
+	{
+		"state" : "INDIANA",
+		"primary_drug" : "OTHER NON-BENZODIAZEPINE TRANQUILIZERS",
+		"value" : 5
+	},
+	{
+		"state" : "IOWA",
+		"primary_drug" : "ALCOHOL",
+		"value" : 10457
+	},
+	{
+		"state" : "IOWA",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 7027
+	},
+	{
+		"state" : "IOWA",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 6870
+	},
+	{
+		"state" : "IOWA",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 1385
+	},
+	{
+		"state" : "IOWA",
+		"primary_drug" : "HEROIN",
+		"value" : 932
+	},
+	{
+		"state" : "IOWA",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 424
+	},
+	{
+		"state" : "IOWA",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 145
+	},
+	{
+		"state" : "IOWA",
+		"primary_drug" : "OTHER",
+		"value" : 98
+	},
+	{
+		"state" : "IOWA",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 56
+	},
+	{
+		"state" : "IOWA",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 39
+	},
+	{
+		"state" : "IOWA",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 36
+	},
+	{
+		"state" : "IOWA",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 28
+	},
+	{
+		"state" : "IOWA",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 27
+	},
+	{
+		"state" : "IOWA",
+		"primary_drug" : "NONE",
+		"value" : 26
+	},
+	{
+		"state" : "IOWA",
+		"primary_drug" : "INHALANTS",
+		"value" : 25
+	},
+	{
+		"state" : "IOWA",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 18
+	},
+	{
+		"state" : "IOWA",
+		"primary_drug" : "PCP",
+		"value" : 6
+	},
+	{
+		"state" : "IOWA",
+		"primary_drug" : "BARBITURATES",
+		"value" : 3
+	},
+	{
+		"state" : "IOWA",
+		"primary_drug" : "OTHER NON-BENZODIAZEPINE TRANQUILIZERS",
+		"value" : 2
+	},
+	{
+		"state" : "KANSAS",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 4419
+	},
+	{
+		"state" : "KANSAS",
+		"primary_drug" : "ALCOHOL",
+		"value" : 3878
+	},
+	{
+		"state" : "KANSAS",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 3095
+	},
+	{
+		"state" : "KANSAS",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 749
+	},
+	{
+		"state" : "KANSAS",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 452
+	},
+	{
+		"state" : "KANSAS",
+		"primary_drug" : "HEROIN",
+		"value" : 241
+	},
+	{
+		"state" : "KANSAS",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 77
+	},
+	{
+		"state" : "KANSAS",
+		"primary_drug" : "PCP",
+		"value" : 54
+	},
+	{
+		"state" : "KANSAS",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 34
+	},
+	{
+		"state" : "KANSAS",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 28
+	},
+	{
+		"state" : "KANSAS",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 17
+	},
+	{
+		"state" : "KANSAS",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 14
+	},
+	{
+		"state" : "KANSAS",
+		"primary_drug" : "INHALANTS",
+		"value" : 12
+	},
+	{
+		"state" : "KANSAS",
+		"primary_drug" : "OTHER",
+		"value" : 8
+	},
+	{
+		"state" : "KANSAS",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 8
+	},
+	{
+		"state" : "KANSAS",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 7
+	},
+	{
+		"state" : "KANSAS",
+		"primary_drug" : "BARBITURATES",
+		"value" : 2
+	},
+	{
+		"state" : "KANSAS",
+		"primary_drug" : "Undefined",
+		"value" : 1
+	},
+	{
+		"state" : "KENTUCKY",
+		"primary_drug" : "HEROIN",
+		"value" : 4868
+	},
+	{
+		"state" : "KENTUCKY",
+		"primary_drug" : "ALCOHOL",
+		"value" : 4031
+	},
+	{
+		"state" : "KENTUCKY",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 3348
+	},
+	{
+		"state" : "KENTUCKY",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 2935
+	},
+	{
+		"state" : "KENTUCKY",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 2288
+	},
+	{
+		"state" : "KENTUCKY",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 1083
+	},
+	{
+		"state" : "KENTUCKY",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 351
+	},
+	{
+		"state" : "KENTUCKY",
+		"primary_drug" : "OTHER",
+		"value" : 290
+	},
+	{
+		"state" : "KENTUCKY",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 178
+	},
+	{
+		"state" : "KENTUCKY",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 177
+	},
+	{
+		"state" : "KENTUCKY",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 44
+	},
+	{
+		"state" : "KENTUCKY",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 19
+	},
+	{
+		"state" : "KENTUCKY",
+		"primary_drug" : "BARBITURATES",
+		"value" : 14
+	},
+	{
+		"state" : "KENTUCKY",
+		"primary_drug" : "OTHER NON-BENZODIAZEPINE TRANQUILIZERS",
+		"value" : 8
+	},
+	{
+		"state" : "KENTUCKY",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 7
+	},
+	{
+		"state" : "KENTUCKY",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 6
+	},
+	{
+		"state" : "KENTUCKY",
+		"primary_drug" : "INHALANTS",
+		"value" : 5
+	},
+	{
+		"state" : "LOUISIANA",
+		"primary_drug" : "Undefined",
+		"value" : 3335
+	},
+	{
+		"state" : "LOUISIANA",
+		"primary_drug" : "NONE",
+		"value" : 2044
+	},
+	{
+		"state" : "LOUISIANA",
+		"primary_drug" : "ALCOHOL",
+		"value" : 1350
+	},
+	{
+		"state" : "LOUISIANA",
+		"primary_drug" : "HEROIN",
+		"value" : 1102
+	},
+	{
+		"state" : "LOUISIANA",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 932
+	},
+	{
+		"state" : "LOUISIANA",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 719
+	},
+	{
+		"state" : "LOUISIANA",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 580
+	},
+	{
+		"state" : "LOUISIANA",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 529
+	},
+	{
+		"state" : "LOUISIANA",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 90
+	},
+	{
+		"state" : "LOUISIANA",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 76
+	},
+	{
+		"state" : "LOUISIANA",
+		"primary_drug" : "OTHER",
+		"value" : 72
+	},
+	{
+		"state" : "LOUISIANA",
+		"primary_drug" : "PCP",
+		"value" : 39
+	},
+	{
+		"state" : "LOUISIANA",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 32
+	},
+	{
+		"state" : "LOUISIANA",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 25
+	},
+	{
+		"state" : "LOUISIANA",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 24
+	},
+	{
+		"state" : "LOUISIANA",
+		"primary_drug" : "BARBITURATES",
+		"value" : 17
+	},
+	{
+		"state" : "LOUISIANA",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 15
+	},
+	{
+		"state" : "LOUISIANA",
+		"primary_drug" : "OTHER NON-BENZODIAZEPINE TRANQUILIZERS",
+		"value" : 13
+	},
+	{
+		"state" : "LOUISIANA",
+		"primary_drug" : "INHALANTS",
+		"value" : 13
+	},
+	{
+		"state" : "LOUISIANA",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 12
+	},
+	{
+		"state" : "MAINE",
+		"primary_drug" : "ALCOHOL",
+		"value" : 3594
+	},
+	{
+		"state" : "MAINE",
+		"primary_drug" : "HEROIN",
+		"value" : 3061
+	},
+	{
+		"state" : "MAINE",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 2123
+	},
+	{
+		"state" : "MAINE",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 525
+	},
+	{
+		"state" : "MAINE",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 311
+	},
+	{
+		"state" : "MAINE",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 138
+	},
+	{
+		"state" : "MAINE",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 65
+	},
+	{
+		"state" : "MAINE",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 60
+	},
+	{
+		"state" : "MAINE",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 27
+	},
+	{
+		"state" : "MAINE",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 23
+	},
+	{
+		"state" : "MAINE",
+		"primary_drug" : "OTHER",
+		"value" : 20
+	},
+	{
+		"state" : "MAINE",
+		"primary_drug" : "Undefined",
+		"value" : 11
+	},
+	{
+		"state" : "MAINE",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 8
+	},
+	{
+		"state" : "MAINE",
+		"primary_drug" : "INHALANTS",
+		"value" : 7
+	},
+	{
+		"state" : "MAINE",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 4
+	},
+	{
+		"state" : "MAINE",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 3
+	},
+	{
+		"state" : "MARYLAND",
+		"primary_drug" : "HEROIN",
+		"value" : 46439
+	},
+	{
+		"state" : "MARYLAND",
+		"primary_drug" : "ALCOHOL",
+		"value" : 14241
+	},
+	{
+		"state" : "MARYLAND",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 12767
+	},
+	{
+		"state" : "MARYLAND",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 6730
+	},
+	{
+		"state" : "MARYLAND",
+		"primary_drug" : "OTHER",
+		"value" : 6211
+	},
+	{
+		"state" : "MARYLAND",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 4050
+	},
+	{
+		"state" : "MARYLAND",
+		"primary_drug" : "Undefined",
+		"value" : 2505
+	},
+	{
+		"state" : "MARYLAND",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 1000
+	},
+	{
+		"state" : "MARYLAND",
+		"primary_drug" : "PCP",
+		"value" : 452
+	},
+	{
+		"state" : "MARYLAND",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 300
+	},
+	{
+		"state" : "MARYLAND",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 139
+	},
+	{
+		"state" : "MARYLAND",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 129
+	},
+	{
+		"state" : "MARYLAND",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 97
+	},
+	{
+		"state" : "MARYLAND",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 93
+	},
+	{
+		"state" : "MARYLAND",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 72
+	},
+	{
+		"state" : "MARYLAND",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 57
+	},
+	{
+		"state" : "MARYLAND",
+		"primary_drug" : "INHALANTS",
+		"value" : 24
+	},
+	{
+		"state" : "MARYLAND",
+		"primary_drug" : "OTHER NON-BENZODIAZEPINE TRANQUILIZERS",
+		"value" : 9
+	},
+	{
+		"state" : "MARYLAND",
+		"primary_drug" : "BARBITURATES",
+		"value" : 5
+	},
+	{
+		"state" : "MASSACHUSETTS",
+		"primary_drug" : "HEROIN",
+		"value" : 48127
+	},
+	{
+		"state" : "MASSACHUSETTS",
+		"primary_drug" : "ALCOHOL",
+		"value" : 22276
+	},
+	{
+		"state" : "MASSACHUSETTS",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 3958
+	},
+	{
+		"state" : "MASSACHUSETTS",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 2913
+	},
+	{
+		"state" : "MASSACHUSETTS",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 2772
+	},
+	{
+		"state" : "MASSACHUSETTS",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 1086
+	},
+	{
+		"state" : "MASSACHUSETTS",
+		"primary_drug" : "NONE",
+		"value" : 262
+	},
+	{
+		"state" : "MASSACHUSETTS",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 235
+	},
+	{
+		"state" : "MASSACHUSETTS",
+		"primary_drug" : "OTHER",
+		"value" : 235
+	},
+	{
+		"state" : "MASSACHUSETTS",
+		"primary_drug" : "PCP",
+		"value" : 63
+	},
+	{
+		"state" : "MASSACHUSETTS",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 58
+	},
+	{
+		"state" : "MASSACHUSETTS",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 37
+	},
+	{
+		"state" : "MASSACHUSETTS",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 37
+	},
+	{
+		"state" : "MASSACHUSETTS",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 25
+	},
+	{
+		"state" : "MASSACHUSETTS",
+		"primary_drug" : "INHALANTS",
+		"value" : 10
+	},
+	{
+		"state" : "MASSACHUSETTS",
+		"primary_drug" : "OTHER NON-BENZODIAZEPINE TRANQUILIZERS",
+		"value" : 5
+	},
+	{
+		"state" : "MASSACHUSETTS",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 4
+	},
+	{
+		"state" : "MASSACHUSETTS",
+		"primary_drug" : "BARBITURATES",
+		"value" : 3
+	},
+	{
+		"state" : "MICHIGAN",
+		"primary_drug" : "ALCOHOL",
+		"value" : 25048
+	},
+	{
+		"state" : "MICHIGAN",
+		"primary_drug" : "HEROIN",
+		"value" : 23106
+	},
+	{
+		"state" : "MICHIGAN",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 8455
+	},
+	{
+		"state" : "MICHIGAN",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 6991
+	},
+	{
+		"state" : "MICHIGAN",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 4958
+	},
+	{
+		"state" : "MICHIGAN",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 1477
+	},
+	{
+		"state" : "MICHIGAN",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 659
+	},
+	{
+		"state" : "MICHIGAN",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 303
+	},
+	{
+		"state" : "MICHIGAN",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 171
+	},
+	{
+		"state" : "MICHIGAN",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 149
+	},
+	{
+		"state" : "MICHIGAN",
+		"primary_drug" : "OTHER",
+		"value" : 93
+	},
+	{
+		"state" : "MICHIGAN",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 49
+	},
+	{
+		"state" : "MICHIGAN",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 44
+	},
+	{
+		"state" : "MICHIGAN",
+		"primary_drug" : "INHALANTS",
+		"value" : 39
+	},
+	{
+		"state" : "MICHIGAN",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 24
+	},
+	{
+		"state" : "MICHIGAN",
+		"primary_drug" : "BARBITURATES",
+		"value" : 23
+	},
+	{
+		"state" : "MICHIGAN",
+		"primary_drug" : "OTHER NON-BENZODIAZEPINE TRANQUILIZERS",
+		"value" : 7
+	},
+	{
+		"state" : "MICHIGAN",
+		"primary_drug" : "PCP",
+		"value" : 7
+	},
+	{
+		"state" : "MINNESOTA",
+		"primary_drug" : "ALCOHOL",
+		"value" : 21672
+	},
+	{
+		"state" : "MINNESOTA",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 12251
+	},
+	{
+		"state" : "MINNESOTA",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 8452
+	},
+	{
+		"state" : "MINNESOTA",
+		"primary_drug" : "HEROIN",
+		"value" : 7504
+	},
+	{
+		"state" : "MINNESOTA",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 3535
+	},
+	{
+		"state" : "MINNESOTA",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 1713
+	},
+	{
+		"state" : "MINNESOTA",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 513
+	},
+	{
+		"state" : "MINNESOTA",
+		"primary_drug" : "Undefined",
+		"value" : 448
+	},
+	{
+		"state" : "MINNESOTA",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 226
+	},
+	{
+		"state" : "MINNESOTA",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 122
+	},
+	{
+		"state" : "MINNESOTA",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 87
+	},
+	{
+		"state" : "MINNESOTA",
+		"primary_drug" : "OTHER",
+		"value" : 82
+	},
+	{
+		"state" : "MINNESOTA",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 77
+	},
+	{
+		"state" : "MINNESOTA",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 69
+	},
+	{
+		"state" : "MINNESOTA",
+		"primary_drug" : "PCP",
+		"value" : 51
+	},
+	{
+		"state" : "MINNESOTA",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 45
+	},
+	{
+		"state" : "MINNESOTA",
+		"primary_drug" : "INHALANTS",
+		"value" : 43
+	},
+	{
+		"state" : "MINNESOTA",
+		"primary_drug" : "BARBITURATES",
+		"value" : 11
+	},
+	{
+		"state" : "MINNESOTA",
+		"primary_drug" : "OTHER NON-BENZODIAZEPINE TRANQUILIZERS",
+		"value" : 2
+	},
+	{
+		"state" : "MISSISSIPPI",
+		"primary_drug" : "ALCOHOL",
+		"value" : 1800
+	},
+	{
+		"state" : "MISSISSIPPI",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 1670
+	},
+	{
+		"state" : "MISSISSIPPI",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 1262
+	},
+	{
+		"state" : "MISSISSIPPI",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 676
+	},
+	{
+		"state" : "MISSISSIPPI",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 627
+	},
+	{
+		"state" : "MISSISSIPPI",
+		"primary_drug" : "HEROIN",
+		"value" : 298
+	},
+	{
+		"state" : "MISSISSIPPI",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 123
+	},
+	{
+		"state" : "MISSISSIPPI",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 94
+	},
+	{
+		"state" : "MISSISSIPPI",
+		"primary_drug" : "OTHER",
+		"value" : 37
+	},
+	{
+		"state" : "MISSISSIPPI",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 21
+	},
+	{
+		"state" : "MISSISSIPPI",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 19
+	},
+	{
+		"state" : "MISSISSIPPI",
+		"primary_drug" : "PCP",
+		"value" : 7
+	},
+	{
+		"state" : "MISSISSIPPI",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 7
+	},
+	{
+		"state" : "MISSISSIPPI",
+		"primary_drug" : "INHALANTS",
+		"value" : 5
+	},
+	{
+		"state" : "MISSISSIPPI",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 3
+	},
+	{
+		"state" : "MISSISSIPPI",
+		"primary_drug" : "BARBITURATES",
+		"value" : 3
+	},
+	{
+		"state" : "MISSISSIPPI",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 2
+	},
+	{
+		"state" : "MISSISSIPPI",
+		"primary_drug" : "OTHER NON-BENZODIAZEPINE TRANQUILIZERS",
+		"value" : 2
+	},
+	{
+		"state" : "MISSISSIPPI",
+		"primary_drug" : "Undefined",
+		"value" : 1
+	},
+	{
+		"state" : "MISSOURI",
+		"primary_drug" : "ALCOHOL",
+		"value" : 11147
+	},
+	{
+		"state" : "MISSOURI",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 7690
+	},
+	{
+		"state" : "MISSOURI",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 7083
+	},
+	{
+		"state" : "MISSOURI",
+		"primary_drug" : "HEROIN",
+		"value" : 5488
+	},
+	{
+		"state" : "MISSOURI",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 2244
+	},
+	{
+		"state" : "MISSOURI",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 1296
+	},
+	{
+		"state" : "MISSOURI",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 362
+	},
+	{
+		"state" : "MISSOURI",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 287
+	},
+	{
+		"state" : "MISSOURI",
+		"primary_drug" : "PCP",
+		"value" : 184
+	},
+	{
+		"state" : "MISSOURI",
+		"primary_drug" : "Undefined",
+		"value" : 178
+	},
+	{
+		"state" : "MISSOURI",
+		"primary_drug" : "OTHER",
+		"value" : 152
+	},
+	{
+		"state" : "MISSOURI",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 112
+	},
+	{
+		"state" : "MISSOURI",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 47
+	},
+	{
+		"state" : "MISSOURI",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 42
+	},
+	{
+		"state" : "MISSOURI",
+		"primary_drug" : "INHALANTS",
+		"value" : 22
+	},
+	{
+		"state" : "MISSOURI",
+		"primary_drug" : "OTHER NON-BENZODIAZEPINE TRANQUILIZERS",
+		"value" : 20
+	},
+	{
+		"state" : "MISSOURI",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 16
+	},
+	{
+		"state" : "MISSOURI",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 10
+	},
+	{
+		"state" : "MISSOURI",
+		"primary_drug" : "BARBITURATES",
+		"value" : 9
+	},
+	{
+		"state" : "MONTANA",
+		"primary_drug" : "ALCOHOL",
+		"value" : 2680
+	},
+	{
+		"state" : "MONTANA",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 1019
+	},
+	{
+		"state" : "MONTANA",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 922
+	},
+	{
+		"state" : "MONTANA",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 417
+	},
+	{
+		"state" : "MONTANA",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 242
+	},
+	{
+		"state" : "MONTANA",
+		"primary_drug" : "INHALANTS",
+		"value" : 140
+	},
+	{
+		"state" : "MONTANA",
+		"primary_drug" : "HEROIN",
+		"value" : 124
+	},
+	{
+		"state" : "MONTANA",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 35
+	},
+	{
+		"state" : "MONTANA",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 23
+	},
+	{
+		"state" : "MONTANA",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 10
+	},
+	{
+		"state" : "MONTANA",
+		"primary_drug" : "OTHER",
+		"value" : 8
+	},
+	{
+		"state" : "MONTANA",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 4
+	},
+	{
+		"state" : "MONTANA",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 3
+	},
+	{
+		"state" : "MONTANA",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 2
+	},
+	{
+		"state" : "MONTANA",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 2
+	},
+	{
+		"state" : "MONTANA",
+		"primary_drug" : "Undefined",
+		"value" : 1
+	},
+	{
+		"state" : "NEBRASKA",
+		"primary_drug" : "ALCOHOL",
+		"value" : 10767
+	},
+	{
+		"state" : "NEBRASKA",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 3381
+	},
+	{
+		"state" : "NEBRASKA",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 1668
+	},
+	{
+		"state" : "NEBRASKA",
+		"primary_drug" : "NONE",
+		"value" : 757
+	},
+	{
+		"state" : "NEBRASKA",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 531
+	},
+	{
+		"state" : "NEBRASKA",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 385
+	},
+	{
+		"state" : "NEBRASKA",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 176
+	},
+	{
+		"state" : "NEBRASKA",
+		"primary_drug" : "HEROIN",
+		"value" : 147
+	},
+	{
+		"state" : "NEBRASKA",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 60
+	},
+	{
+		"state" : "NEBRASKA",
+		"primary_drug" : "OTHER",
+		"value" : 51
+	},
+	{
+		"state" : "NEBRASKA",
+		"primary_drug" : "Undefined",
+		"value" : 27
+	},
+	{
+		"state" : "NEBRASKA",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 25
+	},
+	{
+		"state" : "NEBRASKA",
+		"primary_drug" : "INHALANTS",
+		"value" : 21
+	},
+	{
+		"state" : "NEBRASKA",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 18
+	},
+	{
+		"state" : "NEBRASKA",
+		"primary_drug" : "PCP",
+		"value" : 15
+	},
+	{
+		"state" : "NEBRASKA",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 12
+	},
+	{
+		"state" : "NEBRASKA",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 7
+	},
+	{
+		"state" : "NEBRASKA",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 7
+	},
+	{
+		"state" : "NEBRASKA",
+		"primary_drug" : "BARBITURATES",
+		"value" : 5
+	},
+	{
+		"state" : "NEVADA",
+		"primary_drug" : "Undefined",
+		"value" : 19
+	},
+	{
+		"state" : "NEVADA",
+		"primary_drug" : "HEROIN",
+		"value" : 17
+	},
+	{
+		"state" : "NEVADA",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 14
+	},
+	{
+		"state" : "NEVADA",
+		"primary_drug" : "ALCOHOL",
+		"value" : 8
+	},
+	{
+		"state" : "NEVADA",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 7
+	},
+	{
+		"state" : "NEVADA",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 3
+	},
+	{
+		"state" : "NEVADA",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 1
+	},
+	{
+		"state" : "NEW HAMPSHIRE",
+		"primary_drug" : "HEROIN",
+		"value" : 2390
+	},
+	{
+		"state" : "NEW HAMPSHIRE",
+		"primary_drug" : "ALCOHOL",
+		"value" : 1157
+	},
+	{
+		"state" : "NEW HAMPSHIRE",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 400
+	},
+	{
+		"state" : "NEW HAMPSHIRE",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 208
+	},
+	{
+		"state" : "NEW HAMPSHIRE",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 197
+	},
+	{
+		"state" : "NEW HAMPSHIRE",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 123
+	},
+	{
+		"state" : "NEW HAMPSHIRE",
+		"primary_drug" : "Undefined",
+		"value" : 54
+	},
+	{
+		"state" : "NEW HAMPSHIRE",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 14
+	},
+	{
+		"state" : "NEW HAMPSHIRE",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 14
+	},
+	{
+		"state" : "NEW HAMPSHIRE",
+		"primary_drug" : "OTHER",
+		"value" : 13
+	},
+	{
+		"state" : "NEW HAMPSHIRE",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 8
+	},
+	{
+		"state" : "NEW HAMPSHIRE",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 8
+	},
+	{
+		"state" : "NEW HAMPSHIRE",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 5
+	},
+	{
+		"state" : "NEW HAMPSHIRE",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 4
+	},
+	{
+		"state" : "NEW JERSEY",
+		"primary_drug" : "HEROIN",
+		"value" : 25130
+	},
+	{
+		"state" : "NEW JERSEY",
+		"primary_drug" : "ALCOHOL",
+		"value" : 16818
+	},
+	{
+		"state" : "NEW JERSEY",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 9001
+	},
+	{
+		"state" : "NEW JERSEY",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 4015
+	},
+	{
+		"state" : "NEW JERSEY",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 2946
+	},
+	{
+		"state" : "NEW JERSEY",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 866
+	},
+	{
+		"state" : "NEW JERSEY",
+		"primary_drug" : "PCP",
+		"value" : 476
+	},
+	{
+		"state" : "NEW JERSEY",
+		"primary_drug" : "Undefined",
+		"value" : 250
+	},
+	{
+		"state" : "NEW JERSEY",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 231
+	},
+	{
+		"state" : "NEW JERSEY",
+		"primary_drug" : "OTHER",
+		"value" : 193
+	},
+	{
+		"state" : "NEW JERSEY",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 182
+	},
+	{
+		"state" : "NEW JERSEY",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 97
+	},
+	{
+		"state" : "NEW JERSEY",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 75
+	},
+	{
+		"state" : "NEW JERSEY",
+		"primary_drug" : "INHALANTS",
+		"value" : 13
+	},
+	{
+		"state" : "NEW JERSEY",
+		"primary_drug" : "BARBITURATES",
+		"value" : 8
+	},
+	{
+		"state" : "NEW JERSEY",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 3
+	},
+	{
+		"state" : "NEW MEXICO",
+		"primary_drug" : "HEROIN",
+		"value" : 30
+	},
+	{
+		"state" : "NEW MEXICO",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 22
+	},
+	{
+		"state" : "NEW MEXICO",
+		"primary_drug" : "ALCOHOL",
+		"value" : 19
+	},
+	{
+		"state" : "NEW MEXICO",
+		"primary_drug" : "NONE",
+		"value" : 13
+	},
+	{
+		"state" : "NEW MEXICO",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 5
+	},
+	{
+		"state" : "NEW MEXICO",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 4
+	},
+	{
+		"state" : "NEW MEXICO",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 3
+	},
+	{
+		"state" : "NEW YORK",
+		"primary_drug" : "HEROIN",
+		"value" : 132
+	},
+	{
+		"state" : "NEW YORK",
+		"primary_drug" : "ALCOHOL",
+		"value" : 54
+	},
+	{
+		"state" : "NEW YORK",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 48
+	},
+	{
+		"state" : "NEW YORK",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 37
+	},
+	{
+		"state" : "NEW YORK",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 33
+	},
+	{
+		"state" : "NEW YORK",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 14
+	},
+	{
+		"state" : "NEW YORK",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 8
+	},
+	{
+		"state" : "NEW YORK",
+		"primary_drug" : "OTHER",
+		"value" : 4
+	},
+	{
+		"state" : "NEW YORK",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 4
+	},
+	{
+		"state" : "NEW YORK",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 3
+	},
+	{
+		"state" : "NEW YORK",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 3
+	},
+	{
+		"state" : "NEW YORK",
+		"primary_drug" : "BARBITURATES",
+		"value" : 1
+	},
+	{
+		"state" : "NEW YORK",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 1
+	},
+	{
+		"state" : "NEW YORK",
+		"primary_drug" : "PCP",
+		"value" : 1
+	},
+	{
+		"state" : "NORTH CAROLINA",
+		"primary_drug" : "ALCOHOL",
+		"value" : 19971
+	},
+	{
+		"state" : "NORTH CAROLINA",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 14627
+	},
+	{
+		"state" : "NORTH CAROLINA",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 10652
+	},
+	{
+		"state" : "NORTH CAROLINA",
+		"primary_drug" : "HEROIN",
+		"value" : 7283
+	},
+	{
+		"state" : "NORTH CAROLINA",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 6614
+	},
+	{
+		"state" : "NORTH CAROLINA",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 2674
+	},
+	{
+		"state" : "NORTH CAROLINA",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 932
+	},
+	{
+		"state" : "NORTH CAROLINA",
+		"primary_drug" : "OTHER",
+		"value" : 476
+	},
+	{
+		"state" : "NORTH CAROLINA",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 385
+	},
+	{
+		"state" : "NORTH CAROLINA",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 241
+	},
+	{
+		"state" : "NORTH CAROLINA",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 206
+	},
+	{
+		"state" : "NORTH CAROLINA",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 180
+	},
+	{
+		"state" : "NORTH CAROLINA",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 81
+	},
+	{
+		"state" : "NORTH CAROLINA",
+		"primary_drug" : "NONE",
+		"value" : 55
+	},
+	{
+		"state" : "NORTH CAROLINA",
+		"primary_drug" : "PCP",
+		"value" : 36
+	},
+	{
+		"state" : "NORTH CAROLINA",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 31
+	},
+	{
+		"state" : "NORTH CAROLINA",
+		"primary_drug" : "INHALANTS",
+		"value" : 22
+	},
+	{
+		"state" : "NORTH CAROLINA",
+		"primary_drug" : "BARBITURATES",
+		"value" : 18
+	},
+	{
+		"state" : "NORTH CAROLINA",
+		"primary_drug" : "OTHER NON-BENZODIAZEPINE TRANQUILIZERS",
+		"value" : 11
+	},
+	{
+		"state" : "NORTH DAKOTA",
+		"primary_drug" : "ALCOHOL",
+		"value" : 2107
+	},
+	{
+		"state" : "NORTH DAKOTA",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 1684
+	},
+	{
+		"state" : "NORTH DAKOTA",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 1314
+	},
+	{
+		"state" : "NORTH DAKOTA",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 346
+	},
+	{
+		"state" : "NORTH DAKOTA",
+		"primary_drug" : "HEROIN",
+		"value" : 281
+	},
+	{
+		"state" : "NORTH DAKOTA",
+		"primary_drug" : "NONE",
+		"value" : 143
+	},
+	{
+		"state" : "NORTH DAKOTA",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 19
+	},
+	{
+		"state" : "NORTH DAKOTA",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 15
+	},
+	{
+		"state" : "NORTH DAKOTA",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 13
+	},
+	{
+		"state" : "NORTH DAKOTA",
+		"primary_drug" : "INHALANTS",
+		"value" : 12
+	},
+	{
+		"state" : "NORTH DAKOTA",
+		"primary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"value" : 11
+	},
+	{
+		"state" : "NORTH DAKOTA",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 6
+	},
+	{
+		"state" : "NORTH DAKOTA",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 5
+	},
+	{
+		"state" : "NORTH DAKOTA",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 4
+	},
+	{
+		"state" : "NORTH DAKOTA",
+		"primary_drug" : "OTHER",
+		"value" : 2
+	},
+	{
+		"state" : "NORTH DAKOTA",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 2
+	},
+	{
+		"state" : "OHIO",
+		"primary_drug" : "HEROIN",
+		"value" : 56
+	},
+	{
+		"state" : "OHIO",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 44
+	},
+	{
+		"state" : "OHIO",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 23
+	},
+	{
+		"state" : "OHIO",
+		"primary_drug" : "ALCOHOL",
+		"value" : 20
+	},
+	{
+		"state" : "OHIO",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 16
+	},
+	{
+		"state" : "OHIO",
+		"primary_drug" : "NONE",
+		"value" : 15
+	},
+	{
+		"state" : "OHIO",
+		"primary_drug" : "OTHER",
+		"value" : 2
+	},
+	{
+		"state" : "OHIO",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 2
+	},
+	{
+		"state" : "OHIO",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 1
+	},
+	{
+		"state" : "OHIO",
+		"primary_drug" : "PCP",
+		"value" : 1
+	},
+	{
+		"state" : "OHIO",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 1
+	},
+	{
+		"state" : "OHIO",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 1
+	},
+	{
+		"state" : "OKLAHOMA",
+		"primary_drug" : "ALCOHOL",
+		"value" : 11
+	},
+	{
+		"state" : "OKLAHOMA",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 8
+	},
+	{
+		"state" : "OKLAHOMA",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 6
+	},
+	{
+		"state" : "OKLAHOMA",
+		"primary_drug" : "NONE",
+		"value" : 6
+	},
+	{
+		"state" : "OKLAHOMA",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 4
+	},
+	{
+		"state" : "OKLAHOMA",
+		"primary_drug" : "OTHER",
+		"value" : 1
+	},
+	{
+		"state" : "OKLAHOMA",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 1
+	},
+	{
+		"state" : "OKLAHOMA",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 1
+	},
+	{
+		"state" : "OKLAHOMA",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 1
+	},
+	{
+		"state" : "PENNSYLVANIA",
+		"primary_drug" : "HEROIN",
+		"value" : 37
+	},
+	{
+		"state" : "PENNSYLVANIA",
+		"primary_drug" : "ALCOHOL",
+		"value" : 18
+	},
+	{
+		"state" : "PENNSYLVANIA",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 13
+	},
+	{
+		"state" : "PENNSYLVANIA",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 6
+	},
+	{
+		"state" : "PENNSYLVANIA",
+		"primary_drug" : "Undefined",
+		"value" : 5
+	},
+	{
+		"state" : "PENNSYLVANIA",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 3
+	},
+	{
+		"state" : "PENNSYLVANIA",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 2
+	},
+	{
+		"state" : "PENNSYLVANIA",
+		"primary_drug" : "OTHER",
+		"value" : 2
+	},
+	{
+		"state" : "PENNSYLVANIA",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 2
+	},
+	{
+		"state" : "PENNSYLVANIA",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 1
+	},
+	{
+		"state" : "PENNSYLVANIA",
+		"primary_drug" : "PCP",
+		"value" : 1
+	},
+	{
+		"state" : "PENNSYLVANIA",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 1
+	},
+	{
+		"state" : "PUERTO RICO",
+		"primary_drug" : "HEROIN",
+		"value" : 5
+	},
+	{
+		"state" : "PUERTO RICO",
+		"primary_drug" : "ALCOHOL",
+		"value" : 2
+	},
+	{
+		"state" : "PUERTO RICO",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 1
+	},
+	{
+		"state" : "PUERTO RICO",
+		"primary_drug" : "OTHER",
+		"value" : 1
+	},
+	{
+		"state" : "PUERTO RICO",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 1
+	},
+	{
+		"state" : "PUERTO RICO",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 1
+	},
+	{
+		"state" : "PUERTO RICO",
+		"primary_drug" : "NONE",
+		"value" : 1
+	},
+	{
+		"state" : "RHODE ISLAND",
+		"primary_drug" : "HEROIN",
+		"value" : 43
+	},
+	{
+		"state" : "RHODE ISLAND",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 8
+	},
+	{
+		"state" : "RHODE ISLAND",
+		"primary_drug" : "ALCOHOL",
+		"value" : 5
+	},
+	{
+		"state" : "RHODE ISLAND",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 3
+	},
+	{
+		"state" : "RHODE ISLAND",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 2
+	},
+	{
+		"state" : "SOUTH DAKOTA",
+		"primary_drug" : "ALCOHOL",
+		"value" : 11
+	},
+	{
+		"state" : "SOUTH DAKOTA",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 5
+	},
+	{
+		"state" : "SOUTH DAKOTA",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 5
+	},
+	{
+		"state" : "SOUTH DAKOTA",
+		"primary_drug" : "HEROIN",
+		"value" : 4
+	},
+	{
+		"state" : "SOUTH DAKOTA",
+		"primary_drug" : "NONE",
+		"value" : 4
+	},
+	{
+		"state" : "SOUTH DAKOTA",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 2
+	},
+	{
+		"state" : "SOUTH DAKOTA",
+		"primary_drug" : "INHALANTS",
+		"value" : 2
+	},
+	{
+		"state" : "SOUTH DAKOTA",
+		"primary_drug" : "OTHER",
+		"value" : 1
+	},
+	{
+		"state" : "SOUTH DAKOTA",
+		"primary_drug" : "NON-PRESCRIPTION METHADONE",
+		"value" : 1
+	},
+	{
+		"state" : "SOUTH DAKOTA",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 1
+	},
+	{
+		"state" : "SOUTH DAKOTA",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 1
+	},
+	{
+		"state" : "SOUTH DAKOTA",
+		"primary_drug" : "Undefined",
+		"value" : 1
+	},
+	{
+		"state" : "TENNESSEE",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 10
+	},
+	{
+		"state" : "TENNESSEE",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 9
+	},
+	{
+		"state" : "TENNESSEE",
+		"primary_drug" : "ALCOHOL",
+		"value" : 7
+	},
+	{
+		"state" : "TENNESSEE",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 6
+	},
+	{
+		"state" : "TENNESSEE",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 6
+	},
+	{
+		"state" : "TENNESSEE",
+		"primary_drug" : "HEROIN",
+		"value" : 5
+	},
+	{
+		"state" : "TENNESSEE",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 1
+	},
+	{
+		"state" : "TENNESSEE",
+		"primary_drug" : "INHALANTS",
+		"value" : 1
+	},
+	{
+		"state" : "TEXAS",
+		"primary_drug" : "HEROIN",
+		"value" : 17
+	},
+	{
+		"state" : "TEXAS",
+		"primary_drug" : "ALCOHOL",
+		"value" : 11
+	},
+	{
+		"state" : "TEXAS",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 10
+	},
+	{
+		"state" : "TEXAS",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 6
+	},
+	{
+		"state" : "TEXAS",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 6
+	},
+	{
+		"state" : "TEXAS",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 4
+	},
+	{
+		"state" : "TEXAS",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 3
+	},
+	{
+		"state" : "TEXAS",
+		"primary_drug" : "OTHER",
+		"value" : 1
+	},
+	{
+		"state" : "TEXAS",
+		"primary_drug" : "BARBITURATES",
+		"value" : 1
+	},
+	{
+		"state" : "TEXAS",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 1
+	},
+	{
+		"state" : "Undefined",
+		"primary_drug" : "ALCOHOL",
+		"value" : 32
+	},
+	{
+		"state" : "Undefined",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 25
+	},
+	{
+		"state" : "Undefined",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 21
+	},
+	{
+		"state" : "Undefined",
+		"primary_drug" : "Undefined",
+		"value" : 10
+	},
+	{
+		"state" : "Undefined",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 9
+	},
+	{
+		"state" : "Undefined",
+		"primary_drug" : "OTHER",
+		"value" : 7
+	},
+	{
+		"state" : "Undefined",
+		"primary_drug" : "HEROIN",
+		"value" : 6
+	},
+	{
+		"state" : "Undefined",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 5
+	},
+	{
+		"state" : "Undefined",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 3
+	},
+	{
+		"state" : "Undefined",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 3
+	},
+	{
+		"state" : "Undefined",
+		"primary_drug" : "NONE",
+		"value" : 2
+	},
+	{
+		"state" : "Undefined",
+		"primary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"value" : 1
+	},
+	{
+		"state" : "UTAH",
+		"primary_drug" : "HEROIN",
+		"value" : 29
+	},
+	{
+		"state" : "UTAH",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 12
+	},
+	{
+		"state" : "UTAH",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 8
+	},
+	{
+		"state" : "UTAH",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 8
+	},
+	{
+		"state" : "UTAH",
+		"primary_drug" : "ALCOHOL",
+		"value" : 6
+	},
+	{
+		"state" : "UTAH",
+		"primary_drug" : "BENZODIAZEPINES",
+		"value" : 1
+	},
+	{
+		"state" : "UTAH",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 1
+	},
+	{
+		"state" : "UTAH",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 1
+	},
+	{
+		"state" : "UTAH",
+		"primary_drug" : "INHALANTS",
+		"value" : 1
+	},
+	{
+		"state" : "VERMONT",
+		"primary_drug" : "HEROIN",
+		"value" : 28
+	},
+	{
+		"state" : "VERMONT",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 19
+	},
+	{
+		"state" : "VERMONT",
+		"primary_drug" : "ALCOHOL",
+		"value" : 6
+	},
+	{
+		"state" : "VERMONT",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 5
+	},
+	{
+		"state" : "VERMONT",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 1
+	},
+	{
+		"state" : "VIRGINIA",
+		"primary_drug" : "ALCOHOL",
+		"value" : 14
+	},
+	{
+		"state" : "VIRGINIA",
+		"primary_drug" : "NONE",
+		"value" : 8
+	},
+	{
+		"state" : "VIRGINIA",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 7
+	},
+	{
+		"state" : "VIRGINIA",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 6
+	},
+	{
+		"state" : "VIRGINIA",
+		"primary_drug" : "Undefined",
+		"value" : 6
+	},
+	{
+		"state" : "VIRGINIA",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 2
+	},
+	{
+		"state" : "VIRGINIA",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 2
+	},
+	{
+		"state" : "VIRGINIA",
+		"primary_drug" : "HEROIN",
+		"value" : 2
+	},
+	{
+		"state" : "VIRGINIA",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 1
+	},
+	{
+		"state" : "WASHINGTON",
+		"primary_drug" : "HEROIN",
+		"value" : 51
+	},
+	{
+		"state" : "WASHINGTON",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 16
+	},
+	{
+		"state" : "WASHINGTON",
+		"primary_drug" : "ALCOHOL",
+		"value" : 15
+	},
+	{
+		"state" : "WASHINGTON",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 10
+	},
+	{
+		"state" : "WASHINGTON",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 10
+	},
+	{
+		"state" : "WASHINGTON",
+		"primary_drug" : "NONE",
+		"value" : 2
+	},
+	{
+		"state" : "WASHINGTON",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 2
+	},
+	{
+		"state" : "WASHINGTON",
+		"primary_drug" : "OTHER AMPHETAMINES",
+		"value" : 1
+	},
+	{
+		"state" : "WASHINGTON",
+		"primary_drug" : "COCAINE/CRACK",
+		"value" : 1
+	},
+	{
+		"state" : "WASHINGTON",
+		"primary_drug" : "OTHER",
+		"value" : 1
+	},
+	{
+		"state" : "WASHINGTON",
+		"primary_drug" : "OTHER HALLUCINOGENS",
+		"value" : 1
+	},
+	{
+		"state" : "WISCONSIN",
+		"primary_drug" : "ALCOHOL",
+		"value" : 8
+	},
+	{
+		"state" : "WISCONSIN",
+		"primary_drug" : "HEROIN",
+		"value" : 5
+	},
+	{
+		"state" : "WISCONSIN",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 4
+	},
+	{
+		"state" : "WISCONSIN",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 2
+	},
+	{
+		"state" : "WYOMING",
+		"primary_drug" : "ALCOHOL",
+		"value" : 12
+	},
+	{
+		"state" : "WYOMING",
+		"primary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"value" : 9
+	},
+	{
+		"state" : "WYOMING",
+		"primary_drug" : "METHAMPHETAMINE",
+		"value" : 4
+	},
+	{
+		"state" : "WYOMING",
+		"primary_drug" : "MARIJUANA/HASHISH",
+		"value" : 3
+	},
+	{
+		"state" : "WYOMING",
+		"primary_drug" : "OTHER STIMULANTS",
+		"value" : 1
+	},
+	{
+		"state" : "WYOMING",
+		"primary_drug" : "HEROIN",
+		"value" : 1
+	}
+]
