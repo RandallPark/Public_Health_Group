@@ -476,15 +476,37 @@ order by
 
 
 -----------------------------------------------
---
+--treatment completed by state
 -----------------------------------------------
 
+select
+  region_de region, 
+  stfips_de state,
+  count(*) 'value'
+from
+  disch_lookups
+where reason_de = 'TREATMENT COMPLETED'
+group by
+   region_de, 
+  stfips_de;
 
 
 
+-----------------------------------------------
+--primary drug by state
+-----------------------------------------------
 
-
-
+select 
+  stfips_de state,
+  sub1_de primary_drug,
+  count(*) 'value'
+from
+  adm_lookups
+group by
+  stfips_de,
+  sub1_de
+order by
+  stfips_de, count(*) desc;
 
 
 
