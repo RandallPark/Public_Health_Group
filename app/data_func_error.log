@@ -1,0 +1,69 @@
+ERROR:root:(pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'sum( case when gender = 1 then 1 else 0 end ) male_count,                       ' at line 1")
+[SQL: CREATE TABLE mf_counts SELECT year_de                                        sum( case when gender = 1 then 1 else 0 end ) male_count,                                        sum( case when gender = 2 then 1 else 0 end ) female_count                                        FROM adm_lookups                                        WHERE year_de = '2016';]
+(Background on this error at: http://sqlalche.me/e/f405)
+ERROR:root:(pymysql.err.ProgrammingError) (1146, "Table 'project2.mf_counts' doesn't exist")
+[SQL: SELECT                                                round(((male_count /(male_count + female_count)) * 100), 2) 'male_addicts_pct',                                                round(((female_count /(male_count + female_count)) * 100), 2) 'female_addicts_pct'                                                FROM                                                mf_counts                                                WHERE                                                year_de = '2016';]
+(Background on this error at: http://sqlalche.me/e/f405)
+ERROR:root:(pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'sum( case when gender = 1 then 1 else 0 end ) male_count,                       ' at line 1")
+[SQL: CREATE TABLE mf_counts SELECT year_de                                        sum( case when gender = 1 then 1 else 0 end ) male_count,                                        sum( case when gender = 2 then 1 else 0 end ) female_count                                        FROM adm_lookups                                        WHERE year_de = '2016';]
+(Background on this error at: http://sqlalche.me/e/f405)
+ERROR:root:(pymysql.err.ProgrammingError) (1146, "Table 'project2.mf_counts' doesn't exist")
+[SQL: SELECT                                                round(((male_count /(male_count + female_count)) * 100), 2) 'male_addicts_pct',                                                round(((female_count /(male_count + female_count)) * 100), 2) 'female_addicts_pct'                                                FROM                                                mf_counts                                                WHERE                                                year_de = '2016';]
+(Background on this error at: http://sqlalche.me/e/f405)
+ERROR:root:(pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'sum( case when gender = 1 then 1 else 0 end ) male_count,                       ' at line 1")
+[SQL: CREATE TABLE mf_counts SELECT year_de                                        sum( case when gender = 1 then 1 else 0 end ) male_count,                                        sum( case when gender = 2 then 1 else 0 end ) female_count                                        FROM adm_lookups                                        WHERE year_de = '2016';]
+(Background on this error at: http://sqlalche.me/e/f405)
+ERROR:root:(pymysql.err.ProgrammingError) (1146, "Table 'project2.mf_counts' doesn't exist")
+[SQL: SELECT                                                round(((male_count /(male_count + female_count)) * 100), 2) 'male_addicts_pct',                                                round(((female_count /(male_count + female_count)) * 100), 2) 'female_addicts_pct'                                                FROM                                                mf_counts                                                WHERE                                                year_de = '2016';]
+(Background on this error at: http://sqlalche.me/e/f405)
+DEBUG:matplotlib:CACHEDIR=C:\Users\Jamuna Prakash\.matplotlib
+DEBUG:matplotlib.font_manager:Using fontManager instance from C:\Users\Jamuna Prakash\.matplotlib\fontlist-v300.json
+DEBUG:matplotlib.pyplot:Loaded backend qt5agg version unknown.
+DEBUG:matplotlib.pyplot:Loaded backend qt5agg version unknown.
+DEBUG:matplotlib.pyplot:Loaded backend Qt5Agg version unknown.
+DEBUG:matplotlib:CACHEDIR=C:\Users\Jamuna Prakash\.matplotlib
+DEBUG:matplotlib.font_manager:Using fontManager instance from C:\Users\Jamuna Prakash\.matplotlib\fontlist-v300.json
+DEBUG:matplotlib.pyplot:Loaded backend qt5agg version unknown.
+DEBUG:matplotlib.pyplot:Loaded backend qt5agg version unknown.
+DEBUG:matplotlib.pyplot:Loaded backend Qt5Agg version unknown.
+ERROR:root:(sqlalchemy.exc.ResourceClosedError) This Connection is closed
+[SQL: SELECT region, sum(deaths) total_deaths                                              FROM drug_deaths GROUP BY region;]
+ERROR:root:(sqlalchemy.exc.ResourceClosedError) This Connection is closed
+[SQL: SELECT sub1_de, count(*) FROM adm_lookups                                               GROUP BY sub1_de ORDER BY count(*) desc;]
+ERROR:root:
+Couldn't process query due to this error: 
+local variable 'error_flag' referenced before assignment
+DEBUG:matplotlib:CACHEDIR=C:\Users\Jamuna Prakash\.matplotlib
+DEBUG:matplotlib.font_manager:Using fontManager instance from C:\Users\Jamuna Prakash\.matplotlib\fontlist-v300.json
+DEBUG:matplotlib.pyplot:Loaded backend qt5agg version unknown.
+DEBUG:matplotlib.pyplot:Loaded backend qt5agg version unknown.
+DEBUG:matplotlib.pyplot:Loaded backend Qt5Agg version unknown.
+ERROR:root:
+Couldn't process query due to this error: 
+local variable 'error_flag' referenced before assignment
+ERROR:root:
+Couldn't process query due to this error: 
+local variable 'error_flag' referenced before assignment
+ERROR:root:
+Couldn't process query due to this error: 
+local variable 'error_flag' referenced before assignment
+ERROR:root:
+Couldn't process query due to this error: 
+(pymysql.err.ProgrammingError) (1146, "Table 'project2.test_table' doesn't exist")
+[SQL: SELECT * FROM test_table;]
+(Background on this error at: http://sqlalche.me/e/f405)
+ERROR:root:
+Couldn't process query due to this error: 
+(pymysql.err.ProgrammingError) (1146, "Table 'project2.test_table' doesn't exist")
+[SQL: SELECT * FROM test_table;]
+(Background on this error at: http://sqlalche.me/e/f405)
+DEBUG:matplotlib:CACHEDIR=C:\Users\Jamuna Prakash\.matplotlib
+DEBUG:matplotlib.font_manager:Using fontManager instance from C:\Users\Jamuna Prakash\.matplotlib\fontlist-v300.json
+DEBUG:matplotlib.pyplot:Loaded backend qt5agg version unknown.
+DEBUG:matplotlib.pyplot:Loaded backend qt5agg version unknown.
+DEBUG:matplotlib.pyplot:Loaded backend Qt5Agg version unknown.
+ERROR:root:
+Couldn't process query due to this error: 
+(pymysql.err.ProgrammingError) (1146, "Table 'project2.test_table' doesn't exist")
+[SQL: SELECT * FROM test_table;]
+(Background on this error at: http://sqlalche.me/e/f405)
