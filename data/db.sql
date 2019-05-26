@@ -945,6 +945,9 @@ create table adm_lookups as select
 FROM 
   admissions_raw;
 
+alter table adm_lookups add adm_lk_pk_id int auto_increment primary key first;
+
+
 select '------------------------------------------------------' from dual;
 select concat("Table adm_lookups created. Count is ", count(*) ) from adm_lookups;
 
@@ -1696,6 +1699,9 @@ as select
    else "Undefined"
    end gender_de 
 from discharges_raw;
+
+alter table disch_lookups add disch_lk_pk_id int auto_increment primary key first;
+
 
 select '------------------------------------------------------' from dual;
 select concat("Table disch_lookups created. Count is ", count(*) ) from disch_lookups;
