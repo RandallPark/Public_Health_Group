@@ -1,42 +1,58 @@
 [
 	{
 		"age_started" : "11 AND UNDER",
-		"treatment_completed" : 23371,
+		treatment_status:
+		{"treatment_completed" : 23371,
 		"treatment_incomplete" : 32410
+		}
 	},
 	{
 		"age_started" : "12 TO 14 YEARS",
-		"treatment_completed" : 82156,
-		"treatment_incomplete" : 114096
+		treatment_status: {
+			"treatment_completed" : 82156,
+			"treatment_incomplete" : 114096
+		}
 	},
 	{
 		"age_started" : "15 TO 17 YEARS",
-		"treatment_completed" : 115029,
-		"treatment_incomplete" : 148584
+		treatment_status: {
+			"treatment_completed" : 115029,
+			"treatment_incomplete" : 148584
+		}
 	},
 	{
 		"age_started" : "18 TO 20 YEARS",
-		"treatment_completed" : 80090,
-		"treatment_incomplete" : 108891
+		treatment_status: {
+			"treatment_completed" : 80090,
+			"treatment_incomplete" : 108891
+		}
 	},
 	{
 		"age_started" : "21 TO 24 YEARS",
-		"treatment_completed" : 50415,
-		"treatment_incomplete" : 74736
+		treatment_status: {
+			"treatment_completed" : 50415,
+			"treatment_incomplete" : 74736
+		}
 	},
 	{
 		"age_started" : "25 TO 29 YEARS",
-		"treatment_completed" : 33048,
-		"treatment_incomplete" : 55144
+		treatment_status: {
+			"treatment_completed" : 33048,
+			"treatment_incomplete" : 55144
+		}
 	},
 	{
 		"age_started" : "30 AND OVER",
-		"treatment_completed" : 38677,
-		"treatment_incomplete" : 63039
+		treatment_status: {
+			"treatment_completed" : 38677,
+			"treatment_incomplete" : 63039
+		}
 	},
 	{
 		"age_started" : "MISSING/UNKNOWN/NOT COLLECTED/INVALID",
-		"treatment_completed" : 9000,
-		"treatment_incomplete" : 19889
+		treatment_status: {
+			"treatment_completed" : 9000,
+			"treatment_incomplete" : 19889
+		}
 	}
 ]
