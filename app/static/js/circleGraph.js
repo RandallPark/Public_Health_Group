@@ -11,19 +11,19 @@ var svg = d3.select("#my_dataviz")
     .attr("height", height)
 
 // Read data
-d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/11_SevCatOneNumNestedOneObsPerGroup.csv", function(data) {
+d3.csv("../../data/pt_by_state.csv", function(data) {
 
   // Filter a bit the data -> more than 1 million inhabitants
-  data = data.filter(function(d){ return d.value>10000000 })
+  data = data.filter(function(d){ return d.value>1 })
 
   // Color palette for continents?
   var color = d3.scaleOrdinal()
-    .domain(["Asia", "Europe", "Africa", "Oceania", "Americas"])
+    .domain(["MIDWEST", "NORTHEAST", "SOUTH", "WEST", "US JURISDICTION/TERRITORY"])
     .range(d3.schemeSet1);
 
   // Size scale for countries
   var size = d3.scaleLinear()
-    .domain([0, 1400000000])
+    .domain([0, 120000])
     .range([7,55])  // circle will be between 7 and 55 px wide
 
   // create a tooltip
@@ -44,7 +44,7 @@ d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_data
   }
   var mousemove = function(d) {
     Tooltip
-      .html('<u>' + d.key + '</u>' + "<br>" + d.value + " inhabitants")
+      .html('<u>' + d.state + '</u>' + "<br>" + d.value + " patients")
       .style("left", (d3.mouse(this)[0]+20) + "px")
       .style("top", (d3.mouse(this)[1]) + "px")
   }
