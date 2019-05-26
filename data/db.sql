@@ -1,22 +1,15 @@
-<<<<<<< HEAD
+drop database if exists project2;
 
-select '------------------------------------------------------' from dual;
-select 'Creating table ADM_LOOKUPS' from dual;
-=======
-#--mysql -uroot -p -h127.0.0.1 sakila
-USE sakila;
-
-DROP DATABASE IF EXISTS project2;
 create database project2;
 
 use project2;
 
 
-#-------------------------------------------------#---------
+#----------------------------------------------------------
 #-- drug overdose data
-#-------------------------------------------------#---------
+#----------------------------------------------------------
 
-DROP TABLE IF EXISTS drug_deaths;
+
 create table drug_deaths
 (
    drug_deaths_pk_id               int(5) unsigned not null auto_increment
@@ -30,13 +23,12 @@ create table drug_deaths
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 
-
 LOAD DATA LOCAL INFILE  
-'C:\\Users\\Jamuna\ Prakash\\Desktop\\CLASSWORK_JP\\USCLOS201812DATA1\\Public_Health_Group\\data\\DRUG_DEATHS2016_ADDED_REGION.csv'
+'DRUG_DEATHS2016_ADDED_REGION.csv'
 INTO TABLE drug_deaths  
 FIELDS TERMINATED BY ',' 
 ENCLOSED BY '"'
-LINES TERMINATED BY '\n'
+LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS
 ( 
    year_de                    
@@ -48,10 +40,16 @@ IGNORE 1 ROWS
 )
 set drug_deaths_pk_id = null;  
 
-#-------------------------------------------------#---------
+select '------------------------------------------------------' from dual;
+select concat("Table drug_deaths created. Count is ", count(*) ) from drug_deaths; 
+
+#select count(*) from drug_deaths;
+#--count should be 50
+
+#----------------------------------------------------------
 #-- admissions_raw (csv data no manipulation)
-#-------------------------------------------------#---------
-DROP TABLE IF EXISTS admissions_raw;
+#----------------------------------------------------------
+
 create table admissions_raw
 (
    adm_pk_id                       int(20) unsigned not null auto_increment
@@ -123,11 +121,11 @@ create table admissions_raw
 
 #--LOAD RAW ADMISSIONS DATA (ALL)
 LOAD DATA LOCAL INFILE  
-'C:\\Users\\Jamuna\ Prakash\\Desktop\\CLASSWORK_JP\\USCLOS201812DATA1\\Public_Health_Group\\data\\admissions.csv'
+'admissions.csv'
 INTO TABLE admissions_raw  
 FIELDS TERMINATED BY ',' 
 ENCLOSED BY '"'
-LINES TERMINATED BY '\n'
+LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS
 (                      
    caseid
@@ -195,9 +193,15 @@ IGNORE 1 ROWS
 )
 set adm_pk_id = null;  
 
-#-------------------------------------------------#---------
+select '------------------------------------------------------' from dual;
+select concat("Table admissions_raw created. Count is ", count(*) ) from admissions_raw;
+
+#select count(*) from admissions_raw;
+#--should be 1048575
+
+#----------------------------------------------------------
 #-- discharges_raw (csv data no manipulation)
-#-------------------------------------------------#---------
+#----------------------------------------------------------
 
 create table discharges_raw
 (
@@ -286,11 +290,11 @@ create table discharges_raw
 
 #--LOAD RAW DISCHARGES DATA (ALL)
 LOAD DATA LOCAL INFILE  
-'C:\\Users\\Jamuna\ Prakash\\Desktop\\CLASSWORK_JP\\USCLOS201812DATA1\\Public_Health_Group\\data\\discharges.csv'
+'discharges.csv'
 INTO TABLE discharges_raw  
 FIELDS TERMINATED BY ',' 
 ENCLOSED BY '"'
-LINES TERMINATED BY '\n'
+LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS
 (                      
    disyr
@@ -374,15 +378,18 @@ IGNORE 1 ROWS
 )
 set disch_pk_id = null;  
 
->>>>>>> 274407e8846571a59c4d0572711c8e77fd934199
+select '------------------------------------------------------' from dual;
+select concat("Table discharges_raw created. Count is ", count(*) ) from discharges_raw;
+
+#select count(*) from discharges_raw;
+#--should be 1048757
+
 
 #--------------------------------
-#--admissions lookup table 
+#--table with lookup keys
 #--------------------------------
-
+#
 #--admissions data
-drop table adm_lookups;
-
 create table adm_lookups as select
    caseid 
   ,stfips
@@ -937,20 +944,14 @@ create table adm_lookups as select
    end idu_de  
 FROM 
   admissions_raw;
-  
-alter table adm_lookups add adm_lk_pk_id int auto_increment primary key first; 
+
+select '------------------------------------------------------' from dual;
+select concat("Table adm_lookups created. Count is ", count(*) ) from adm_lookups;
+
+#select count(*) from adm_lookups;
 
 
-
-
-
-
-#------------------------------------------------
-#--discharges lookup table
-#------------------------------------------------
-
-drop table disch_lookups;
-
+#--discharges data
 create table disch_lookups
 as select
    disyr
@@ -1468,13 +1469,99 @@ as select
    else "Undefined"
    end employ_d_de  
   ,livarag_d
+  ,case when livarag_d = 1  then "HOMELESS"
+        when livarag_d = 2  then "DEPENDENT LIVING"
+        when livarag_d = 3  then "INDEPENDENT LIVING"
+        when livarag_d = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
+   else "Undefined"
+   end livarag_d_de
   ,detnlf_d
+  ,case when detnlf_d = 1  then "HOMEMAKER"
+        when detnlf_d = 2  then "STUDENT"
+        when detnlf_d = 3  then "RETIRED, DISABLED"
+        when detnlf_d = 4  then "RESIDENT OF INSTITUTION"
+        when detnlf_d = 5  then "OTHER"
+        when detnlf_d = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
+   else "Undefined"
+   end detnlf_d_de
   ,freq1_d
+  ,case when freq1_d = 1  then "NO USE IN THE PAST MONTH"
+        when freq1_d = 2  then "SOME USE"
+        when freq1_d = 3  then "DAILY USE"
+        when freq1_d = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
+   else "Undefined"
+   end freq1_d_de
   ,freq2_d
+  ,case when freq2_d = 1  then "NO USE IN THE PAST MONTH"
+        when freq2_d = 2  then "SOME USE"
+        when freq2_d = 3  then "DAILY USE"
+        when freq2_d = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
+   else "Undefined"
+   end freq2_d_de 
   ,freq3_d
+  ,case when freq3_d = 1  then "NO USE IN THE PAST MONTH"
+        when freq3_d = 2  then "SOME USE"
+        when freq3_d = 3  then "DAILY USE"
+        when freq3_d = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
+   else "Undefined"
+   end freq3_d_de
   ,freq_atnd_self_help_d
+  ,case when freq_atnd_self_help_d = 1  then "NO ATTENDANCE"
+        when freq_atnd_self_help_d = 2  then "1-3 TIMES IN THE PAST MONTH"
+        when freq_atnd_self_help_d = 3  then "4-7 TIMES IN THE PAST MONTH"
+        when freq_atnd_self_help_d = 4  then "8-30 TIMES IN THE PAST MONTH"
+        when freq_atnd_self_help_d = 5  then "SOME ATTENDANCE, FREQUENCY IS UNKNOWN"
+        when freq_atnd_self_help_d = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
+   else "Undefined"
+   end freq_atnd_self_help_d_de
   ,los
+  ,case when los = 1  then "1"
+        when los = 2  then "2"
+        when los = 3  then "3"
+        when los = 4  then "4"
+        when los = 5  then "5"
+        when los = 6  then "6"
+        when los = 7  then "7"
+        when los = 8  then "8"
+        when los = 9  then "9"
+        when los = 10 then "10"
+        when los = 11 then "11"
+        when los = 12 then "12"
+        when los = 13 then "13"
+        when los = 14 then "14"
+        when los = 15 then "15"
+        when los = 16 then "16"
+        when los = 17 then "17"
+        when los = 18 then "18"
+        when los = 19 then "19"
+        when los = 20 then "20"
+        when los = 21 then "21"
+        when los = 22 then "22"
+        when los = 23 then "23"
+        when los = 24 then "24"
+        when los = 25 then "25"
+        when los = 26 then "26"
+        when los = 27 then "27"
+        when los = 28 then "28"
+        when los = 29 then "29"
+        when los = 30 then "30"
+        when los = 31 then "31 TO 45 DAYS"
+        when los = 32 then "46 TO 60 DAYS"
+        when los = 33 then "61 TO 90 DAYS"
+        when los = 34 then "91 TO 120 DAYS"
+        when los = 35 then "121 TO 180 DAYS"
+        when los = 36 then "181 TO 365 DAYS"
+        when los = 37 then "MORE THAN A YEAR"
+        when los = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
+   else "Undefined"
+   end los_de
   ,arrests_d
+  ,case when arrests_d = 0 then "NONE"
+        when arrests_d = 1 then "ONCE"
+        when arrests_d = 2 then "TWO OR MORE TIMES"
+        when arrests_d = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
+   else "Undefined"
+   end arrests_d_de
   ,alcflg
   ,case when alcflg = 0 then "SUBSTANCE NOT REPORTED"
         when alcflg = 1 then "SUBSTANCE REPORTED"
@@ -1567,55 +1654,81 @@ as select
    end otherflg_de
   ,numsubs
   ,idu
+  ,case when idu = 0  then "IDU NOT REPORTED"
+        when idu = 1  then "IDU REPORTED"
+        when idu = -9 then "NO SUBSTANCES REPORTED"
+   else "Undefined"
+   end idu_de 
   ,division
+  ,case when division = 0 then "US JURISDICTION/TERRITORY"
+        when division = 1 then "NEW ENGLAND"
+        when division = 2 then "MID-ATLANTIC"
+        when division = 3 then "EAST NORTH CENTRAL"
+        when division = 4 then "WEST NORTH CENTRAL"
+        when division = 5 then "SOUTH ATLANTIC"
+        when division = 6 then "EAST SOUTH CENTRAL"
+        when division = 7 then "WEST SOUTH CENTRAL"
+        when division = 8 then "MOUNTAIN"
+        when division = 9 then "PACIFIC"
+   else "Undefined"
+   end division_de
   ,region
+  ,case when region = 0 then "US JURISDICTION/TERRITORY"
+        when region = 1 then "NORTHEAST"
+        when region = 2 then "MIDWEST"
+        when region = 3 then "SOUTH"
+        when region = 4 then "WEST"
+   else "Undefined"
+   end region_de
   ,alcdrug
+  ,case when alcdrug = 0 then "NONE"
+        when alcdrug = 1 then "ALCOHOL ONLY"
+        when alcdrug = 2 then "OTHER DRUGS ONLY"
+        when alcdrug = 3 then "ALCOHOL AND OTHER DRUGS"
+   else "Undefined"
+   end alcdrug_de
   ,year_de
   ,cbsa
   ,gender
+  ,case when gender = 1  then "MALE"
+        when gender = 2  then "FEMALE"
+        when gender = -9 then "MISSING/UNKNOWN/NOT COLLECTED/INVALID"
+   else "Undefined"
+   end gender_de 
 from discharges_raw;
-
-<<<<<<< HEAD
-alter table disch_lookups add disch_lk_pk_id int auto_increment primary key first; 
-
 
 select '------------------------------------------------------' from dual;
 select concat("Table disch_lookups created. Count is ", count(*) ) from disch_lookups;
 
 #select count(*) from disch_lookups;
-=======
->>>>>>> 274407e8846571a59c4d0572711c8e77fd934199
 
 #-----------------------------------
 #--sample lookup table
 #-----------------------------------
 
-#create table age_lookup
-#(
-#   age_lookup_pk_id  int(5) unsigned not null auto_increment
-#  ,value_nr       smallint(5)
-#  ,age_range_de   varchar(15)
-#  ,primary key (drug_deaths_pk_id)
-#);
-#
-#insert into age_lookup values (null, 1, '12-14'); 
-#insert into age_lookup values (null, 2, '15-17'); 
-#insert into age_lookup values (null, 3, '18-20'); 
-#insert into age_lookup values (null, 4, '21-24'); 
-#insert into age_lookup values (null, 5, '25-29'); 
-#insert into age_lookup values (null, 6, '30-34'); 
-#insert into age_lookup values (null, 7, '35-39'); 
-#insert into age_lookup values (null, 8, '40-44'); 
-#insert into age_lookup values (null, 9, '45-49'); 
-#insert into age_lookup values (null, 10, '50-54');
-#insert into age_lookup values (null, 11, '55-64');
-#insert into age_lookup values (null, 12, '65 and older');
+create table age_lookup
+(
+   age_lookup_pk_id  int(5) unsigned not null auto_increment
+  ,value_nr       smallint(5)
+  ,age_range_de   varchar(15)
+  ,primary key (drug_deaths_pk_id)
+);
 
-<<<<<<< HEAD
-
-select '**** DATABASE SCRIPT COMPLETED SUCCESSFULLY ****' FROM DUAL;
+insert into age_lookup values (null, 1, '12-14'); 
+insert into age_lookup values (null, 2, '15-17'); 
+insert into age_lookup values (null, 3, '18-20'); 
+insert into age_lookup values (null, 4, '21-24'); 
+insert into age_lookup values (null, 5, '25-29'); 
+insert into age_lookup values (null, 6, '30-34'); 
+insert into age_lookup values (null, 7, '35-39'); 
+insert into age_lookup values (null, 8, '40-44'); 
+insert into age_lookup values (null, 9, '45-49'); 
+insert into age_lookup values (null, 10, '50-54');
+insert into age_lookup values (null, 11, '55-64');
+insert into age_lookup values (null, 12, '65 and older');
 
 
+select '**** SCRIPT COMPLETED SUCCESSFULLY ****' FROM DUAL;
 
-=======
->>>>>>> 274407e8846571a59c4d0572711c8e77fd934199
+
+

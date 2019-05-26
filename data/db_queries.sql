@@ -509,7 +509,68 @@ order by
   stfips_de, count(*) desc;
 
 
+-----------------------------------------------
+--heroin deaths by age
+-----------------------------------------------
 
+SELECT 
+  age_de 'age_group', 
+  sub1_de 'primary_drug',
+  reason_de 'discharge_reason',
+  count(*)
+FROM 
+  disch_lookups 
+WHERE 
+  sub1_de = 'HEROIN'
+  and reason_de = 'DEATH'
+group by
+  age_de,
+  sub1_de,
+  reason_de
+order by
+  age;
+
+--------------------------------------------------
+--
+--------------------------------------------------
+
+create table tx_completed
+as 
+select
+ frstuse1_de 'age_started',
+ count(reason_de) 'treatment_completed'
+from
+  disch_lookups
+where
+  reason_de = 'TREATMENT COMPLETED'
+group by
+  frstuse1_de;
+
+
+create table tx_incomplete
+as 
+select
+ frstuse1_de 'age_started',
+ count(reason_de) 'treatment_incomplete'
+from
+  disch_lookups
+where
+  reason_de != 'TREATMENT COMPLETED'
+group by
+  frstuse1_de;
+
+select
+  a.age_started,
+  sum(a.treatment_completed) treatment_completed,
+  sum(b.treatment_incomplete) treatment_incomplete
+from
+  tx_completed a,
+  tx_incomplete b
+where
+  a.age_started = b.age_started
+group by
+  a.age_started;
+  
 
 
 
