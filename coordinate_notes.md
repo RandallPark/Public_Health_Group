@@ -6,7 +6,14 @@ Tasks:
 
 
 #### Trends to look at:
-Use a GLM (generalized linear model) to determine the variable in the data set that have the largest statistical significance for determining treatment success. 
+Use a GLM (generalized linear model) to determine the variable in the data set that have the largest statistical significance for determining the average **treatment success** in REASON column. 
+
+### Data for Visual @Eddie
+1. In JSON format
+ - SELECT "FRSTUSE1", COUNT REASON == "TREATMENT COMPLETE" as "complete", COUNT REASON != TREATMENT COMPLETE as "not complete"
+ - groupy by "FRSTUSE1" (AGE AT FIRST USE (PRIMARY))
+ - COUNT  REASON == "TREATMENT COMPLETE"
+ - GROUPBY "FRSTUSE1"
 
 ### Analysis Questions
 
