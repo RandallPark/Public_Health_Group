@@ -67,3 +67,5 @@ Couldn't process query due to this error:
 (pymysql.err.ProgrammingError) (1146, "Table 'project2.test_table' doesn't exist")
 [SQL: SELECT * FROM test_table;]
 (Background on this error at: http://sqlalche.me/e/f405)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 953-478-970
