@@ -43,6 +43,7 @@ d3.csv("../../data/pt_by_state.csv", function(data) {
       .style("opacity", 1)
   }
   var mousemove = function(d) {
+    //console.log(d3.mouse(this))
     Tooltip
       .html('<u>' + d.state + '</u>' + "<br>" + d.value + " patients")
       .style("left", (d3.mouse(this)[0]+20) + "px")
