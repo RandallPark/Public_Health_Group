@@ -82,47 +82,85 @@ order by count(*) desc;
 --Error Code: 1206. The total number of locks exceeds the lock table size
 --bummer this won't work, hit error in lock table (basically too much data, value has to be increased)
 --Error Code 1206 solved.
-create table mf_counts select
-  year_de
-  sum( case when gender = 1 then 1 else 0 end ) male_count,
-  sum( case when gender = 2 then 1 else 0 end ) female_count
-from
-  adm_lookups
-  where year_de = '2016';
 
---graph this, pct of male vs. female addicts 2016
+--#ORIGINAL SYNTAX
+---create table mf_counts select
+---  year_de
+---  sum( case when gender = 1 then 1 else 0 end ) male_count,
+---  sum( case when gender = 2 then 1 else 0 end ) female_count
+---from
+---  adm_lookups
+---  where year_de = '2016';
+---
+-----graph this, pct of male vs. female addicts 2016
+---select
+---  round(((male_count /(male_count + female_count)) * 100), 2) 'male_addicts_pct',
+---  round(((female_count /(male_count + female_count)) * 100), 2) 'female_addicts_pct'
+---from
+---  mf_counts
+---where
+---  year_de = '2016';
+
+--MODIFIED FOR JAMUNA
+set @varYear='2016';
+
 select
-  round(((male_count /(male_count + female_count)) * 100), 2) 'male_addicts_pct',
-  round(((female_count /(male_count + female_count)) * 100), 2) 'female_addicts_pct'
+  x.year_de,
+  round(((x.male_count /(x.male_count + x.female_count)) * 100), 2) 'male_addicts_pct',
+  round(((x.female_count /(x.male_count + x.female_count)) * 100), 2) 'female_addicts_pct'
 from
-  mf_counts
-where
-  year_de = '2016';
-
+(
+  select
+    year_de,
+    sum( case when gender = 1 then 1 else 0 end ) male_count,
+    sum( case when gender = 2 then 1 else 0 end ) female_count
+  from
+    adm_lookups
+    where year_de = @varYear
+) x;
 
 
 -----------------------------------------------
 --veteran status as a pct of all admits for year
 -----------------------------------------------
 
-create table vet_status as
+--old syntax
+--create table vet_status as
+--select
+--year_de,
+--sum(case when vet_de = 'YES' then 1 else 0 end) 'VETERAN',
+--sum(case when vet_de = 'NO' then 1 else 0 end) 'NON_VETERAN'
+--FROM
+--ADM_LOOKUPS
+--where year_de = '2016';
+--
+----graph this, pct of vet vs. non-vet addicts 2016
+--select
+--  year_de,
+--  round(((VETERAN /(VETERAN + NON_VETERAN)) * 100), 2) 'VETERAN_PCT',
+--  round(((NON_VETERAN /(VETERAN + NON_VETERAN)) * 100), 2) 'NON_VETERAN_PCT'
+--from
+--  vet_status
+--where
+--  year_de = '2016';
+  
+  
+  
+--changed below for Jamuna's code to work
 select
-year_de,
-sum(case when vet_de = 'YES' then 1 else 0 end) 'VETERAN',
-sum(case when vet_de = 'NO' then 1 else 0 end) 'NON_VETERAN'
-FROM
-ADM_LOOKUPS
-where year_de = '2016';
-
---graph this, pct of vet vs. non-vet addicts 2016
-select
-  year_de,
-  round(((VETERAN /(VETERAN + NON_VETERAN)) * 100), 2) 'VETERAN_PCT',
-  round(((NON_VETERAN /(VETERAN + NON_VETERAN)) * 100), 2) 'NON_VETERAN_PCT'
+  x.year_de,
+  round(((x.VETERAN /(x.VETERAN + x.NON_VETERAN)) * 100), 2) 'VETERAN_PCT',
+  round(((x.NON_VETERAN /(x.VETERAN + x.NON_VETERAN)) * 100), 2) 'NON_VETERAN_PCT'
 from
-  vet_status
-where
-  year_de = '2016';
+(
+  select
+    year_de,
+    sum(case when vet_de = 'YES' then 1 else 0 end) 'VETERAN',
+    sum(case when vet_de = 'NO' then 1 else 0 end) 'NON_VETERAN'
+  FROM
+    ADM_LOOKUPS
+  where year_de = @varYear
+)x ;  
 
 -----------------------------------------------
 --top drug of choice for vets
@@ -534,42 +572,76 @@ order by
 --
 --------------------------------------------------
 
-create table tx_completed
-as 
-select
- frstuse1_de 'age_started',
- count(reason_de) 'treatment_completed'
-from
-  disch_lookups
-where
-  reason_de = 'TREATMENT COMPLETED'
-group by
-  frstuse1_de;
-
-
-create table tx_incomplete
-as 
-select
- frstuse1_de 'age_started',
- count(reason_de) 'treatment_incomplete'
-from
-  disch_lookups
-where
-  reason_de != 'TREATMENT COMPLETED'
-group by
-  frstuse1_de;
-
+--ORIGINAL SYNTAX
+--create table tx_completed
+--as 
+--select
+-- frstuse1_de 'age_started',
+-- count(reason_de) 'treatment_completed'
+--from
+--  disch_lookups
+--where
+--  reason_de = 'TREATMENT COMPLETED'
+--group by
+--  frstuse1_de;
+--
+--
+--create table tx_incomplete
+--as 
+--select
+-- frstuse1_de 'age_started',
+-- count(reason_de) 'treatment_incomplete'
+--from
+--  disch_lookups
+--where
+--  reason_de != 'TREATMENT COMPLETED'
+--group by
+--  frstuse1_de;
+--
+--select
+--  a.age_started,
+--  sum(a.treatment_completed) treatment_completed,
+--  sum(b.treatment_incomplete) treatment_incomplete
+--from
+--  tx_completed a,
+--  tx_incomplete b
+--where
+--  a.age_started = b.age_started
+--group by
+--  a.age_started;
+  
+  
+--changed to work for Jamuna  
 select
   a.age_started,
   sum(a.treatment_completed) treatment_completed,
   sum(b.treatment_incomplete) treatment_incomplete
 from
-  tx_completed a,
-  tx_incomplete b
+  (  
+    select
+     frstuse1_de 'age_started',
+     count(reason_de) 'treatment_completed'
+    from
+      disch_lookups
+    where
+      reason_de = 'TREATMENT COMPLETED'
+    group by
+      frstuse1_de
+   ) a,
+    (select
+      frstuse1_de 'age_started',
+      count(reason_de) 'treatment_incomplete'
+     from
+       disch_lookups
+     where
+       reason_de != 'TREATMENT COMPLETED'
+     group by
+       frstuse1_de
+     ) b
 where
   a.age_started = b.age_started
 group by
-  a.age_started;
+  a.age_started;   
   
 -----------------------------------------
 --admissions_raw_recoded
