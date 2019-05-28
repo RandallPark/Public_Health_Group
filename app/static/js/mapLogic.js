@@ -1,6 +1,10 @@
 // Creating map object
 var map = L.map('map').setView([37.8, -96], 5);
 var geojson;
+
+//creating a control panel to present info for each feature
+var info = L.control();
+
 // Adding tile layer
 L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
   attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
@@ -8,8 +12,6 @@ L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
   id: "mapbox.streets",
   accessToken: API_KEY
 }).addTo(map);
-
-
 
 
 // Function that will determine the color of each state based on stats
@@ -27,9 +29,18 @@ function chooseColor(s) {
                     '#f7f4f9';
 }
 
+// Read data from patient info by state
+var px_data = d3.csv("../../data/pt_by_state.csv")
+
+px_data.then(function(data) {
+  console.log(data[0].state)
+});
 
 function style(feature){
+  console.log("return function called");
   return{
+    // Call the chooseColor function to decide which color
+    //Set color for polygons here.
     fillColor: chooseColor(feature.properties.density),
     color:'white',
     fillOpacity: 0.3,
@@ -38,6 +49,10 @@ function style(feature){
   }
 };
 
+
+
+// Grabbing our GeoJSON data..
+// Creating a geoJSON layer with the retrieved data
 L.geoJson(statesData, {style: style}).addTo(map);
 
 function highlightFeature(e) {
@@ -59,6 +74,8 @@ function highlightFeature(e) {
   }
 };
 
+// When the cursor no longer hovers over a map feature - 
+//when the mouseout event occurs - the feature's opacity reverts back
 function resetHighlight(e) {
   console.log(e);
   geojson.resetStyle(e.target);
@@ -74,14 +91,15 @@ function onEachFeature(feature, layer) {
   });
 }
 
+// Style each feature 
 geojson = L.geoJson(statesData, {
   style: style,
   onEachFeature: onEachFeature
 }).addTo(map);
 
-//creating a control panel to present info for each feature
-var info = L.control();
 
+
+// Adding info control panel to map
 info.onAdd = function(map){
   this._div = L.DomUtil.create('div', 'info'); //creat div with class "info"
   this.update;
@@ -100,8 +118,6 @@ info.update = function(props) {
 info.addTo(map);
 
 //adding Legend to map
-// var legend = L.control({position: 'bottomright'});
-
 var legend = L.control({position: 'bottomright'});
 
 legend.onAdd = function (map) {
@@ -126,33 +142,13 @@ legend.onAdd = function (map) {
 
 legend.addTo(map);
 
-// legend.onAdd = function (map) {
-
-//   var div= L.DomUtil.creat('div', 'info legend'),
-//     grades = [0, 10, 20, 50, 100, 200, 500, 1000],
-//     labels = [];
-
-//   for (var i = 0; i < grades.length; i++) {
-//     div.innerHTML +=
-//       '<i style="background:' + chooseColor(grades[i] + 1) + '"></i> ' +
-//       grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
-//   }
-
-//   return div;
-// };
-
-// legend.addTo(map);
-
-
-// Grabbing our GeoJSON data..
-  // Creating a geoJSON layer with the retrieved data
 
 // L.geoJson(statesData, {
-//   // Style each feature 
+//   
 //   style: function(feature) {
 //     return {
 //       color: "white",
-//       // Call the chooseColor function to decide which color to color our neighborhood (color based on borough)
+//        to color our neighborhood (color based on borough)
 //       fillColor: chooseColor(feature.properties.density),
 //       fillOpacity: 0.5,
 //       weight: 1.5
@@ -172,7 +168,7 @@ legend.addTo(map);
 //           fillOpacity: 0.9
 //         });
 //       },
-//       // When the cursor no longer hovers over a map feature - when the mouseout event occurs - the feature's opacity reverts back to 50%
+//       
 //       mouseout: function(event) {
 //         console.log(event);
 //         layer = event.target;

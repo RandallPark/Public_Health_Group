@@ -13,7 +13,7 @@ var svg = d3.select("#my_dataviz")
 // Read data
 d3.csv("../../data/pt_by_state.csv", function(data) {
 
-  // Filter a bit the data -> more than 1 million inhabitants
+  // Filter a bit the data 
   data = data.filter(function(d){ return d.value>1 })
 
   // Color palette for continents?
