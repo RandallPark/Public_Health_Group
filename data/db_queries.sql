@@ -1552,6 +1552,9 @@ as select
         when reason = 7 then "OTHER"
    else "Undefined"
    end reason_de
+  ,case when reason = 1 then "TREATMENT COMPLETED"
+   else "TREATMENT INCOMPLETE"
+   end reason_class  
   ,case when sub1_d = 1  then "NONE"
         when sub1_d = 2  then "ALCOHOL"
         when sub1_d = 3  then "COCAINE/CRACK"
