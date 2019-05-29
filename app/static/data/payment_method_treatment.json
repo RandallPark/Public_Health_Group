@@ -1,0 +1,42 @@
+[
+	{
+		"payment_method" : "MEDICAID",
+		"treatment_completed" : 46457,
+		"treatment_incomplete" : 104503
+	},
+	{
+		"payment_method" : "MEDICARE",
+		"treatment_completed" : 1397,
+		"treatment_incomplete" : 2019
+	},
+	{
+		"payment_method" : "MISSING/UNKNOWN/NOT COLLECTED/INVALID",
+		"treatment_completed" : 279513,
+		"treatment_incomplete" : 390996
+	},
+	{
+		"payment_method" : "NO CHARGE (FREE, CHARITY, SPECIAL RESEARCH, TEACHING)",
+		"treatment_completed" : 5298,
+		"treatment_incomplete" : 13745
+	},
+	{
+		"payment_method" : "OTHER",
+		"treatment_completed" : 14786,
+		"treatment_incomplete" : 18208
+	},
+	{
+		"payment_method" : "OTHER GOVERNMENT PAYMENTS",
+		"treatment_completed" : 50008,
+		"treatment_incomplete" : 54182
+	},
+	{
+		"payment_method" : "PRIVATE INSURANCE (BLUE CROSS/BLUE SHIELD, OTHER HEALTH INSURANCE, WORKERS COMPENSATION)",
+		"treatment_completed" : 13281,
+		"treatment_incomplete" : 14886
+	},
+	{
+		"payment_method" : "SELF-PAY",
+		"treatment_completed" : 21046,
+		"treatment_incomplete" : 18250
+	}
+]

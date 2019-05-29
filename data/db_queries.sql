@@ -642,6 +642,94 @@ where
   a.age_started = b.age_started
 group by
   a.age_started;   
+
+--------------------------------------------------
+--treatment complete/incomplete by primary drug
+--------------------------------------------------
+
+select
+  a.primary_drug,
+  sum(a.treatment_completed) treatment_completed,
+  sum(b.treatment_incomplete) treatment_incomplete
+from
+  (  
+    select
+     sub1_de 'primary_drug',
+     count(reason_de) 'treatment_completed'
+    from
+      disch_lookup_final
+    where
+      reason_de = 'Complete'
+    group by
+      sub1_de
+   ) a,
+    (select
+      sub1_de 'primary_drug',
+      count(reason_de) 'treatment_incomplete'
+     from
+       disch_lookup_final
+     where
+       reason_de != 'Complete'
+     group by
+       sub1_de
+     ) b
+where
+  a.primary_drug = b.primary_drug
+group by
+  a.primary_drug;   
+
+
+--------------------------------------------------
+--treatment complete/incomplete by secondary drug
+--------------------------------------------------
+
+select
+  a.secondary_drug,
+  sum(a.treatment_completed) treatment_completed,
+  sum(b.treatment_incomplete) treatment_incomplete
+from
+  (  
+    select
+     sub1_de 'secondary_drug',
+     count(reason_de) 'treatment_completed'
+    from
+      disch_lookup_final
+    where
+      reason_de = 'Complete'
+    group by
+      sub1_de
+   ) a,
+    (select
+      sub1_de 'secondary_drug',
+      count(reason_de) 'treatment_incomplete'
+     from
+       disch_lookup_final
+     where
+       reason_de != 'Complete'
+     group by
+       sub1_de
+     ) b
+where
+  a.secondary_drug = b.secondary_drug
+group by
+  a.secondary_drug;   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 -----------------------------------------
 --admissions_raw_recoded
@@ -1827,6 +1915,44 @@ from discharges_raw;
 alter table discharges_raw_recoded add disch_raw_recoded_pk_id int auto_increment primary key first;
 
 
+-----------------------------------------------------------
+-- disch_lookup_final with reduced amount of columns
+-----------------------------------------------------------
 
+create table disch_lookup_final as select  
+  year_de,
+  age_de,
+  route1_de, 
+  freq1_de, 
+  sub3_d_de,
+  primpay_de, 
+  psyprob_de, 
+  daywait_de, 
+  detcrim_de, 
+  livarag_de,
+  freq_atnd_self_help_de,
+  los_de, 
+  sub3_de,
+  sub1_de, 
+  employ_d_de, 
+  sub1_d_de, 
+  sub2_d_de, 
+  region_de, 
+  stfips_de, 
+  freq_atnd_self_help_d_de,
+  division_de, 
+  livarag_d_de,
+  freq1_d_de,
+  services_d_de,
+  services_de,
+  alcdrug_de, 
+  arrests_de, 
+  hlthins_de, 
+  freq2_de,
+  case when reason_de = 'TREATMENT COMPLETED' then 'Complete'
+  else 'Incomplete'
+  end reason_de
+from
+  disch_lookups;
 
 
