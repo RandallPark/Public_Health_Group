@@ -1,0 +1,247 @@
+[
+	{
+		"region" : "MIDWEST",
+		"state" : "ILLINOIS",
+		"value" : 16291
+	},
+	{
+		"region" : "MIDWEST",
+		"state" : "INDIANA",
+		"value" : 18377
+	},
+	{
+		"region" : "MIDWEST",
+		"state" : "IOWA",
+		"value" : 24748
+	},
+	{
+		"region" : "MIDWEST",
+		"state" : "KANSAS",
+		"value" : 11664
+	},
+	{
+		"region" : "MIDWEST",
+		"state" : "MICHIGAN",
+		"value" : 56227
+	},
+	{
+		"region" : "MIDWEST",
+		"state" : "MINNESOTA",
+		"value" : 48542
+	},
+	{
+		"region" : "MIDWEST",
+		"state" : "MISSOURI",
+		"value" : 48678
+	},
+	{
+		"region" : "MIDWEST",
+		"state" : "NEBRASKA",
+		"value" : 13107
+	},
+	{
+		"region" : "MIDWEST",
+		"state" : "NORTH DAKOTA",
+		"value" : 2242
+	},
+	{
+		"region" : "MIDWEST",
+		"state" : "OHIO",
+		"value" : 690
+	},
+	{
+		"region" : "MIDWEST",
+		"state" : "SOUTH DAKOTA",
+		"value" : 176
+	},
+	{
+		"region" : "MIDWEST",
+		"state" : "WISCONSIN",
+		"value" : 46
+	},
+	{
+		"region" : "NORTHEAST",
+		"state" : "CONNECTICUT",
+		"value" : 61479
+	},
+	{
+		"region" : "NORTHEAST",
+		"state" : "MAINE",
+		"value" : 8379
+	},
+	{
+		"region" : "NORTHEAST",
+		"state" : "MASSACHUSETTS",
+		"value" : 69237
+	},
+	{
+		"region" : "NORTHEAST",
+		"state" : "NEW HAMPSHIRE",
+		"value" : 4853
+	},
+	{
+		"region" : "NORTHEAST",
+		"state" : "NEW JERSEY",
+		"value" : 67371
+	},
+	{
+		"region" : "NORTHEAST",
+		"state" : "NEW YORK",
+		"value" : 119876
+	},
+	{
+		"region" : "NORTHEAST",
+		"state" : "PENNSYLVANIA",
+		"value" : 585
+	},
+	{
+		"region" : "NORTHEAST",
+		"state" : "RHODE ISLAND",
+		"value" : 320
+	},
+	{
+		"region" : "NORTHEAST",
+		"state" : "VERMONT",
+		"value" : 258
+	},
+	{
+		"region" : "SOUTH",
+		"state" : "ALABAMA",
+		"value" : 6037
+	},
+	{
+		"region" : "SOUTH",
+		"state" : "ARKANSAS",
+		"value" : 9368
+	},
+	{
+		"region" : "SOUTH",
+		"state" : "DELAWARE",
+		"value" : 5211
+	},
+	{
+		"region" : "SOUTH",
+		"state" : "DISTRICT OF COLUMBIA",
+		"value" : 4059
+	},
+	{
+		"region" : "SOUTH",
+		"state" : "FLORIDA",
+		"value" : 28739
+	},
+	{
+		"region" : "SOUTH",
+		"state" : "KENTUCKY",
+		"value" : 49496
+	},
+	{
+		"region" : "SOUTH",
+		"state" : "LOUISIANA",
+		"value" : 10852
+	},
+	{
+		"region" : "SOUTH",
+		"state" : "MARYLAND",
+		"value" : 25797
+	},
+	{
+		"region" : "SOUTH",
+		"state" : "MISSISSIPPI",
+		"value" : 7092
+	},
+	{
+		"region" : "SOUTH",
+		"state" : "NORTH CAROLINA",
+		"value" : 57770
+	},
+	{
+		"region" : "SOUTH",
+		"state" : "OKLAHOMA",
+		"value" : 119
+	},
+	{
+		"region" : "SOUTH",
+		"state" : "TENNESSEE",
+		"value" : 122
+	},
+	{
+		"region" : "SOUTH",
+		"state" : "TEXAS",
+		"value" : 297
+	},
+	{
+		"region" : "SOUTH",
+		"state" : "Undefined",
+		"value" : 668
+	},
+	{
+		"region" : "SOUTH",
+		"state" : "VIRGINIA",
+		"value" : 135
+	},
+	{
+		"region" : "US JURISDICTION/TERRITORY",
+		"state" : "PUERTO RICO",
+		"value" : 55
+	},
+	{
+		"region" : "WEST",
+		"state" : "ALASKA",
+		"value" : 6953
+	},
+	{
+		"region" : "WEST",
+		"state" : "ARIZONA",
+		"value" : 21926
+	},
+	{
+		"region" : "WEST",
+		"state" : "CALIFORNIA",
+		"value" : 156936
+	},
+	{
+		"region" : "WEST",
+		"state" : "COLORADO",
+		"value" : 52180
+	},
+	{
+		"region" : "WEST",
+		"state" : "HAWAII",
+		"value" : 8753
+	},
+	{
+		"region" : "WEST",
+		"state" : "IDAHO",
+		"value" : 6880
+	},
+	{
+		"region" : "WEST",
+		"state" : "MONTANA",
+		"value" : 6453
+	},
+	{
+		"region" : "WEST",
+		"state" : "NEVADA",
+		"value" : 7872
+	},
+	{
+		"region" : "WEST",
+		"state" : "NEW MEXICO",
+		"value" : 855
+	},
+	{
+		"region" : "WEST",
+		"state" : "UTAH",
+		"value" : 297
+	},
+	{
+		"region" : "WEST",
+		"state" : "WASHINGTON",
+		"value" : 431
+	},
+	{
+		"region" : "WEST",
+		"state" : "WYOMING",
+		"value" : 76
+	}
+]

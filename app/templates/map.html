@@ -80,11 +80,11 @@
     <div id="map"></div>
 
     <!-- API key -->
-    <script type="text/javascript" src="../static/js/config.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/config.js') }}"></script>
     
     <!-- JS  -->
-    <script type="text/javascript" src="../static/js/statesData.js"></script>
-    <script type="text/javascript" src="../static/js/mapLogic.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/statesData.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/mapLogic.js') }}"></script>
 
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -1,6 +1,7 @@
 // Creating map object
 var map = L.map('map').setView([37.8, -96], 5);
 var geojson;
+var pt_data = {};
 
 //creating a control panel to present info for each feature
 var info = L.control();
@@ -30,10 +31,10 @@ function chooseColor(s) {
 }
 
 // Read data from patient info by state
-var px_data = d3.csv("../../data/pt_by_state.csv")
-
-px_data.then(function(data) {
-  console.log(data[0].state)
+d3.json("/static/data/pt_by_state.json").then(function(data) {
+  data.forEach(element => {
+    pt_data[element.state] = element;
+  });
 });
 
 function style(feature){
@@ -51,7 +52,7 @@ function style(feature){
 
 
 
-// Grabbing our GeoJSON data..
+// Grabbing our GeoJSON data.
 // Creating a geoJSON layer with the retrieved data
 L.geoJson(statesData, {style: style}).addTo(map);
 
@@ -109,8 +110,11 @@ info.onAdd = function(map){
 //method used to update control based on feature properties passed
 //adding html tags for a header, bold text and line break
 info.update = function(props) {
+  // TODO: check if state_key exists...
+  var state_key = props.name.toUpperCase();
+  var num_patients = pt_data[state_key].value;
   this._div.innerHTML = '<h4>US Substance Treatment</h4>' + (props ?
-    '<b>' +props.name + '</b><br />'+ props.density + ' people'
+    '<b>' +props.name + '</b><br />'+ num_patients + ' people'
     : 'Hoover over a state');
 
 }
