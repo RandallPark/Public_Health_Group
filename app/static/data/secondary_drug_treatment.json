@@ -1,0 +1,102 @@
+[
+	{
+		"secondary_drug" : "ALCOHOL",
+		"treatment_completed" : 37740,
+		"treatment_incomplete" : 55142
+	},
+	{
+		"secondary_drug" : "BARBITURATES",
+		"treatment_completed" : 200,
+		"treatment_incomplete" : 291
+	},
+	{
+		"secondary_drug" : "BENZODIAZEPINES",
+		"treatment_completed" : 11263,
+		"treatment_incomplete" : 19198
+	},
+	{
+		"secondary_drug" : "COCAINE/CRACK",
+		"treatment_completed" : 28378,
+		"treatment_incomplete" : 49230
+	},
+	{
+		"secondary_drug" : "HEROIN",
+		"treatment_completed" : 10195,
+		"treatment_incomplete" : 16029
+	},
+	{
+		"secondary_drug" : "INHALANTS",
+		"treatment_completed" : 150,
+		"treatment_incomplete" : 368
+	},
+	{
+		"secondary_drug" : "MARIJUANA/HASHISH",
+		"treatment_completed" : 50313,
+		"treatment_incomplete" : 77702
+	},
+	{
+		"secondary_drug" : "METHAMPHETAMINE",
+		"treatment_completed" : 17660,
+		"treatment_incomplete" : 28941
+	},
+	{
+		"secondary_drug" : "NON-PRESCRIPTION METHADONE",
+		"treatment_completed" : 455,
+		"treatment_incomplete" : 1101
+	},
+	{
+		"secondary_drug" : "NONE",
+		"treatment_completed" : 218801,
+		"treatment_incomplete" : 212924
+	},
+	{
+		"secondary_drug" : "OTHER",
+		"treatment_completed" : 9533,
+		"treatment_incomplete" : 6613
+	},
+	{
+		"secondary_drug" : "OTHER AMPHETAMINES",
+		"treatment_completed" : 1522,
+		"treatment_incomplete" : 2546
+	},
+	{
+		"secondary_drug" : "OTHER HALLUCINOGENS",
+		"treatment_completed" : 715,
+		"treatment_incomplete" : 1153
+	},
+	{
+		"secondary_drug" : "OTHER NON-BARBITURATE SEDATIVES OR HYPNOTICS",
+		"treatment_completed" : 1011,
+		"treatment_incomplete" : 1669
+	},
+	{
+		"secondary_drug" : "OTHER NON-BENZODIAZEPINE TRANQUILIZERS",
+		"treatment_completed" : 85,
+		"treatment_incomplete" : 161
+	},
+	{
+		"secondary_drug" : "OTHER OPIATES AND SYNTHETICS",
+		"treatment_completed" : 13036,
+		"treatment_incomplete" : 27062
+	},
+	{
+		"secondary_drug" : "OTHER STIMULANTS",
+		"treatment_completed" : 455,
+		"treatment_incomplete" : 831
+	},
+	{
+		"secondary_drug" : "OVER-THE-COUNTER MEDICATIONS",
+		"treatment_completed" : 217,
+		"treatment_incomplete" : 297
+	},
+	{
+		"secondary_drug" : "PCP",
+		"treatment_completed" : 553,
+		"treatment_incomplete" : 940
+	},
+	{
+		"secondary_drug" : "Undefined",
+		"treatment_completed" : 29504,
+		"treatment_incomplete" : 114591
+	}
+]
