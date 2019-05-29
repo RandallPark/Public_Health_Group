@@ -1,6 +1,6 @@
 ##Public_Health_Group : Feature Selection algorithm
 # 
-# Feature Engineering - using R's Boruta library 
+# Feature Selection - using R's Boruta library 
 # -----------------------------------------------
 
 # *Background:*
