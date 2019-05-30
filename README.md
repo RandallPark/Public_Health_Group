@@ -23,8 +23,8 @@ Data is for year 2016 only and was obtained from the following:
  - **Rename** [`config_temp.py`](config_temp.py) to [`config.py`](config.py). 
  - Update the database credentials for your local MySQL instance. **Be aware** that SQLAlchemy uses different Dialects and the string for connecting to MySQL can be 'mysql' or 'mysql+pymysql' depending on your environment. This will be set in `config.py` as `dialect =`.
 ---
-- Go to the `data` folder of this repository.
-- Pull all files in the `data` folder and keep together in your local folder.
+- Go to the `data_master` folder of this repository.
+- Pull all files in the `data_master` folder and keep together in your local folder.
 - Open a command prompt, navigate to script/file location and run: ` >>> python db_load.py`
 =======
 # Public_Health_Group #
@@ -37,7 +37,7 @@ Steps to EXPORT database tables using mysqldump
 ---------------------------------------------------------------------
 1.From Command Prompt (Terminal window):
 ---------------------------------------
-1. Navigate to your project folder and to the /data folder.*Note: User needs have enough privilleges:*
+1. Navigate to your project folder and to the /data_master folder.*Note: User needs have enough privilleges:*
 2. Establish a connection to mysql using the following command:
 **mysql -uroot -p -h127.0.0.1**
 3. Within 'mysql>' prompt, type the following to start a large database dump using:
@@ -60,7 +60,7 @@ Steps to EXPORT database tables using mysqldump
 
 3.From Windows' File Explorer:
 ------------------------------
-1. **Navigate** to your project directory and /data folder.
+1. **Navigate** to your project directory and /data_master folder.
 2. Right click on **'dumps'**; choose **'Send to'->'Compressed(zipped) folder**.
 
 ---------------------------------------------------------------------

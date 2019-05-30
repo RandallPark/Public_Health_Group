@@ -1330,38 +1330,6 @@ select concat("Table disch_lookups created. Count is ", count(*) ) from disch_lo
 
 #select count(*) from disch_lookups;
 
-#---------------------------------------
-#-- map visualization table
-#---------------------------------------
-
-drop table map_viz;
-
-create table map_viz as
-select
-  b.year_de,
-  a.state_full_name_de,
-  a.deaths,
-  sum(case when b.gender_de = 'MALE' then 1 else 0 end) male_count,
-  sum(case when b.gender_de = 'FEMALE' then 1 else 0 end) female_count,
-  sum(case when b.reason_de = 'Complete' then 1 else 0 end) tx_complete,
-  sum(case when b.reason_de = 'Incomplete' then 1 else 0 end) tx_incomplete
-from
-  drug_deaths a,
-  disch_lookup_final b
-where
-  upper(a.state_full_name_de) = upper(b.stfips_de)
-group by
-  b.year_de,
-  a.state_full_name_de,
-  a.deaths
-order by
-  a.state_full_name_de;
-  
-alter table map_viz add map_viz_pk_id int auto_increment primary key first;  
-
-select '------------------------------------------------------' from dual;
-select concat("Table map_viz created. Count is ", count(*) ) from map_viz;
-
 #-----------------------------------------
 #--admissions_raw_recoded
 #-----------------------------------------
@@ -2603,5 +2571,99 @@ alter table disch_lookup_final add disch_raw_final_pk_id int auto_increment prim
 
 select '------------------------------------------------------' from dual;
 select concat("Table disch_lookup_final created. Count is ", count(*) ) from disch_lookup_final;
+
+
+#---------------------------------------------------
+#-- drug death table modification
+#---------------------------------------------------
+
+alter table drug_deaths add column state_full_name_de varchar(25);
+
+update drug_deaths
+set state_full_name_de = case when state_de = 'AK' then 'Alaska'
+                              when state_de = 'AL' then 'Alabama'
+                              when state_de = 'AR' then 'Arkansas'
+                              when state_de = 'AZ' then 'Arizona'
+                              when state_de = 'CA' then 'California'
+                              when state_de = 'CO' then 'Colorado'
+                              when state_de = 'CT' then 'Connecticut'
+                              when state_de = 'DE' then 'Delaware'
+                              when state_de = 'FL' then 'Florida'
+                              when state_de = 'GA' then 'Georgia'
+                              when state_de = 'HI' then 'Hawaii'
+                              when state_de = 'IA' then 'Iowa'
+                              when state_de = 'ID' then 'Idaho'
+                              when state_de = 'IL' then 'Illinois'
+                              when state_de = 'IN' then 'Indiana'
+                              when state_de = 'KS' then 'Kansas'
+                              when state_de = 'KY' then 'Kentucky'
+                              when state_de = 'LA' then 'Louisiana'
+                              when state_de = 'MA' then 'Massachusetts'
+                              when state_de = 'MD' then 'Maryland'
+                              when state_de = 'ME' then 'Maine'
+                              when state_de = 'MI' then 'Michigan'
+                              when state_de = 'MN' then 'Minnesota'
+                              when state_de = 'MO' then 'Missouri'
+                              when state_de = 'MS' then 'Mississippi'
+                              when state_de = 'MT' then 'Montana'
+                              when state_de = 'NC' then 'North Carolina'
+                              when state_de = 'ND' then 'North Dakota'
+                              when state_de = 'NE' then 'Nebraska'
+                              when state_de = 'NH' then 'New Hampshire'
+                              when state_de = 'NJ' then 'New Jersey'
+                              when state_de = 'NM' then 'New Mexico'
+                              when state_de = 'NV' then 'Nevada'
+                              when state_de = 'NY' then 'New York'
+                              when state_de = 'OH' then 'Ohio'
+                              when state_de = 'OK' then 'Oklahoma'
+                              when state_de = 'OR' then 'Oregon'
+                              when state_de = 'PA' then 'Pennsylvania'
+                              when state_de = 'RI' then 'Rhode Island'
+                              when state_de = 'SC' then 'South Carolina'
+                              when state_de = 'SD' then 'South Dakota'
+                              when state_de = 'TN' then 'Tennessee'
+                              when state_de = 'TX' then 'Texas'
+                              when state_de = 'UT' then 'Utah'
+                              when state_de = 'VA' then 'Virginia'
+                              when state_de = 'VT' then 'Vermont'
+                              when state_de = 'WA' then 'Washington'
+                              when state_de = 'WI' then 'Wisconsin'
+                              when state_de = 'WV' then 'West Virginia'
+                              when state_de = 'WY' then 'Wyoming'
+                         end state_full_name_de;
+
+ALTER TABLE drug_deaths CONVERT TO CHARACTER SET cp850 COLLATE 'cp850_general_ci';  
+
+#---------------------------------------
+#-- map visualization table
+#---------------------------------------
+
+drop table map_viz;
+
+create table map_viz as
+select
+  b.year_de,
+  a.state_full_name_de,
+  a.deaths,
+  sum(case when b.gender_de = 'MALE' then 1 else 0 end) male_count,
+  sum(case when b.gender_de = 'FEMALE' then 1 else 0 end) female_count,
+  sum(case when b.reason_de = 'Complete' then 1 else 0 end) tx_complete,
+  sum(case when b.reason_de = 'Incomplete' then 1 else 0 end) tx_incomplete
+from
+  drug_deaths a,
+  disch_lookup_final b
+where
+  upper(a.state_full_name_de) = upper(b.stfips_de)
+group by
+  b.year_de,
+  a.state_full_name_de,
+  a.deaths
+order by
+  a.state_full_name_de;
+  
+alter table map_viz add map_viz_pk_id int auto_increment primary key first;  
+
+select '------------------------------------------------------' from dual;
+select concat("Table map_viz created. Count is ", count(*) ) from map_viz;
 
 select '**** DATABASE SCRIPT COMPLETED SUCCESSFULLY ****' FROM DUAL;
