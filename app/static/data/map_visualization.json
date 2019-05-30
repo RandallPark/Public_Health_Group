@@ -1,0 +1,462 @@
+[
+	{
+		"map_viz_pk_id" : 1,
+		"year_de" : 2016,
+		"state_full_name_de" : "Alabama",
+		"deaths" : 756,
+		"male_count" : 3804,
+		"female_count" : 2233,
+		"tx_complete" : 2650,
+		"tx_incomplete" : 3387
+	},
+	{
+		"map_viz_pk_id" : 2,
+		"year_de" : 2016,
+		"state_full_name_de" : "Alaska",
+		"deaths" : 128,
+		"male_count" : 4269,
+		"female_count" : 2684,
+		"tx_complete" : 3499,
+		"tx_incomplete" : 3454
+	},
+	{
+		"map_viz_pk_id" : 3,
+		"year_de" : 2016,
+		"state_full_name_de" : "Arizona",
+		"deaths" : 1382,
+		"male_count" : 12238,
+		"female_count" : 9688,
+		"tx_complete" : 5214,
+		"tx_incomplete" : 16712
+	},
+	{
+		"map_viz_pk_id" : 4,
+		"year_de" : 2016,
+		"state_full_name_de" : "Arkansas",
+		"deaths" : 401,
+		"male_count" : 5926,
+		"female_count" : 3440,
+		"tx_complete" : 4908,
+		"tx_incomplete" : 4460
+	},
+	{
+		"map_viz_pk_id" : 5,
+		"year_de" : 2016,
+		"state_full_name_de" : "California",
+		"deaths" : 4654,
+		"male_count" : 97522,
+		"female_count" : 59326,
+		"tx_complete" : 51586,
+		"tx_incomplete" : 105350
+	},
+	{
+		"map_viz_pk_id" : 6,
+		"year_de" : 2016,
+		"state_full_name_de" : "Colorado",
+		"deaths" : 942,
+		"male_count" : 37825,
+		"female_count" : 14355,
+		"tx_complete" : 41603,
+		"tx_incomplete" : 10577
+	},
+	{
+		"map_viz_pk_id" : 7,
+		"year_de" : 2016,
+		"state_full_name_de" : "Connecticut",
+		"deaths" : 971,
+		"male_count" : 42611,
+		"female_count" : 18783,
+		"tx_complete" : 29543,
+		"tx_incomplete" : 31936
+	},
+	{
+		"map_viz_pk_id" : 8,
+		"year_de" : 2016,
+		"state_full_name_de" : "Delaware",
+		"deaths" : 282,
+		"male_count" : 3839,
+		"female_count" : 1362,
+		"tx_complete" : 2099,
+		"tx_incomplete" : 3112
+	},
+	{
+		"map_viz_pk_id" : 9,
+		"year_de" : 2016,
+		"state_full_name_de" : "Florida",
+		"deaths" : 4728,
+		"male_count" : 18163,
+		"female_count" : 10576,
+		"tx_complete" : 20235,
+		"tx_incomplete" : 8504
+	},
+	{
+		"map_viz_pk_id" : 10,
+		"year_de" : 2016,
+		"state_full_name_de" : "Hawaii",
+		"deaths" : 191,
+		"male_count" : 5934,
+		"female_count" : 2819,
+		"tx_complete" : 3048,
+		"tx_incomplete" : 5705
+	},
+	{
+		"map_viz_pk_id" : 11,
+		"year_de" : 2016,
+		"state_full_name_de" : "Idaho",
+		"deaths" : 243,
+		"male_count" : 4443,
+		"female_count" : 2437,
+		"tx_complete" : 2707,
+		"tx_incomplete" : 4173
+	},
+	{
+		"map_viz_pk_id" : 12,
+		"year_de" : 2016,
+		"state_full_name_de" : "Illinois",
+		"deaths" : 2411,
+		"male_count" : 10535,
+		"female_count" : 5756,
+		"tx_complete" : 5129,
+		"tx_incomplete" : 11162
+	},
+	{
+		"map_viz_pk_id" : 13,
+		"year_de" : 2016,
+		"state_full_name_de" : "Indiana",
+		"deaths" : 1526,
+		"male_count" : 10996,
+		"female_count" : 7381,
+		"tx_complete" : 5971,
+		"tx_incomplete" : 12406
+	},
+	{
+		"map_viz_pk_id" : 14,
+		"year_de" : 2016,
+		"state_full_name_de" : "Iowa",
+		"deaths" : 314,
+		"male_count" : 16105,
+		"female_count" : 8637,
+		"tx_complete" : 11429,
+		"tx_incomplete" : 13319
+	},
+	{
+		"map_viz_pk_id" : 15,
+		"year_de" : 2016,
+		"state_full_name_de" : "Kansas",
+		"deaths" : 313,
+		"male_count" : 6898,
+		"female_count" : 4766,
+		"tx_complete" : 2584,
+		"tx_incomplete" : 9080
+	},
+	{
+		"map_viz_pk_id" : 16,
+		"year_de" : 2016,
+		"state_full_name_de" : "Kentucky",
+		"deaths" : 1419,
+		"male_count" : 25414,
+		"female_count" : 24066,
+		"tx_complete" : 5373,
+		"tx_incomplete" : 44123
+	},
+	{
+		"map_viz_pk_id" : 17,
+		"year_de" : 2016,
+		"state_full_name_de" : "Louisiana",
+		"deaths" : 996,
+		"male_count" : 6898,
+		"female_count" : 3951,
+		"tx_complete" : 1246,
+		"tx_incomplete" : 9606
+	},
+	{
+		"map_viz_pk_id" : 18,
+		"year_de" : 2016,
+		"state_full_name_de" : "Maine",
+		"deaths" : 353,
+		"male_count" : 5064,
+		"female_count" : 3315,
+		"tx_complete" : 3473,
+		"tx_incomplete" : 4906
+	},
+	{
+		"map_viz_pk_id" : 19,
+		"year_de" : 2016,
+		"state_full_name_de" : "Maryland",
+		"deaths" : 2044,
+		"male_count" : 15530,
+		"female_count" : 10267,
+		"tx_complete" : 3336,
+		"tx_incomplete" : 22461
+	},
+	{
+		"map_viz_pk_id" : 20,
+		"year_de" : 2016,
+		"state_full_name_de" : "Massachusetts",
+		"deaths" : 2227,
+		"male_count" : 47919,
+		"female_count" : 21262,
+		"tx_complete" : 38134,
+		"tx_incomplete" : 31103
+	},
+	{
+		"map_viz_pk_id" : 21,
+		"year_de" : 2016,
+		"state_full_name_de" : "Michigan",
+		"deaths" : 2347,
+		"male_count" : 34426,
+		"female_count" : 21801,
+		"tx_complete" : 15204,
+		"tx_incomplete" : 41023
+	},
+	{
+		"map_viz_pk_id" : 22,
+		"year_de" : 2016,
+		"state_full_name_de" : "Minnesota",
+		"deaths" : 672,
+		"male_count" : 31524,
+		"female_count" : 17018,
+		"tx_complete" : 25015,
+		"tx_incomplete" : 23527
+	},
+	{
+		"map_viz_pk_id" : 23,
+		"year_de" : 2016,
+		"state_full_name_de" : "Mississippi",
+		"deaths" : 352,
+		"male_count" : 4369,
+		"female_count" : 2721,
+		"tx_complete" : 1206,
+		"tx_incomplete" : 5886
+	},
+	{
+		"map_viz_pk_id" : 24,
+		"year_de" : 2016,
+		"state_full_name_de" : "Missouri",
+		"deaths" : 1371,
+		"male_count" : 29375,
+		"female_count" : 19303,
+		"tx_complete" : 11236,
+		"tx_incomplete" : 37442
+	},
+	{
+		"map_viz_pk_id" : 25,
+		"year_de" : 2016,
+		"state_full_name_de" : "Montana",
+		"deaths" : 119,
+		"male_count" : 3927,
+		"female_count" : 2526,
+		"tx_complete" : 2925,
+		"tx_incomplete" : 3528
+	},
+	{
+		"map_viz_pk_id" : 26,
+		"year_de" : 2016,
+		"state_full_name_de" : "Nebraska",
+		"deaths" : 120,
+		"male_count" : 9020,
+		"female_count" : 4072,
+		"tx_complete" : 8677,
+		"tx_incomplete" : 4430
+	},
+	{
+		"map_viz_pk_id" : 27,
+		"year_de" : 2016,
+		"state_full_name_de" : "Nevada",
+		"deaths" : 665,
+		"male_count" : 5250,
+		"female_count" : 2622,
+		"tx_complete" : 3394,
+		"tx_incomplete" : 4478
+	},
+	{
+		"map_viz_pk_id" : 28,
+		"year_de" : 2016,
+		"state_full_name_de" : "New Hampshire",
+		"deaths" : 481,
+		"male_count" : 2686,
+		"female_count" : 2167,
+		"tx_complete" : 1811,
+		"tx_incomplete" : 3042
+	},
+	{
+		"map_viz_pk_id" : 29,
+		"year_de" : 2016,
+		"state_full_name_de" : "New Jersey",
+		"deaths" : 2056,
+		"male_count" : 45244,
+		"female_count" : 22108,
+		"tx_complete" : 36370,
+		"tx_incomplete" : 31001
+	},
+	{
+		"map_viz_pk_id" : 30,
+		"year_de" : 2016,
+		"state_full_name_de" : "New Mexico",
+		"deaths" : 500,
+		"male_count" : 543,
+		"female_count" : 259,
+		"tx_complete" : 135,
+		"tx_incomplete" : 720
+	},
+	{
+		"map_viz_pk_id" : 31,
+		"year_de" : 2016,
+		"state_full_name_de" : "New York",
+		"deaths" : 3638,
+		"male_count" : 86449,
+		"female_count" : 33427,
+		"tx_complete" : 54350,
+		"tx_incomplete" : 65526
+	},
+	{
+		"map_viz_pk_id" : 32,
+		"year_de" : 2016,
+		"state_full_name_de" : "North Carolina",
+		"deaths" : 1956,
+		"male_count" : 38903,
+		"female_count" : 18844,
+		"tx_complete" : 23746,
+		"tx_incomplete" : 34024
+	},
+	{
+		"map_viz_pk_id" : 33,
+		"year_de" : 2016,
+		"state_full_name_de" : "North Dakota",
+		"deaths" : 77,
+		"male_count" : 1304,
+		"female_count" : 931,
+		"tx_complete" : 409,
+		"tx_incomplete" : 1833
+	},
+	{
+		"map_viz_pk_id" : 34,
+		"year_de" : 2016,
+		"state_full_name_de" : "Ohio",
+		"deaths" : 4329,
+		"male_count" : 433,
+		"female_count" : 256,
+		"tx_complete" : 159,
+		"tx_incomplete" : 531
+	},
+	{
+		"map_viz_pk_id" : 35,
+		"year_de" : 2016,
+		"state_full_name_de" : "Oklahoma",
+		"deaths" : 813,
+		"male_count" : 56,
+		"female_count" : 63,
+		"tx_complete" : 30,
+		"tx_incomplete" : 89
+	},
+	{
+		"map_viz_pk_id" : 36,
+		"year_de" : 2016,
+		"state_full_name_de" : "Pennsylvania",
+		"deaths" : 4627,
+		"male_count" : 397,
+		"female_count" : 188,
+		"tx_complete" : 187,
+		"tx_incomplete" : 398
+	},
+	{
+		"map_viz_pk_id" : 37,
+		"year_de" : 2016,
+		"state_full_name_de" : "Rhode Island",
+		"deaths" : 326,
+		"male_count" : 184,
+		"female_count" : 136,
+		"tx_complete" : 84,
+		"tx_incomplete" : 236
+	},
+	{
+		"map_viz_pk_id" : 38,
+		"year_de" : 2016,
+		"state_full_name_de" : "South Dakota",
+		"deaths" : 69,
+		"male_count" : 99,
+		"female_count" : 77,
+		"tx_complete" : 75,
+		"tx_incomplete" : 101
+	},
+	{
+		"map_viz_pk_id" : 39,
+		"year_de" : 2016,
+		"state_full_name_de" : "Tennessee",
+		"deaths" : 1630,
+		"male_count" : 68,
+		"female_count" : 54,
+		"tx_complete" : 42,
+		"tx_incomplete" : 80
+	},
+	{
+		"map_viz_pk_id" : 40,
+		"year_de" : 2016,
+		"state_full_name_de" : "Texas",
+		"deaths" : 2831,
+		"male_count" : 123,
+		"female_count" : 174,
+		"tx_complete" : 97,
+		"tx_incomplete" : 200
+	},
+	{
+		"map_viz_pk_id" : 41,
+		"year_de" : 2016,
+		"state_full_name_de" : "Utah",
+		"deaths" : 635,
+		"male_count" : 124,
+		"female_count" : 173,
+		"tx_complete" : 91,
+		"tx_incomplete" : 206
+	},
+	{
+		"map_viz_pk_id" : 42,
+		"year_de" : 2016,
+		"state_full_name_de" : "Vermont",
+		"deaths" : 125,
+		"male_count" : 114,
+		"female_count" : 144,
+		"tx_complete" : 46,
+		"tx_incomplete" : 212
+	},
+	{
+		"map_viz_pk_id" : 43,
+		"year_de" : 2016,
+		"state_full_name_de" : "Virginia",
+		"deaths" : 1405,
+		"male_count" : 37,
+		"female_count" : 98,
+		"tx_complete" : 47,
+		"tx_incomplete" : 88
+	},
+	{
+		"map_viz_pk_id" : 44,
+		"year_de" : 2016,
+		"state_full_name_de" : "Washington",
+		"deaths" : 1102,
+		"male_count" : 197,
+		"female_count" : 234,
+		"tx_complete" : 84,
+		"tx_incomplete" : 347
+	},
+	{
+		"map_viz_pk_id" : 45,
+		"year_de" : 2016,
+		"state_full_name_de" : "Wisconsin",
+		"deaths" : 1074,
+		"male_count" : 18,
+		"female_count" : 28,
+		"tx_complete" : 18,
+		"tx_incomplete" : 28
+	},
+	{
+		"map_viz_pk_id" : 46,
+		"year_de" : 2016,
+		"state_full_name_de" : "Wyoming",
+		"deaths" : 99,
+		"male_count" : 44,
+		"female_count" : 32,
+		"tx_complete" : 24,
+		"tx_incomplete" : 52
+	}
+]
