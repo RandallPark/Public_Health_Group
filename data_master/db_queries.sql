@@ -211,7 +211,7 @@ count of male, female, tx_complete, tx_incomplete,
 
 
 --TABLE MODIFICATIONS TO PERFORM THIS JOIN
-alter table drug_deaths add column state_full_name_de varchar(25) fourth;
+alter table drug_deaths add column state_full_name_de varchar(25);
 
 update drug_deaths
 set state_full_name_de = case when state_de = 'AK' then 'Alaska'
@@ -321,7 +321,8 @@ group by
   a.deaths
 order by
   a.state_full_name_de;
-
+  
+alter table map_viz add map_viz_pk_id int auto_increment primary key first;  
 
 
 --########################################################################################
