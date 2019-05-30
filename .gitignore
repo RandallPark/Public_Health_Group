@@ -107,6 +107,6 @@ venv.bak/
 .DS_Store
 data/.DS_Store
 
-#random file?
+#random files from Public Health group project
 .vscode/
-
+app/data_func_error.log
