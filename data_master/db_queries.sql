@@ -204,14 +204,125 @@ select
 from
   drug_deaths;
   
+--new viz
+/* deaths,
+count of male, female, tx_complete, tx_incomplete, 
+*/ 
+
+
+--TABLE MODIFICATIONS TO PERFORM THIS JOIN
+alter table drug_deaths add column state_full_name_de varchar(25);
+
+update drug_deaths
+set state_full_name_de = case when state_de = 'AK' then 'Alaska'
+                              when state_de = 'AL' then 'Alabama'
+                              when state_de = 'AR' then 'Arkansas'
+                              when state_de = 'AZ' then 'Arizona'
+                              when state_de = 'CA' then 'California'
+                              when state_de = 'CO' then 'Colorado'
+                              when state_de = 'CT' then 'Connecticut'
+                              when state_de = 'DE' then 'Delaware'
+                              when state_de = 'FL' then 'Florida'
+                              when state_de = 'GA' then 'Georgia'
+                              when state_de = 'HI' then 'Hawaii'
+                              when state_de = 'IA' then 'Iowa'
+                              when state_de = 'ID' then 'Idaho'
+                              when state_de = 'IL' then 'Illinois'
+                              when state_de = 'IN' then 'Indiana'
+                              when state_de = 'KS' then 'Kansas'
+                              when state_de = 'KY' then 'Kentucky'
+                              when state_de = 'LA' then 'Louisiana'
+                              when state_de = 'MA' then 'Massachusetts'
+                              when state_de = 'MD' then 'Maryland'
+                              when state_de = 'ME' then 'Maine'
+                              when state_de = 'MI' then 'Michigan'
+                              when state_de = 'MN' then 'Minnesota'
+                              when state_de = 'MO' then 'Missouri'
+                              when state_de = 'MS' then 'Mississippi'
+                              when state_de = 'MT' then 'Montana'
+                              when state_de = 'NC' then 'North Carolina'
+                              when state_de = 'ND' then 'North Dakota'
+                              when state_de = 'NE' then 'Nebraska'
+                              when state_de = 'NH' then 'New Hampshire'
+                              when state_de = 'NJ' then 'New Jersey'
+                              when state_de = 'NM' then 'New Mexico'
+                              when state_de = 'NV' then 'Nevada'
+                              when state_de = 'NY' then 'New York'
+                              when state_de = 'OH' then 'Ohio'
+                              when state_de = 'OK' then 'Oklahoma'
+                              when state_de = 'OR' then 'Oregon'
+                              when state_de = 'PA' then 'Pennsylvania'
+                              when state_de = 'RI' then 'Rhode Island'
+                              when state_de = 'SC' then 'South Carolina'
+                              when state_de = 'SD' then 'South Dakota'
+                              when state_de = 'TN' then 'Tennessee'
+                              when state_de = 'TX' then 'Texas'
+                              when state_de = 'UT' then 'Utah'
+                              when state_de = 'VA' then 'Virginia'
+                              when state_de = 'VT' then 'Vermont'
+                              when state_de = 'WA' then 'Washington'
+                              when state_de = 'WI' then 'Wisconsin'
+                              when state_de = 'WV' then 'West Virginia'
+                              when state_de = 'WY' then 'Wyoming'
+                         end state_full_name_de;
+                         
+
+-- ERROR:  1267 - Illegal mix of collations
+--SOLUTION: MAKE THE CHARACTER SETS MATCH BETWEEN JOINED TABLES
+
+SELECT table_schema, table_name, column_name, character_set_name, collation_name
+FROM information_schema.columns
+where table_schema = 'project2'
+and table_name in ('disch_lookup_final','drug_deaths')
+ORDER BY table_schema, table_name,ordinal_position; 
+
+ALTER TABLE drug_deaths CONVERT TO CHARACTER SET cp850 COLLATE 'cp850_general_ci';                         
+
+
+---FINAL QUERY (TAKES TOO LONG, > 5 MINUTES)
+select
+  b.year_de,
+  a.state_de,
+  a.deaths,
+  sum(case when b.gender_de = 'MALE' then 1 else 0 end) male_count,
+  sum(case when b.gender_de = 'FEMALE' then 1 else 0 end) female_count,
+  sum(case when b.reason_de = 'Complete' then 1 else 0 end) tx_complete,
+  sum(case when b.reason_de = 'Incomplete' then 1 else 0 end) tx_incomplete
+from
+  drug_deaths a,
+  disch_lookup_final b
+where
+  upper(a.state_full_name_de) = upper(b.stfips_de)
+group by
+  b.year_de,
+  a.state_de,
+  a.deaths
+order by
+  a.state_full_name_de;
+
+---just create the table
+create table map_viz as
+select
+  b.year_de,
+  a.state_full_name_de,
+  a.deaths,
+  sum(case when b.gender_de = 'MALE' then 1 else 0 end) male_count,
+  sum(case when b.gender_de = 'FEMALE' then 1 else 0 end) female_count,
+  sum(case when b.reason_de = 'Complete' then 1 else 0 end) tx_complete,
+  sum(case when b.reason_de = 'Incomplete' then 1 else 0 end) tx_incomplete
+from
+  drug_deaths a,
+  disch_lookup_final b
+where
+  upper(a.state_full_name_de) = upper(b.stfips_de)
+group by
+  b.year_de,
+  a.state_full_name_de,
+  a.deaths
+order by
+  a.state_full_name_de;
   
-
-
-
-
-
-
-
+alter table map_viz add map_viz_pk_id int auto_increment primary key first;  
 
 
 --########################################################################################
@@ -223,75 +334,6 @@ from
 --  |______|_| |_|\__,_|     \/   |_|___/\__,_|\__,_|_|_/___\__,_|\__|_|\___/|_| |_|___/
 --                                                                                      
 --########################################################################################
-
-
-
-
--------------------------------------------------
---table modifications
--------------------------------------------------
-
-alter table drug_deaths add column state_full_name_de varchar(25) fourth;
-
-update drug_deaths
-set state_full_name_de = case when state_de = 'AK' then 'Alaska'
-                         case when state_de = 'AL' then 'Alabama'
-                         case when state_de = 'AR' then 'Arkansas'
-                         case when state_de = 'AZ' then 'Arizona'
-                         case when state_de = 'CA' then 'California'
-                         case when state_de = 'CO' then 'Colorado'
-                         case when state_de = 'CT' then 'Connecticut'
-                         case when state_de = 'DE' then 'Delaware'
-                         case when state_de = 'FL' then 'Florida'
-                         case when state_de = 'GA' then 'Georgia'
-                         case when state_de = 'HI' then 'Hawaii'
-                         case when state_de = 'IA' then 'Iowa'
-                         case when state_de = 'ID' then 'Idaho'
-                         case when state_de = 'IL' then 'Illinois'
-                         case when state_de = 'IN' then 'Indiana'
-                         case when state_de = 'KS' then 'Kansas'
-                         case when state_de = 'KY' then 'Kentucky'
-                         case when state_de = 'LA' then 'Louisiana'
-                         case when state_de = 'MA' then 'Massachusetts'
-                         case when state_de = 'MD' then 'Maryland'
-                         case when state_de = 'ME' then 'Maine'
-                         case when state_de = 'MI' then 'Michigan'
-                         case when state_de = 'MN' then 'Minnesota'
-                         case when state_de = 'MO' then 'Missouri'
-                         case when state_de = 'MS' then 'Mississippi'
-                         case when state_de = 'MT' then 'Montana'
-                         case when state_de = 'NC' then 'North Carolina'
-                         case when state_de = 'ND' then 'North Dakota'
-                         case when state_de = 'NE' then 'Nebraska'
-                         case when state_de = 'NH' then 'New Hampshire'
-                         case when state_de = 'NJ' then 'New Jersey'
-                         case when state_de = 'NM' then 'New Mexico'
-                         case when state_de = 'NV' then 'Nevada'
-                         case when state_de = 'NY' then 'New York'
-                         case when state_de = 'OH' then 'Ohio'
-                         case when state_de = 'OK' then 'Oklahoma'
-                         case when state_de = 'OR' then 'Oregon'
-                         case when state_de = 'PA' then 'Pennsylvania'
-                         case when state_de = 'RI' then 'Rhode Island'
-                         case when state_de = 'SC' then 'South Carolina'
-                         case when state_de = 'SD' then 'South Dakota'
-                         case when state_de = 'TN' then 'Tennessee'
-                         case when state_de = 'TX' then 'Texas'
-                         case when state_de = 'UT' then 'Utah'
-                         case when state_de = 'VA' then 'Virginia'
-                         case when state_de = 'VT' then 'Vermont'
-                         case when state_de = 'WA' then 'Washington'
-                         case when state_de = 'WI' then 'Wisconsin'
-                         case when state_de = 'WV' then 'West Virginia'
-                         case when state_de = 'WY' then 'Wyoming'
-                         end state_full_name_de;
-
-
-
-
-
-
-
 
 
 -----------------------------------------------
@@ -2088,6 +2130,7 @@ alter table discharges_raw_recoded add disch_raw_recoded_pk_id int auto_incremen
 create table disch_lookup_final as select  
   year_de,
   age_de,
+  gender_de,
   route1_de, 
   freq1_de, 
   sub3_d_de,
