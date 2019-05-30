@@ -20,13 +20,13 @@ L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 //['#f7f4f9','#e7e1ef','#d4b9da','#c994c7','#df65b0','#e7298a','#ce1256','#91003f']
 
 function chooseColor(s) {
-  return s > 1000 ? '#91003f' :
-         s > 500  ? '#ce1256' :
-         s > 200  ? '#e7298a' :
-         s > 100  ? '#df65b0' :
-         s > 50   ? '#c994c7' :
-         s > 20   ? '#d4b9da' :
-         s > 10   ? '#e7e1ef' :
+  return s > 100000 ? '#91003f' :
+         s > 50000  ? '#ce1256' :
+         s > 20000  ? '#e7298a' :
+         s > 10000  ? '#df65b0' :
+         s > 5000   ? '#c994c7' :
+         s > 2000   ? '#d4b9da' :
+         s > 200   ? '#e7e1ef' :
                     '#f7f4f9';
 }
 
@@ -38,13 +38,20 @@ d3.json("/static/data/pt_by_state.json").then(function(data) {
 });
 
 function style(feature){
-  console.log("return function called");
+  // console.log("'style' function called");
+  // console.log(feature);
+  // var state_key = feature.properties.name.toUpperCase();
+  // console.log(state_key);
+  // console.log(pt_data[state_key]);
+  // var num_patients = pt_data[state_key].value;
+  // console.log(state_key);
   return{
     // Call the chooseColor function to decide which color
     //Set color for polygons here.
-    fillColor: chooseColor(feature.properties.density),
+    fillColor: chooseColor(feature.properties.value),
+    //fillColor: chooseColor(num_patients),
     color:'white',
-    fillOpacity: 0.3,
+    fillOpacity: 0.4,
     weight:2,
     opacity:1
   }
@@ -56,8 +63,30 @@ function style(feature){
 // Creating a geoJSON layer with the retrieved data
 L.geoJson(statesData, {style: style}).addTo(map);
 
+//// Function to call statesData variable on styling features.
+// function onEachFeature(feature, layer) {
+//   console.log("'onEachFeature' function called");
+//   console.log(feature);
+//   var state_key = feature.properties.name.toUpperCase();
+//   console.log(state_key);
+//   console.log(pt_data[state_key]);
+//   var num_patients = pt_data[state_key].value;
+//   //console.log(state_key);
+//   return{
+//     // Call the chooseColor function to decide which color
+//     //Set color for polygons here.
+//     // fillColor: chooseColor(feature.properties.density),
+//     fillColor: chooseColor(num_patients),
+//     // color:'white',
+//     // fillOpacity: 0.3,
+//     // weight:2,
+//     // opacity:1
+//   }
+// };
+
 function highlightFeature(e) {
   var layer = e.target;
+  console.log("highlightFeature");
   console.log(e);
   
   layer.setStyle({
@@ -78,6 +107,7 @@ function highlightFeature(e) {
 // When the cursor no longer hovers over a map feature - 
 //when the mouseout event occurs - the feature's opacity reverts back
 function resetHighlight(e) {
+  console.log("resetHighlight");
   console.log(e);
   geojson.resetStyle(e.target);
   info.update();
@@ -111,10 +141,14 @@ info.onAdd = function(map){
 //adding html tags for a header, bold text and line break
 info.update = function(props) {
   // TODO: check if state_key exists...
-  var state_key = props.name.toUpperCase();
-  var num_patients = pt_data[state_key].value;
+  // console.log("info.update");
+  // console.log(props);
+  // console.log(props ? props.name : 'properties not defined');
+  // console.log(props ? props.name.toUpperCase(): 'properties not defined');
+  var state_key = props ? props.name.toUpperCase(): "";
+  var num_patients = props ? pt_data[state_key].value : 0;
   this._div.innerHTML = '<h4>US Substance Treatment</h4>' + (props ?
-    '<b>' +props.name + '</b><br />'+ num_patients + ' people'
+    '<b>' +props.name + '</b><br /><b>'+ num_patients + ' people</b>'
     : 'Hoover over a state');
 
 }
@@ -127,7 +161,7 @@ var legend = L.control({position: 'bottomright'});
 legend.onAdd = function (map) {
 
   var div = L.DomUtil.create('div', 'info legend'),
-    grades = [0, 10, 20, 50, 100, 200, 500, 1000],
+    grades = [0, 200, 2000, 5000, 10000, 20000, 50000, 100000],
     labels = [],
     from, to;
 
@@ -147,46 +181,3 @@ legend.onAdd = function (map) {
 legend.addTo(map);
 
 
-// L.geoJson(statesData, {
-//   
-//   style: function(feature) {
-//     return {
-//       color: "white",
-//        to color our neighborhood (color based on borough)
-//       fillColor: chooseColor(feature.properties.density),
-//       fillOpacity: 0.5,
-//       weight: 1.5
-//     };
-//   },
-//   // Called on each feature
-//   onEachFeature: function(feature, layer) {
-//     // Set mouse events to change map styling
-//     layer.on({
-//       // When a user's mouse touches a map feature, the mouseover event calls this function, that feature's opacity changes to 90% so that it stands out
-//       mouseover: function(event) {
-//         console.log(event);
-//         layer = event.target;
-//         // Giving each feature a pop-up with information pertinent to it
-//         layer.bindPopup("<h1>" + feature.properties.name + "</h1> <hr> <h2>" + feature.properties.density + "</h2>");
-//         layer.setStyle({
-//           fillOpacity: 0.9
-//         });
-//       },
-//       
-//       mouseout: function(event) {
-//         console.log(event);
-//         layer = event.target;
-//         layer.setStyle({
-//           fillOpacity: 0.5
-//         });
-//       },
-//       // When a feature (neighborhood) is clicked, it is enlarged to fit the screen
-//       // click: function(event) {
-//       //   console.log(event);
-//       //   //map.fitBounds(event.target.getBounds());
-//       // }
-//     });
-    
-
-//   }
-// }).addTo(map);
