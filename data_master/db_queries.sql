@@ -272,7 +272,7 @@ set state_full_name_de = case when state_de = 'AK' then 'Alaska'
 
 SELECT table_schema, table_name, column_name, character_set_name, collation_name
 FROM information_schema.columns
-where table_schema = 'project2'
+where table_schema = 'patient_info'
 and table_name in ('disch_lookup_final','drug_deaths')
 ORDER BY table_schema, table_name,ordinal_position; 
 

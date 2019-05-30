@@ -1,8 +1,11 @@
-drop database if exists project2;
+drop database if exists patient_info;
 
-create database project2;
+create database patient_info;
 
-use project2;
+use patient_info;
+
+SET GLOBAL innodb_buffer_pool_size=64388608;
+
 
 
 #----------------------------------------------------------
