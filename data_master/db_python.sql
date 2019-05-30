@@ -1,3 +1,5 @@
+SET GLOBAL innodb_buffer_pool_size=64388608;
+
 
 select '------------------------------------------------------' from dual;
 select 'Creating table ADM_LOOKUPS' from dual;
