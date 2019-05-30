@@ -34,6 +34,162 @@ Summary:        Potential queries to be used for plotting.  Will hit against 3 m
 
 
 
+--######################################################################
+--   __      ___                 _ _          _   _                 
+--    \ \    / (_)               | (_)        | | (_)                
+--     \ \  / / _ ___ _   _  __ _| |_ ______ _| |_ _  ___  _ __  ___ 
+--      \ \/ / | / __| | | |/ _` | | |_  / _` | __| |/ _ \| '_ \/ __|
+--       \  /  | \__ \ |_| | (_| | | |/ / (_| | |_| | (_) | | | \__ \
+--        \/   |_|___/\__,_|\__,_|_|_/___\__,_|\__|_|\___/|_| |_|___/
+--                                                                   
+--                                                                   
+--######################################################################
+
+
+
+--------------------------------------------------
+--treatment complete/incomplete by primary drug
+--------------------------------------------------
+
+select
+  a.primary_drug,
+  sum(a.treatment_completed) treatment_completed,
+  sum(b.treatment_incomplete) treatment_incomplete
+from
+  (  
+    select
+     sub1_de 'primary_drug',
+     count(reason_de) 'treatment_completed'
+    from
+      disch_lookup_final
+    where
+      reason_de = 'Complete'
+    group by
+      sub1_de
+   ) a,
+    (select
+      sub1_de 'primary_drug',
+      count(reason_de) 'treatment_incomplete'
+     from
+       disch_lookup_final
+     where
+       reason_de != 'Complete'
+     group by
+       sub1_de
+     ) b
+where
+  a.primary_drug = b.primary_drug
+group by
+  a.primary_drug;   
+
+
+--------------------------------------------------
+--treatment complete/incomplete by secondary drug
+--------------------------------------------------
+
+select
+  a.secondary_drug,
+  sum(a.treatment_completed) treatment_completed,
+  sum(b.treatment_incomplete) treatment_incomplete
+from
+  (  
+    select
+     sub2_d_de 'secondary_drug',
+     count(reason_de) 'treatment_completed'
+    from
+      disch_lookup_final
+    where
+      reason_de = 'Complete'
+    group by
+      sub2_d_de
+   ) a,
+    (select
+      sub2_d_de 'secondary_drug',
+      count(reason_de) 'treatment_incomplete'
+     from
+       disch_lookup_final
+     where
+       reason_de != 'Complete'
+     group by
+       sub2_d_de
+     ) b
+where
+  a.secondary_drug = b.secondary_drug
+group by
+  a.secondary_drug;   
+
+
+--------------------------------------------------
+--primary pay method for treatment
+--------------------------------------------------
+
+select
+  a.payment_method,
+  sum(a.treatment_completed) treatment_completed,
+  sum(b.treatment_incomplete) treatment_incomplete
+from
+  (  
+    select
+     primpay_de 'payment_method',
+     count(reason_de) 'treatment_completed'
+    from
+      disch_lookup_final
+    where
+      reason_de = 'Complete'
+    group by
+      primpay_de
+   ) a,
+    (select
+      primpay_de 'payment_method',
+      count(reason_de) 'treatment_incomplete'
+     from
+       disch_lookup_final
+     where
+       reason_de != 'Complete'
+     group by
+       primpay_de
+     ) b
+where
+  a.payment_method = b.payment_method
+group by
+  a.payment_method; 
+
+
+--------------------------------------------------
+--days wait for treatment
+--------------------------------------------------
+
+
+select
+  a.days_wait,
+  sum(a.treatment_completed) treatment_completed,
+  sum(b.treatment_incomplete) treatment_incomplete
+from
+  (  
+    select
+     daywait_de 'days_wait',
+     count(reason_de) 'treatment_completed'
+    from
+      disch_lookup_final
+    where
+      reason_de = 'Complete'
+    group by
+      daywait_de
+   ) a,
+    (select
+      daywait_de 'days_wait',
+      count(reason_de) 'treatment_incomplete'
+     from
+       disch_lookup_final
+     where
+       reason_de != 'Complete'
+     group by
+       daywait_de
+     ) b
+where
+  a.days_wait = b.days_wait
+group by
+  a.days_wait; 
 
 
 
@@ -41,12 +197,102 @@ Summary:        Potential queries to be used for plotting.  Will hit against 3 m
 --drug deaths by state 
 -----------------------------------------------
 
+--original
 select
   state_de,
   deaths
 from
   drug_deaths;
   
+  
+
+
+
+
+
+
+
+
+
+--########################################################################################
+--   ______           _  __      ___                 _ _          _   _                 
+--  |  ____|         | | \ \    / (_)               | (_)        | | (_)                
+--  | |__   _ __   __| |  \ \  / / _ ___ _   _  __ _| |_ ______ _| |_ _  ___  _ __  ___ 
+--  |  __| | '_ \ / _` |   \ \/ / | / __| | | |/ _` | | |_  / _` | __| |/ _ \| '_ \/ __|
+--  | |____| | | | (_| |    \  /  | \__ \ |_| | (_| | | |/ / (_| | |_| | (_) | | | \__ \
+--  |______|_| |_|\__,_|     \/   |_|___/\__,_|\__,_|_|_/___\__,_|\__|_|\___/|_| |_|___/
+--                                                                                      
+--########################################################################################
+
+
+
+
+-------------------------------------------------
+--table modifications
+-------------------------------------------------
+
+alter table drug_deaths add column state_full_name_de varchar(25) fourth;
+
+update drug_deaths
+set state_full_name_de = case when state_de = 'AK' then 'Alaska'
+                         case when state_de = 'AL' then 'Alabama'
+                         case when state_de = 'AR' then 'Arkansas'
+                         case when state_de = 'AZ' then 'Arizona'
+                         case when state_de = 'CA' then 'California'
+                         case when state_de = 'CO' then 'Colorado'
+                         case when state_de = 'CT' then 'Connecticut'
+                         case when state_de = 'DE' then 'Delaware'
+                         case when state_de = 'FL' then 'Florida'
+                         case when state_de = 'GA' then 'Georgia'
+                         case when state_de = 'HI' then 'Hawaii'
+                         case when state_de = 'IA' then 'Iowa'
+                         case when state_de = 'ID' then 'Idaho'
+                         case when state_de = 'IL' then 'Illinois'
+                         case when state_de = 'IN' then 'Indiana'
+                         case when state_de = 'KS' then 'Kansas'
+                         case when state_de = 'KY' then 'Kentucky'
+                         case when state_de = 'LA' then 'Louisiana'
+                         case when state_de = 'MA' then 'Massachusetts'
+                         case when state_de = 'MD' then 'Maryland'
+                         case when state_de = 'ME' then 'Maine'
+                         case when state_de = 'MI' then 'Michigan'
+                         case when state_de = 'MN' then 'Minnesota'
+                         case when state_de = 'MO' then 'Missouri'
+                         case when state_de = 'MS' then 'Mississippi'
+                         case when state_de = 'MT' then 'Montana'
+                         case when state_de = 'NC' then 'North Carolina'
+                         case when state_de = 'ND' then 'North Dakota'
+                         case when state_de = 'NE' then 'Nebraska'
+                         case when state_de = 'NH' then 'New Hampshire'
+                         case when state_de = 'NJ' then 'New Jersey'
+                         case when state_de = 'NM' then 'New Mexico'
+                         case when state_de = 'NV' then 'Nevada'
+                         case when state_de = 'NY' then 'New York'
+                         case when state_de = 'OH' then 'Ohio'
+                         case when state_de = 'OK' then 'Oklahoma'
+                         case when state_de = 'OR' then 'Oregon'
+                         case when state_de = 'PA' then 'Pennsylvania'
+                         case when state_de = 'RI' then 'Rhode Island'
+                         case when state_de = 'SC' then 'South Carolina'
+                         case when state_de = 'SD' then 'South Dakota'
+                         case when state_de = 'TN' then 'Tennessee'
+                         case when state_de = 'TX' then 'Texas'
+                         case when state_de = 'UT' then 'Utah'
+                         case when state_de = 'VA' then 'Virginia'
+                         case when state_de = 'VT' then 'Vermont'
+                         case when state_de = 'WA' then 'Washington'
+                         case when state_de = 'WI' then 'Wisconsin'
+                         case when state_de = 'WV' then 'West Virginia'
+                         case when state_de = 'WY' then 'Wyoming'
+                         end state_full_name_de;
+
+
+
+
+
+
+
+
 
 -----------------------------------------------
 --drug deaths by region
@@ -642,86 +888,6 @@ where
   a.age_started = b.age_started
 group by
   a.age_started;   
-
---------------------------------------------------
---treatment complete/incomplete by primary drug
---------------------------------------------------
-
-select
-  a.primary_drug,
-  sum(a.treatment_completed) treatment_completed,
-  sum(b.treatment_incomplete) treatment_incomplete
-from
-  (  
-    select
-     sub1_de 'primary_drug',
-     count(reason_de) 'treatment_completed'
-    from
-      disch_lookup_final
-    where
-      reason_de = 'Complete'
-    group by
-      sub1_de
-   ) a,
-    (select
-      sub1_de 'primary_drug',
-      count(reason_de) 'treatment_incomplete'
-     from
-       disch_lookup_final
-     where
-       reason_de != 'Complete'
-     group by
-       sub1_de
-     ) b
-where
-  a.primary_drug = b.primary_drug
-group by
-  a.primary_drug;   
-
-
---------------------------------------------------
---treatment complete/incomplete by secondary drug
---------------------------------------------------
-
-select
-  a.secondary_drug,
-  sum(a.treatment_completed) treatment_completed,
-  sum(b.treatment_incomplete) treatment_incomplete
-from
-  (  
-    select
-     sub1_de 'secondary_drug',
-     count(reason_de) 'treatment_completed'
-    from
-      disch_lookup_final
-    where
-      reason_de = 'Complete'
-    group by
-      sub1_de
-   ) a,
-    (select
-      sub1_de 'secondary_drug',
-      count(reason_de) 'treatment_incomplete'
-     from
-       disch_lookup_final
-     where
-       reason_de != 'Complete'
-     group by
-       sub1_de
-     ) b
-where
-  a.secondary_drug = b.secondary_drug
-group by
-  a.secondary_drug;   
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1955,4 +2121,6 @@ create table disch_lookup_final as select
 from
   disch_lookups;
 
+
+alter table disch_lookup_final add disch_raw_final_pk_id int auto_increment primary key first;
 

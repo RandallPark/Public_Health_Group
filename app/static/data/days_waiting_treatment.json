@@ -1,0 +1,32 @@
+[
+	{
+		"days_wait" : "0",
+		"treatment_completed" : 167928,
+		"treatment_incomplete" : 238449
+	},
+	{
+		"days_wait" : "1-7",
+		"treatment_completed" : 61518,
+		"treatment_incomplete" : 82503
+	},
+	{
+		"days_wait" : "15-30",
+		"treatment_completed" : 10683,
+		"treatment_incomplete" : 16299
+	},
+	{
+		"days_wait" : "31 and more",
+		"treatment_completed" : 6149,
+		"treatment_incomplete" : 10640
+	},
+	{
+		"days_wait" : "8-14",
+		"treatment_completed" : 12391,
+		"treatment_incomplete" : 22618
+	},
+	{
+		"days_wait" : "MISSING/UNKNOWN/NOT COLLECTED/INVALID",
+		"treatment_completed" : 173117,
+		"treatment_incomplete" : 246280
+	}
+]
