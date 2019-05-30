@@ -36,7 +36,14 @@ def map():
 def graph():
 
     # Return template for html
-    return render_template("graph.html")
+    return render_template("d3-circle-graph.html")
+
+# Route to render dash-board.html
+@app.route("/dash-board")
+def dash():
+
+    # Return template for html
+    return render_template("dash-board.html")
 
 
 # Route that will trigger data retrieval

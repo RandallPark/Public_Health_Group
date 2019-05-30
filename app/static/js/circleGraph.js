@@ -11,7 +11,9 @@ var svg = d3.select("#my_dataviz")
     .attr("height", height)
 
 // Read data
-d3.csv("../../data/pt_by_state.csv", function(data) {
+//convert to d3 v5
+d3.json("/static/data/pt_by_state.json").then(function(data) {
+
 
   // Filter a bit the data 
   data = data.filter(function(d){ return d.value>1 })

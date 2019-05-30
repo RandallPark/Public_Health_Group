@@ -3,15 +3,20 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+        <!-- Bootstrap Components -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
 
     <!-- Load d3.js -->
-    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://d3js.org/d3.v5.js"></script>
 
     <!-- Color palette -->
     <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 
-    <!-- Create a div where the graph will take place -->
-    <div id="my_dataviz"></div>
     <style>
       .node:hover{
         stroke-width: 7px !important;
@@ -20,8 +25,57 @@
     </style>
   </head>
   <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          <a class="navbar-brand" href="#">Substance Use Treatment</a>
+        </div>
   
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Map</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Graphs<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="{{ url_for('dash') }}">Dash Board</a></li>
+                <li><a href="{{ url_for('graph') }}">Collide-a-graph</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">TODO</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">TODO</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">By State <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">TODO</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">States will</a></li>
+                <li><a href="#">populate here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
 
+    <!-- Create a div where the graph will take place -->
+    <div id="my_dataviz"></div>
+    
     <!-- JS for circle graph -->
     <script type="text/javascript" src="../static/js/circleGraph.js"></script>
     <script type="text/javascript" src="../static/js/statesData.js"></script>
