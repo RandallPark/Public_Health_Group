@@ -52,6 +52,11 @@ def dash():
     # Return template for html
     return render_template("dash-board.html")
 
+@app.route("/dash-board2")
+def dash2():
+
+    # Return template for html
+    return render_template("dash-board2.html")
 
 # Route that will trigger data retrieval
 @app.route("/data")
