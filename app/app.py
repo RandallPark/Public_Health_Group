@@ -22,6 +22,13 @@ def home():
     # Return template for html
     return render_template("home.html")
 
+# Route to render home.html template
+@app.route("/images")
+def images():
+
+    # Return template for html
+    return render_template("static-images.html")
+
 # Route to render index.html template
 # Warren using for development...
 @app.route("/map")
